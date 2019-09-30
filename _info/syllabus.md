@@ -14,17 +14,14 @@ You must contact the instructor for clarification if you receive information fro
 
 * **Instructor**: Yekaterina Kharitonova (Prof. K)
 * **Lecture**: Tuesday and Thursday, 5--6:15pm, TD-W 1701
-* **Lab / Discussion Sections**:
-  * Wednesday, 5PM, Phelps 3525
-  * Wednesday, 6PM, Phelps 3525
-  * Wednesday, 7PM, Phelps 3525
+* **Lab / Discussion Sections**: in Phelps 3525 on Wednesdays: 9a, 10a, 11a, noon
 * Exam 1: Oct 22, in class;
 * Exam 2: Nov 21, in class;
 * Final exam: Dec 11 at 7:15pm.
 
 # Required Resources
-* Textbook: "Introduction to Computing Using Python"- Ljubomir Perkovic, 2nd edition
-* iclicker: Used in class participation (purchase at the bookstore)
+* **Textbook**: "Introduction to Computing Using Python"- Ljubomir Perkovic, 2nd edition
+* **iclicker**: Used for in class participation (purchase at the bookstore)
 
 # Support
 You are not alone in this course; the mentors (staff and the instructors) are here to support you as you learn the material. It's expected that some aspects of the course will take time to master, and the best way to master challenging material is to ask questions and practice. Take advantage of the office hours and the open-lab hours and attend them even if you don't have specific questions but feel uncertain about your understanding of the material. Small-group tutoring sessions can be available for students in need.

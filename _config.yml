@@ -1,0 +1,128 @@
+plugins:
+  - jekyll-remote-theme
+  - jekyll-include-cache
+
+remote_theme: ucsb-cs-course-repos/course-repo-jekyll-theme
+
+suppress_footer: true
+
+name: "CS 8 Fall 2019"
+github_url: https://github.com/ucsb-cs8/f19
+baseurl: "/f19"
+url: "https://ucsb-cs8.github.io/f19"
+slides_url: ""
+
+instances:
+  -
+    instructor: "Kharitonova"
+    site_url: "https://ucsb-cs8.github.io/f19"
+    github_org:
+       name: ucsb-cs8/f19
+       url: https://github.com/ucsb-cs8/f19
+    piazza_url:  https://piazza.com/class/
+    gradescope_url: https://www.gradescope.com
+
+
+start_week: 0
+start_date: 2019-09-22 00:00:00.00-8:00 # Has to start on a Sunday
+num_weeks: 11
+extra_exam_week: true
+lecture_days_of_week: TR
+
+cal_dates: >
+  [
+  {"label":"First day of Fall Quarter", "date":"2019-09-26" },
+  {"label":"No classes: Veterans' Day", "date":"2019-11-11", "holiday":true },
+  {"label":"No classes: Thanksgiving Break", "date":"2019-11-28", "holiday":true },
+  {"label":"No classes: Thanksgiving Break", "date":"2019-11-29", "holiday":true },
+  {"label":"Last day of classes", "date":"2019-12-06" },
+  {"label":"Finals Begin", "date":"2019-12-07" },
+  {"label":"Finals End", "date":"2019-12-13" },
+  {"label":"Drop deadline (no W grade)", "date":"2019-10-23" }
+  ]
+ 
+future: false
+
+course: "CS 8"
+qtr: "f19"
+quarter: "Fall 2019"
+
+kramdown:
+  parse_block_html: false
+
+exclude: ['vendor', 'setup.sh', 'jekyll.sh']
+include:
+  - _pages
+
+timezone: America/Los_Angeles
+
+collections:
+  hwk:
+    output: true
+    permalink: /hwk/:path/
+    last_before: false
+  lab:
+    output: true
+    permalink: /lab/:path/
+    last_before: false
+  exam:
+    output: true
+    permalink: /exam/:path/
+  info:
+    output: true
+    permalink: /info/:path/
+  lectures:
+    output: true
+    permalink: /lectures/:path/
+  bios:
+    output: true
+    permalink: /bios/:path
+
+defaults:
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+    values:
+      layout: default
+  -
+    scope:
+      path: ""
+      type: hwk
+    values:
+      layout: hwk
+  -
+    scope:
+      path: ""
+      type: lab
+    values:
+      layout: lab
+  -
+    scope:
+      path: ""
+      type: exam
+    values:
+      layout: exam_info
+  -
+    scope:
+      path: ""
+      type: info
+    values:
+      layout: info
+  -
+    scope:
+      path: ""
+      type: lectures
+    values:
+      layout: lecture
+  -
+    scope:
+      path: "syllabus.md"
+      type: info
+    values:
+      layout: handout
+  -
+    scope:
+     path: ""
+     type: bios
+    values:
+     layout: default #bio

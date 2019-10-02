@@ -425,7 +425,7 @@ Here's how to understand `pytest` output.
    
    In general, its a breakdown of why the assertion turned out to be false, showing every step in the calculation.  Let's break it down one line at a time:
    
-   <div class="explain-pytest">
+   <div class="explain-pytest" markdown="1">
    
    | line of output | meaning |
    |----------------|----------|

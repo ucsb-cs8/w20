@@ -5,6 +5,8 @@ ready: true
 ---
 
 # CS 8 Office / Open Lab Hours
+<img src="/f19/info/mentorPhotos/trailer-map.png"  width="600px"  alt="TA office hours trailer map" style="float: left; margin: 0px 10px 20px 10px;">
+
 
 ## Prof. K’s Office Hours
 
@@ -13,9 +15,22 @@ ready: true
 
 **Open labs**:  Open labs will be open for walk-in help: see the schedule below for more information.
 
+## TA Office Hours
+
+TA Office Hours will be held in the Building 936, which is next to the Phelps building.
+
+## Open labs
+
+Open labs will be open for walk-in help: see the schedule below for more information.
+
+Link to the interactive UCSB map: 
+<http://mapdev.geog.ucsb.edu>
+
+
 ## Lab Hours
 * "Closed" labs refer to your sections that you are registered for on GOLD. These are (50 minute discussion sections) and will be held in Phelps 3525 on Wednesdays: 9a, 10a, 11a, noon.
 * "Open" labs refer to times that you can get help from TAs and tutors outside of your scheduled labs. These will be held in the evenings in Phelps 3525 and in other locations. Please check the detailed schedule below:
+
 <style>
 iframe { width: 90%; height: 100px; overflow: scroll; }  
 </style>

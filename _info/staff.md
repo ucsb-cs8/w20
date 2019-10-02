@@ -63,6 +63,17 @@ iframe { width: 90%; height: 100px; overflow: scroll; }
   </td>
 </tr>
 
+<tr>
+  <td>
+  <img src="/f19/info/mentorPhotos/404.gif"  width="300px"  alt="" style="float: left; margin: 0px 10px 20px 10px;">
+  <h3>(Tutor)</h3>
+    Preferred Pronouns: <br/>
+    Major: <br/>
+    Previous experience as a tutor: <br/>
+  <i> ":)" </i>
+  </td>
+</tr>
+
 </table>
 
 

@@ -44,13 +44,14 @@ iframe { width: 90%; height: 100px; overflow: scroll; }
 <tr>
 <td>
   <img src="/f19/info/mentorPhotos/Kevin.png"  width="300px"  alt="" style="float: left; margin: 0px 10px 20px 10px;">
-  <h3> (TA) </h3>
+  <h3>Kevin H. (Tutor) </h3>
     Preferred Pronouns: He, Him, His<br/>
     Major: Computer Science<br/>
     Previous experience as a tutor: Last year I tutored for CS 16. I love to teach, and share my experience coding. <br/>
     <i> "I am a Senior in my last coding classes here at UCSB. I love to cook, read, write, and get outdoors. Feel free to reach out to me with questions, and I will be available in your sections. Looking forward to a great quarter. Let's have fun in this class! " </i>
   </td>
 </tr>
+    
 <tr>
   <td>
   <img src="/f19/info/mentorPhotos/404.gif"  width="300px"  alt="" style="float: left; margin: 0px 10px 20px 10px;">

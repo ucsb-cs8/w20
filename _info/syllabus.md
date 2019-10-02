@@ -70,7 +70,7 @@ It is certainly possible for all students to receive high grades in this course 
 Lecture and lab attendance is highly encouraged as they are factored into your final grade in the course. You are adults and are responsible for your learning. I expect you to come to all classes and labs, since this is an essential part of your education. This is also your time to engage with the material and ask your questions.
 During class, you will work alone and in groups to work through problems and answer questions. On some days, the groups will be asked to turn in their in-class work. If you were absent, you miss the opportunity for the points on that in-class assignment or iclicker questions.
 
-I recognize that some absences (e.g., minor illnesses, mishaps, etc.) are unavoidable.  Litigating whether each of these is "excused" or not isn't a good use of anyone's time, so instead we just drop the lowest two grades from everyone's homework/in-class assignment grades.  In this way, absenses (or failure to turn in homework) does not unduly penalize your grade unless it becomes excessive.
+I recognize that some absences (e.g., minor illnesses, mishaps, etc.) are unavoidable.  Litigating whether each of these is "excused" or not isn't a good use of anyone's time, so instead we just drop the lowest grades from everyone's homework/in-class assignment grades (drop the lowest homework and two lowest in-class activities).  In this way, absenses (or failure to turn in homework) does not unduly penalize your grade unless it becomes excessive.
 
 The participation portion of your grade will also include providing good answers on Piazza and engaging with the various activities that the instructor will provide throughout the quarter (e.g., online surveys).
 _Disrespectful, unprofessional, and otherwise inappropriate behavior can be grounds for receiving a zero for participation in this course._
@@ -116,6 +116,9 @@ The Office of Judicial Affairs has policies, tips, and resources for proper cita
 Rather than copying someone else's work, ask for help. You are not alone in this course! We are here to help you succeed. If you invest the time to learn the material and complete the projects, you won't need to copy any answers.
 
 ## A Parting Thought
-This page shouldn't end with a list of penalties for cheating or lateness, because penalties and grades aren't the purpose of the course. We actually just want you to learn and have a great time in the process. Please keep that goal in mind throughout the semester. Welcome to Data Science Foundations!
+This page shouldn't end with a list of penalties for cheating or lateness, because penalties and grades aren't the purpose of the course. We actually just want you to learn and have a great time in the process. Please keep that goal in mind throughout the semester. Welcome to CS 8!
 
 Last major revision: Sep 26, 2019
+
+Last updated:
+10/02 -- clarified the dropped homework/in-class activities

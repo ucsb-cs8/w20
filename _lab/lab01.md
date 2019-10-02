@@ -420,12 +420,11 @@ Here's how to understand `pytest` output.
    `test_fToC_boiling`.  What does all of the detailed output mean?
 
    <style>
-   div.explain-pytest table * td:first-of-type { width: 35em; font-size: 90%; }
+   div.explain-pytest table * td:first-of-type { width: 18em; font-size: 90%; }
    </style>
    
    In general, its a breakdown of why the assertion turned out to be false, showing every step in the calculation.  Let's break it down one line at a time:
    
-    
    <div class="explain-pytest">
    
    | line of output | meaning |

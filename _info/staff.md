@@ -54,6 +54,17 @@ iframe { width: 90%; height: 100px; overflow: scroll; }
     
 <tr>
   <td>
+  <img src="/f19/info/mentorPhotos/CS08-S19-Siqi-Z.JPG"  width="300px"  alt="" style="float: left; margin: 0px 10px 20px 10px;">
+  <h3>(Tutor)</h3>
+    Preferred Pronouns: She, Her, Hers<br/>
+    Major: Computer Science <br/>
+    Previous experience as a tutor: Last quarter I was the tutor for CS8 also, I really had a great experiences!<br/>
+  <i> "Hi! This is Siqi (or Maggie), currently a third year CS major student. I came to UCSB with my major undeclared, but luckily, I took CS 8 and fell in love with it. Then I decided to declare CS as my major, even if I did’t have any programming experience before. I was helped by a tutor at that time also, so I decided that I will help other students when I am able to. Luckily, I got the chance this quarter again! I am really looking forward to meet and help you guys. If there is anything that you want me to improve, please always feel free to email, text or directly talk to me in person. I also speak Chinese. I hope my presence can really make a difference in your CS journey." </i>
+  </td>
+</tr>
+
+<tr>
+  <td>
   <img src="/f19/info/mentorPhotos/404.gif"  width="300px"  alt="" style="float: left; margin: 0px 10px 20px 10px;">
   <h3>(Tutor)</h3>
     Preferred Pronouns: <br/>

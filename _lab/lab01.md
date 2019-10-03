@@ -143,7 +143,7 @@ False
 True
 ```
 
-We should plan to program with the knowledge that some mathematics operations are approximations (especially irrational numbers). 
+We should plan to program with the knowledge that some mathematics operations are approximations  (especially irrational numbers). 
 <strong>When we test software involving floating point numbers, we must allow for some inaccuracy</strong>.   This "allowable inaccuracy" is sometimes called the <em>tolerance</em>, and it might be a small value such as `0.001` (1x10<sup>-3</sup>, or `0.000001` (1x10<sup>-6</sup>).
 
 In Python, we can write `0.001` as `1e-03`, and `0.000001` as `1e-06`.  (The lowercase `e` is the way that Python represents scientific notation.)
@@ -223,7 +223,7 @@ The code above is how we define functions in python. We will work on defining ou
 On a very high level, the `def fToC(fTemp)` and `def cToF(cTemp)` is what we call a function <strong>signature</strong>. 
 * In the function signature of `def fToC(fTemp)`, the keyword `def` tells python we are defining a function,
 * `fToC` is the name of the function and 
-* `fTemp` is the function's parameter enclosed in parenthesis (note, there can be zero or more parameters for a function, but in this case there is only one). You can think of parameters as variables that the function can use (note that calling fToC(32) is telling the computer to call fToC and set fTemp = 32).
+* `fTemp` is the function's parameter enclosed in parenthesis (note, there can be zero or more parameters for a function, but in this case there is only one). You can think of parameters as variables that the function can use (note that calling `fToC(32)` is telling the computer to call `fToC` and set `fTemp` = 32).
 * The `return` keyword is used to pass back a value to whoever used the function. 
     * In this case, the function `fToC(fTemp)` returns the celsius value of a fahrenheit temperature we passed into the function (`fTemp`). 
     * The function `cToF(cTemp)` returns the fahrenheit value of a celsius temperature we passed into this function (`cTemp`). 
@@ -324,7 +324,7 @@ def test_cToF_boiling():
 
 </div>
 
-After entering this, save the file and use "Run Module" to make sure there are no error messages (error messages are discplayed as red output in the Python Shell Window).  If there are any, make sure to fix them before running the next step.
+After entering this, save the file and use "Run Module" to make sure there are no error messages  (error messages are discplayed as red output in the Python Shell Window).  If there are any, make sure to fix them before running the next step.
             
 # Step 6: Running the test cases
         
@@ -475,9 +475,9 @@ Keep in mind that in Python:
 
 * The `*` symbol is used for multiplication.  In algebra, we can write
   `1.8x` to mean `1.8` multiplied by `x`, however, this does not work
-  in Python.  In Python you must write `1.8 * x` if you want to
-  multiply the variable `x` by 1.8 (or `1.5 * a` if you want to
-  multiply the variable `a` by 1.5, or `1.2 * three` if you want to multiply the variable `three`(which could encode any value (i.e. three = 10)) by 1.2 ...).
+  in Python.  In Python you must write `1.8` * `x` if you want to
+  multiply the variable `x` by `1.8` (or `1.5` * `a` if you want to
+  multiply the variable `a` by `1.5`, or `1.2` * `count` if you want to multiply the variable `count` (which could encode any value (i.e. `count` = `10`)) by `1.2` ...).
 
 * The `+` and `-` symbols are used for addition and subtraction
 
@@ -502,7 +502,7 @@ the comment that says `# TODO: Fix this line of code `.
 
 You'll also want to replace the similar line in the cToF function.
 
-When you have the test cases passing, try running the pytest command again(shown below)&mdash;remembering that:
+When you have the test cases passing, try running the pytest command again (shown below)&mdash;remembering that:
 
 * it <b>must be done from the terminal shell</b>, NOT the Python shell.
 * the current working directory of that terminal session must be

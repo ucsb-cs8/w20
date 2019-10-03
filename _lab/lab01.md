@@ -41,7 +41,7 @@ File "", line 1, in ImportError: No module named 'pytest'
 
 In order to exit the python shell in terminal press Ctrl+D or type exit() in order to return to the normal terminal. 
 
-To install it, type this command into the terminal session
+To install pytest, type this command into the terminal session
 (the Unix Terminal prompt) to install pytest for your CSIL account:
 
 
@@ -105,7 +105,7 @@ Note that the `import` statement allows your program to use other code (librarie
 The value we get back is the square root of 2, which is an irrational number&mdash;its decimal representation goes on forever.  Unfortunately, real world computing devices typically store numbers with a finite number of decimal places&dagger;. So, the representation we see for the square root of two is in fact an approximation.
 
 <div style="font-size:80%">
-(&dagger;&nbsp;Technically, "binary places", or "binary digits" rather than "decimal places". For purposes of this discussion it amounts to the same thing.  Also, some computer systems do work with "symbolic" representations of numeric quantities e.g retaining √2 or π as symbolic values rather than as numerical approximations. On those systems, you can exact results, without losing precision, at the expense of speed.  We won't discuss that kind of software in this course.)
+(&dagger;&nbsp;Technically, "binary places", or "binary digits" rather than "decimal places". For purposes of this discussion it amounts to the same thing.  Also, some computer systems do work with "symbolic" representations of numeric quantities, e.g., retaining √2 or π as symbolic values rather than as numerical approximations. On those systems, you can get exact results, without losing precision, at the expense of speed.  We won't discuss that kind of software in this course.)
 </div>
 
 We can see this if we multiply `math.sqrt(2)` by itself.  Try it:
@@ -158,23 +158,24 @@ and returns you to the Unix shell prompt.
 # Step 2: Make a `~/cs8/{{page.num}}` folder
 
 In the previous lab, you should already have created the 
-`~/cs8/lab00` You are now going to create folder
+`~/cs8/lab00`. You are now going to create a folder
 `~/cs8/lab01` for the files for this lab.
 
-In general, its probably a good idea to keep your work for this class
-under `~/cs8`, in folders called `lab00`, `lab01`, `lab02` etc.
+In general, it's probably a good idea to keep your work for this class
+under `~/cs8`, in folders called `lab00`, `lab01`, `lab02`, etc.
 
 This isn't exactly *required* (no-one is going to check), but it's
 probably a good habit to develop.  Here's why: all the rest of the
 instructions will be written based on the assumption that you did
 things this way.  And if you continue to take CS courses at UCSB,
 you'll often find that's the case from one course to the next.
+Plus, it helps you organize your files from different labs.
 
-So, I'd strongly encourage you to do it.
+So, we strongly encourage you to do it.
 
 As a reminder:
 
-* `cd` returns you to your home directory (e.g. `/cs/student/cgaucho/`)
+* `cd` returns you to your home directory (e.g., `/cs/student/cgaucho/`, if your username is `cgaucho`)
 * `pwd` prints your current working directory
 * `cd cs8` changes into the cs8 directory under the current directory
 * `cd ~/cs8` changes into the cs8 directory under your home directory regardless of the current working directory (because `~` is a shortcut for the absolute path of
@@ -185,16 +186,16 @@ As a reminder:
 
 With that information, you should be able to determine how to
 create a `~/cs8/lab01` directory, and make that directory your current
-working directory (the one that comes up when you type `pwd`.)  Do that now.
+working directory (the one that comes up when you type `pwd`.)  Do that now. (Remember that creating and navigating directories happens using the terminal shell prompt, also known as the Unix command line, marked by `$`.)
 
 Then, you are ready for the next step.
 
 # Step 3: Create a file called `convert.py` in your `~/cs8/lab01` directory
 
-The contents of `convert.py` should be as shown below.  This contains
+The contents of `convert.py` should be as shown below: it should contain
 two Python function definitions that, at the moment are incorrect.
 
-Choose "File => New File" in IDLE to bring up an "untitled" window, then copy and paste this code into that window.
+Choose "File => New File" **in IDLE** to bring up an "untitled" window, then copy and paste this code into that window.
 
 Note that the formulas for converting between Celsius and Fahrenheit are incorrect.  That's deliberate, so just go with it for now.  We'll fix those at a later step.
 
@@ -205,15 +206,23 @@ def fToC(fTemp):
 def cToF(cTemp):
     return cTemp + 32 # TODO: Fix this line of code
 ``` 
-The code above is how we define functions in python. We will work on defining our own functions throughout the course. On a very high level, the `def fToC(fTemp)` and `def cToF(cTemp)` is what we call a function <strong>signature</strong>. In the function signature of `def fToC(fTemp)`, the keyword `def` tells python we are defining a function, `fToC` is the name of the function and `fTemp` is the function's parameter enclosed in parenthesis (note, there can be zero or more parameters for a function, but in this case there is only one). The `return` keyword is used to pass back a value to whoever used the function. In this case, the function `fToC(fTemp)` returns the celsius value of a fahrenheit value we passed into the function (`fTemp`). The function `cToF(cTemp)` returns the fahrenheit value of a celsius value we passed into this function (`cTemp`). 
+The code above is how we define functions in python. We will work on defining our own functions throughout the course.
+    
+On a very high level, the `def fToC(fTemp)` and `def cToF(cTemp)` is what we call a function <strong>signature</strong>. 
+* In the function signature of `def fToC(fTemp)`, the keyword `def` tells python we are defining a function,
+* `fToC` is the name of the function and 
+* `fTemp` is the function's parameter enclosed in parenthesis (note, there can be zero or more parameters for a function, but in this case there is only one). 
+* The `return` keyword is used to pass back a value to whoever used the function. 
+    * In this case, the function `fToC(fTemp)` returns the celsius value of a fahrenheit temperature we passed into the function (`fTemp`). 
+    * The function `cToF(cTemp)` returns the fahrenheit value of a celsius temperature we passed into this function (`cTemp`). 
       
 # Step 4: Test your code by hand
 
 To test this code, we'll first do what many programmers do: test the code by hand.  
 
-That is, we'll run the file in IDLE, and then enter some function calls in the Python shell to see what results we get.  These two functions are supposed to convert between Fahrenheit where water freezes at 32 degrees, and Celsius where it freezes at 0 degrees.  Let's see if they work properly.
+That is, we'll run the file in IDLE, and then "call the function" (i.e.  enter some function calls in the Python shell) to see what results we get.  These two functions are supposed to convert between Fahrenheit where water freezes at 32 degrees, and Celsius where it freezes at 0 degrees.  Let's see if they work properly.
 
-Use the Run Module command to run the code, and then try entering these function calls at the Python Shell prompt.  You should see output similar to what is shown below:
+Use the Run Module command to run the code: doing so will definte the functions (i.e., make Python aware that they exist and what they are supposed to do according to the provided function definitions). You can then try entering these function calls at the Python Shell prompt.  You should see output similar to what is shown below:
 
 ```
 >>> fToC(32)
@@ -223,7 +232,7 @@ Use the Run Module command to run the code, and then try entering these function
 >>> 
 ```
 
-As you can see, for those two particular values, the function appears to return the correct answer&mdash;32 degrees fahrenheit is indeed 0 degrees celsius, and 0 degrees celsius is indeed 32 degrees fahrenheit.  
+As you can see, for those two particular values, the function appears to return the correct answer: 32 degrees fahrenheit is indeed 0 degrees celsius, and 0 degrees celsius is indeed 32 degrees fahrenheit.  
 
 So clearly, testing with a single value is not enough.  Indeed, if we test with another well known value, 212 Fahrenheit and 100 Celsius (the boiling point of water), we see that the output is incorrect:
 
@@ -235,11 +244,11 @@ So clearly, testing with a single value is not enough.  Indeed, if we test with 
 >>> 
 ```
 
-One of the problems with testing by hand is that it is tedious, and folks have a tendency to skip it.  So, experienced programmers have learned that its generally a better idea to automate the process of testing. We'll learn how to do that next. We'll see that when we set up these four tests, two of them will pass, and two of them will fail.
+One of the problems with testing by hand is that it is tedious, and folks have a tendency to skip it.  So, experienced programmers have learned that it's generally a better idea to automate the process of testing. We'll learn how to do that next. We'll see that when we set up these four tests, two of them will pass, and two of them will fail.
 
 # Step 5: Setting up automated tests
 
-Add this line at the top of your convert.py file:
+Add this line at the top of your `convert.py` file:
 
 ```
 import pytest
@@ -270,7 +279,7 @@ If the expresssion after `assert` is true, the test passes, otherwise it fails.
 
 We are using `pytest.approx()` here because any time you are testing with floating point numbers, we have to be aware that there may be some inaccuracy, as we discussed earlier.  
 
-(Recall our discussion of what happens when you multiply `math.sqrt(2.0)` by itself.  Here, its probably overkill since we aren't using any irrational numbers, but it is still safer to always use some way of approximating equality when dealing with floating point.)
+(Recall our discussion of what happens when you multiply `math.sqrt(2.0)` by itself.  Here, it's probably overkill since we aren't using any irrational numbers, but it is still safer to always use some way of approximating equality when dealing with floating point.)
 
 You can click the plus to open a dropdown showing what your entire file should look like at this point:
 
@@ -303,13 +312,13 @@ def test_cToF_boiling():
 
 </div>
 
-After entering this, save the file and use "Run Module" to make sure there are no error messages (red output in the Python Shell Window.).  If not, then you are ready for the next step.
+After entering this, save the file and use "Run Module" to make sure there are no error messages (error messages are discplayed as red output in the Python Shell Window).  If there are any, make sure to fix them before running the next step.
             
 # Step 6: Running the test cases
         
 Running the test cases requires us to go <em>outside of IDLE</em> back to the terminal shell prompt.  
 
-Your current directory needs to be the same one that your convert.py file is stored in. That should be `~/cs8/lab01`, but if it isn't, then fix things so that the `convert.py` file is in that directory, and you are in that directory. If you need help, ask for assistance.
+Your current directory needs to be the same one that your `convert.py` file is stored in. That should be `~/cs8/lab01`, but if it isn't, then fix things so that the `convert.py` file is in that directory, and your current working directory is set to that directory. If you need help, ask for assistance.
 
 You should be able to type the `ls` command  (or on Windows, `dir`) at the terminal shell prompt and see the `convert.py` file listed:
 
@@ -325,7 +334,7 @@ When that's the case, try this command:
 python3 -m pytest convert.py
 ```
 
-You should see output like this.  It may be a little overwhelming at first, but don't let it intimidate you. Once you know what you are looking for, it is very easy to read.    After the output, there is a guide to understanding it.
+You should see output like what's shown below.  It may be a little overwhelming at first, but don't let it intimidate you. Once you know what you are looking for, it is very easy to read.    After the output, there is a guide to understanding it.
 
 
 ```text
@@ -371,15 +380,15 @@ Here's how to understand `pytest` output.
 1. <b>Get the big picture first from the <tt>convert.py ..FF</tt> line</b>. 
 
    Look for a line near the beginning that has the name of your file, followed by a list of either dots, 
-   letter 'E' or letter 'F' characters, like this one:
+   letter `E` or letter `F` characters, like this one:
 
    ```
    convert.py ..FF
    ```
    
-   In this case, the `.` characters are tests that passed.  If you have four tests, the ideal thing you'd want to see is <tt>convert.py&nbsp;....</tt> which means that four tests for <tt>convert.py</tt> all passed. 
+   In this case, the `.` characters are tests that passed.  If you have four tests, then ideally, you'd want to see four dots, like this <tt>convert.py&nbsp;....</tt>, which means that four tests for <tt>convert.py</tt> all successfully passed. 
    
-   Instead, here, we see `..FF`, which means we had two test failures.   Later in the output, we'll see more detail about
+   Instead, here, we see `..FF`, which means we had two tests that succeeded and two tests that failed.   Later in the output, we'll see more detail about
    each of those failures.
    
 2. <b>Understand the overall structure of the output.</b>
@@ -472,7 +481,7 @@ division are done before addition and subtraction. Some examples:
   performed before the subtraction.
 
 * If you want to force the addition or subtraction to be done first,
-  you must use parentheses, e. g. `(x + 2) * 3` or `(x - 6) / 2`
+  you *must use parentheses*, e.g., `(x + 2) * 3` or `(x - 6) / 2`
 
 When you replace `return ftemp - 32.0` with the correct formula for
 converting a Fahrenheit temperature to Celsius, you should remove
@@ -509,7 +518,7 @@ At that point, you are ready to submit your work to Gradescope.
 
 # Step 9: Submit your `convert.py` file to Gradescope
 
-Navigate to the Lab assignment "Lab01" and upload your `convert.py` similar to how you submitted `hello.py` for Lab00. Gradescope will check if your `fToC(fTemp)` and `cToF(cTemp)` functions are correct. If your tests do not pass, go back to these functions and double-check your conversion formulas and function syntax.
+Navigate to the Lab assignment "Lab01" and upload your `convert.py`, similar to how you submitted `hello.py` for Lab00. Gradescope will check if your `fToC(fTemp)` and `cToF(cTemp)` functions are correct. If your tests do not pass, go back to these functions and double-check your conversion formulas and function syntax.
 
 
 ## Final Step:  Log Out
@@ -520,6 +529,6 @@ In fact, you should do this every time you walk away from a lab computer, either
 
 Here's how:
 
-* Find the System Menu at the top of the screen.
-* Select Log Out
+* Find the System Menu at the top right of the screen.
+* Select your name and in the dropdown click on "Log Out"
 

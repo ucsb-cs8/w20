@@ -20,7 +20,7 @@ You must contact the instructor for clarification if you receive information fro
 * Final exam: Dec 11 at 7:15pm.
 
 # Required Resources
-* **Textbook**: "Introduction to Computing Using Python"- Ljubomir Perkovic, 2nd edition
+* **Textbook**: "Introduction to Computing Using Python"- Ljubomir Perkovic, 2nd edition (available in the [Course Reserve in the Library](https://ucsb-primo.hosted.exlibrisgroup.com/primo-explore/fulldisplay?docid=01UCSB_ALMA21172715630003776&context=L&vid=UCSB&lang=en_US&search_scope=default_scope&adaptor=Local%20Search%20Engine&tab=default_tab&query=any,contains,perkovic))
 * **iclicker**: Used for in class participation (purchase at the bookstore)
 
 # Support

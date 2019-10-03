@@ -26,7 +26,7 @@ It is probably the case that `pytest` is not installed for your version
 of Python3.  You can check by typing `python3` at the Terminal prompt
 to get to the Python Shell Prompt `>>>`, and then typing `import pytest`.
 
-If you get an error message like this one, then pytest is not installed.
+If you get an error message like the one shown below, then pytest is not installed. However, if you `do not` get an error message, skip to Step 1.
 
 ```
 [cgaucho@csil-12 ~]$ python3
@@ -100,9 +100,9 @@ Type in the `import math`, followed by `math.sqrt(2)`.  It should look like this
 >>> 
 ```
 
-Note that the `import` statement allows your program to use other code (libraries) that you didn't write yourself (someone else did). There are a lot of libraries that come with programming language (such as `math`), and some libraries that can be downloaded and imported into your program (see Section 1.2 in Perkovic). In either case, using libraries help developers focus on solving their problems and manage their code without having to re-implement certain functionality. 
+Note that the `import` statement gives us access to math.sqrt(). The name that comes after the key word `import` is called a library (here we are importing the `math` library). This allows the program to use other code like math.sqrt() that we didn't write ourselves (someone else wrote it for us). There are a lot of libraries that come with programming language (such as `math`), and some libraries that can be downloaded and imported into your program (see Section 1.2 in Perkovic). In either case, using libraries helps developers focus on solving their problems and manage their code without having to re-implement certain functionality (like making a sqrt function from scratch).
 
-The value we get back is the square root of 2, which is an irrational number&mdash;its decimal representation goes on forever.  Unfortunately, real world computing devices typically store numbers with a finite number of decimal places&dagger;. So, the representation we see for the square root of two is in fact an approximation.
+The value we get back is the square root of 2, which is an irrational number&mdash;its decimal representation goes on forever.  Unfortunately, real world computing devices typically store numbers with a finite number of decimal places&dagger;. So, the representation we see for the square root of two is an approximation.
 
 <div style="font-size:80%">
 (&dagger;&nbsp;Technically, "binary places", or "binary digits" rather than "decimal places". For purposes of this discussion it amounts to the same thing.  Also, some computer systems do work with "symbolic" representations of numeric quantities, e.g., retaining √2 or π as symbolic values rather than as numerical approximations. On those systems, you can get exact results, without losing precision, at the expense of speed.  We won't discuss that kind of software in this course.)
@@ -132,7 +132,19 @@ how big that difference is.  The `4` digit is only the tip of the very, very, ve
 >>> 
 ```
 
-This fact is going to be annoying to us many times.   One consequence is that <strong>when we test software involving floating point numbers, we must allow for some inaccuracy</strong>.   This "allowable inaccuracy" is sometimes called the <em>tolerance</em>, and it might be a small value such as `0.001` (1x10<sup>-3</sup>, or `0.000001` (1x10<sup>-6</sup>).
+We can deal with this in our code by subtracting the expected value from the result, taking its absolute value, and finally checking if it is less than some tolerance. This might come in handy in your future coding experiences, but for now we'll leave it here.
+
+```
+>>> a = 5
+>>> b = 5.00001
+>>> a == b
+False
+>>> abs(a - b) < .001
+True
+```
+
+We should plan to program with the knowledge that some mathematics operations are approximations (especially irrational numbers). 
+<strong>When we test software involving floating point numbers, we must allow for some inaccuracy</strong>.   This "allowable inaccuracy" is sometimes called the <em>tolerance</em>, and it might be a small value such as `0.001` (1x10<sup>-3</sup>, or `0.000001` (1x10<sup>-6</sup>).
 
 In Python, we can write `0.001` as `1e-03`, and `0.000001` as `1e-06`.  (The lowercase `e` is the way that Python represents scientific notation.)
 
@@ -211,7 +223,7 @@ The code above is how we define functions in python. We will work on defining ou
 On a very high level, the `def fToC(fTemp)` and `def cToF(cTemp)` is what we call a function <strong>signature</strong>. 
 * In the function signature of `def fToC(fTemp)`, the keyword `def` tells python we are defining a function,
 * `fToC` is the name of the function and 
-* `fTemp` is the function's parameter enclosed in parenthesis (note, there can be zero or more parameters for a function, but in this case there is only one). 
+* `fTemp` is the function's parameter enclosed in parenthesis (note, there can be zero or more parameters for a function, but in this case there is only one). You can think of parameters as variables that the function can use (note that calling fToC(32) is telling the computer to call fToC and set fTemp = 32).
 * The `return` keyword is used to pass back a value to whoever used the function. 
     * In this case, the function `fToC(fTemp)` returns the celsius value of a fahrenheit temperature we passed into the function (`fTemp`). 
     * The function `cToF(cTemp)` returns the fahrenheit value of a celsius temperature we passed into this function (`cTemp`). 
@@ -270,14 +282,14 @@ def test_cToF_boiling():
    assert cToF(100.0)==pytest.approx(212.0) 
 ```
 
-These are automated tests that use a module known as `pytest`.  When defining tests using the `pytest` module, we typically define functions that:
+These are automated tests that use a module(library) known as `pytest`.  When defining tests using the `pytest` library, we typically define functions that:
 
 * have names that start with `test_`.
 * end with exactly one `assert` statement&mdash;that is, the keyword `assert` followed by a boolean expresssion.  
 
-If the expresssion after `assert` is true, the test passes, otherwise it fails.
+If the expresssion after `assert` is true, the test passes, otherwise it fails, and gives us an error message which explains what went wrong.
 
-We are using `pytest.approx()` here because any time you are testing with floating point numbers, we have to be aware that there may be some inaccuracy, as we discussed earlier.  
+We are using `pytest.approx()` here because any time you are testing with floating point numbers, we have to be aware that there may be some inaccuracy, as we discussed earlier. Using `pytest.approx()` is a cleaner way of subtracting the expected value from the actual value, taking the absolute value, and checking if it is les than some tolerance which we touched on in Step 1. Using `pytest.approx()` allows for a tolerance of 1.0e-04.
 
 (Recall our discussion of what happens when you multiply `math.sqrt(2.0)` by itself.  Here, it's probably overkill since we aren't using any irrational numbers, but it is still safer to always use some way of approximating equality when dealing with floating point.)
 
@@ -316,7 +328,7 @@ After entering this, save the file and use "Run Module" to make sure there are n
             
 # Step 6: Running the test cases
         
-Running the test cases requires us to go <em>outside of IDLE</em> back to the terminal shell prompt.  
+Running the test cases requires us to go <em>outside of IDLE</em> back to the terminal shell prompt. Make sure to use quit() or Ctrl-D to exit the python interpreter (`>>>`). Once you are back on the command line prompt (`$`) continue on. 
 
 Your current directory needs to be the same one that your `convert.py` file is stored in. That should be `~/cs8/lab01`, but if it isn't, then fix things so that the `convert.py` file is in that directory, and your current working directory is set to that directory. If you need help, ask for assistance.
 
@@ -328,13 +340,13 @@ convert.py
 your-prompt-here $ 
 ```
 
-When that's the case, try this command:
+When that's the case, copy and then paste this command after the `$` in your terminal window:
 
 ```
 python3 -m pytest convert.py
 ```
 
-You should see output like what's shown below.  It may be a little overwhelming at first, but don't let it intimidate you. Once you know what you are looking for, it is very easy to read.    After the output, there is a guide to understanding it.
+You should see output like what's shown below.  It may be a little overwhelming at first. Once you know what you are looking for, it is very easy to read. After the output, there is a guide to understanding it.
 
 
 ```text
@@ -464,7 +476,8 @@ Keep in mind that in Python:
 * The `*` symbol is used for multiplication.  In algebra, we can write
   `1.8x` to mean `1.8` multiplied by `x`, however, this does not work
   in Python.  In Python you must write `1.8 * x` if you want to
-  multiply the variable `x` by 1.8.
+  multiply the variable `x` by 1.8 (or `1.5 * a` if you want to
+  multiply the variable `a` by 1.5, or `1.2 * three` if you want to multiply the variable `three`(which could encode any value (i.e. three = 10)) by 1.2 ...).
 
 * The `+` and `-` symbols are used for addition and subtraction
 
@@ -489,7 +502,7 @@ the comment that says `# TODO: Fix this line of code `.
 
 You'll also want to replace the similar line in the cToF function.
 
-When you have the test cases passing, try running the pytest command again&mdash;remembering that:
+When you have the test cases passing, try running the pytest command again(shown below)&mdash;remembering that:
 
 * it <b>must be done from the terminal shell</b>, NOT the Python shell.
 * the current working directory of that terminal session must be

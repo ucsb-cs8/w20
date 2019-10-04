@@ -5,6 +5,8 @@ ready: true
 ---
 
 # CS 8 Office / Open Lab Hours
+<img src="/f19/info/mentorPhotos/trailer-map.png"  width="600px"  alt="TA office hours trailer map" style="float: left; margin: 0px 10px 20px 10px;">
+
 
 ## Prof. K’s Office Hours
 
@@ -13,9 +15,22 @@ ready: true
 
 **Open labs**:  Open labs will be open for walk-in help: see the schedule below for more information.
 
+## TA Office Hours
+
+TA Office Hours will be held in the Building 936, which is next to the Phelps building.
+
+## Open labs
+
+Open labs will be open for walk-in help: see the schedule below for more information.
+
+Link to the interactive UCSB map: 
+<http://mapdev.geog.ucsb.edu>
+
+
 ## Lab Hours
 * "Closed" labs refer to your sections that you are registered for on GOLD. These are (50 minute discussion sections) and will be held in Phelps 3525 on Wednesdays: 9a, 10a, 11a, noon.
 * "Open" labs refer to times that you can get help from TAs and tutors outside of your scheduled labs. These will be held in the evenings in Phelps 3525 and in other locations. Please check the detailed schedule below:
+
 <style>
 iframe { width: 90%; height: 100px; overflow: scroll; }  
 </style>
@@ -73,7 +88,18 @@ iframe { width: 90%; height: 100px; overflow: scroll; }
     
 <tr>
   <td>
-  <img src="/f19/info/mentorPhotos/CS08-F19-Xingxing-G.JPG"  width="300px"  alt="" style="float: left; margin: 0px 10px 20px 10px;">
+  <img src="/f19/info/mentorPhotos/CS08-S19-Siqi-Z.JPG"  width="300px"  alt="" style="float: left; margin: 0px 10px 20px 10px;">
+  <h3>Siqi Zhao(Tutor)</h3>
+    Preferred Pronouns: She, Her, Hers<br/>
+    Major: Computer Science <br/>
+    Previous experience as a tutor: Last quarter I was the tutor for CS8 also, I really had a great experiences!<br/>
+  <i> "Hi! This is Siqi (or Maggie). I am third-year with CS major. I came to UCSB as undeclared, but I took this course in my first quarter and fell in love with it, even if I did’t have any prior programming experience. I was helped by a tutor when I took this course, so I decided to help others when I am able to. Luckily, I got the chance to do it this quarter again! I am really looking forward to help you guys when you have any problem, even about this major and this school, we could talk about such stuff after class or ourside of labs. Please always feel free to email, text or directly talk to me. I also speak Chinese. I hope my presence can really make a difference in your CS journey." </i>
+  </td>
+</tr>
+
+<tr>
+  <td>
+<img src="/f19/info/mentorPhotos/CS08-F19-Xingxing-G.JPG"  width="300px"  alt="" style="float: left; margin: 0px 10px 20px 10px;">
   <h3>Xingxing G.(Tutor)</h3>
     Preferred Pronouns: She, Her, Hers<br/>
     Major: Computer Science <br/>

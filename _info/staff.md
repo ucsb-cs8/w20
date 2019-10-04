@@ -74,7 +74,15 @@ iframe { width: 90%; height: 100px; overflow: scroll; }
       <i> "Hi everyone! I’m Rachel, a fourth-year PhD student in Computer Science. Prior to this, I’ve been a TA for CS16 and for CS40. I hope that I can help make programming a pleasant experience and give you a positive first impression of it!" </i>
   </td>
 </tr>
-
+<tr>
+  <td> 
+  <img src="/f19/info/mentorPhotos/Jose.jpg"  width="300px"  alt="" style="float: left; margin: 0px 10px 20px 10px;">
+  <h3>Jose Cuellar (Tutor)</h3>
+    Preferred Pronouns: He, Him, His <br/>
+    Major: Computer Science<br/>
+    Previous experience as a tutor: For Spring 2018 I was a tutor for CS8 and in Winter of 2018 I was a tutor for CS56<br/>
+  <i> "Hello! I am a 4th year Computer Science. I was a tutor for this course last quarter so I have a lot of experience with questions that commonly arise. I came to UCSB with no prior programming experience and CS8 was my introduction to the field. Due to this I know how overwhelming and confusing some topics in Computer Science are and I can hopefully help you all get a better understanding based on my experience. I'm always glad to help with any sort of questions related to the class or the major. Some of my hobbies include  creating mobile applications, playing video games and going out hiking. A random tidbit about myself, my favorite animals are reptiles in particular turtles and snakes :). With that said, I look forward to helping you succeed in the course!" </i>
+</tr>
 <tr>
 <td>
   <img src="/f19/info/mentorPhotos/Kevin.png"  width="300px"  alt="" style="float: left; margin: 0px 10px 20px 10px;">

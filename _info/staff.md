@@ -99,12 +99,12 @@ iframe { width: 90%; height: 100px; overflow: scroll; }
 
 <tr>
   <td>
-  <img src="/f19/info/mentorPhotos/404.gif"  width="300px"  alt="" style="float: left; margin: 0px 10px 20px 10px;">
-  <h3>(Tutor)</h3>
-    Preferred Pronouns: <br/>
-    Major: <br/>
-    Previous experience as a tutor: <br/>
-  <i> ":)" </i>
+<img src="/f19/info/mentorPhotos/CS08-F19-Xingxing-G.JPG"  width="300px"  alt="" style="float: left; margin: 0px 10px 20px 10px;">
+  <h3>Xingxing G.(Tutor)</h3>
+    Preferred Pronouns: She, Her, Hers<br/>
+    Major: Computer Science <br/>
+    Previous experience as a tutor: This is my first time tutoring CS8. <br/>
+  <i> " I am a fourth year CS major student, and this will be my first time to be tutor. After three years learning Computer Science, I want to apply what I learned to practice and help students who may struggle to start. I will be available in the closed lab and open lab time. And I will also attend the class, so please feel free to come to me and ask questions. Looking forward to figuring problems out with you during this course, and I hope you all can enjoy yourselves in CS8! " </i>
   </td>
 </tr>
 

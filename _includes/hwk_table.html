@@ -1,0 +1,11 @@
+<h1><a href="https://drive.google.com/open?id=1ozdKf6bsNKoelD2C03EY_YSFMtCDRglq" target="_blank">Link to Homework PDFs</a></h1>
+
+<table id="hwk_table" class="asn_table">
+{% include asn_table_header_row.html %}
+{% for asn in site.hwk %}
+  {% if asn.layout != 'handout'  %}
+    {% include asn_table_row.html %}
+  {% endif %}
+{% endfor %}
+</table>
+

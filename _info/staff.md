@@ -63,7 +63,7 @@ iframe { width: 90%; height: 700px; overflow: scroll; }
 <td>
   <img src="/f19/info/mentorPhotos/noahstier.jpg"  width="300px"  alt="" style="float: left; margin: 0px 10px 20px 10px;">
   <h3> Noah S. (TA) </h3>
-    Preferred Pronouns: He, Him, His<br/>
+     Preferred Pronouns: He, Him, His<br/>
     Major: Computational Biology <br/>
     Previous experience as a TA: None! First time. <br/>
       <i> "Hi! I'm a first year PhD student in CS, excited to be here and to help introduce you to the field. I first learned to program by writing web scrapers as an undergrad at UCLA, and then I got involved in a medical imaging lab that introduced me to research in CS. Since then I have worked as a software developer at a number of companies (including Procore in the SB area), and I have also worked as a researcher in the areas of machine learning and computer vision. Learning to write code is very rewarding and eye-opening, and I'm looking forward to sharing that experience with you." </i>
@@ -80,7 +80,7 @@ iframe { width: 90%; height: 700px; overflow: scroll; }
 <tr>
   <td>
   <img src="/f19/info/mentorPhotos/jianyu.jpg"  width="300px"  alt="" style="float: left; margin: 0px 10px 20px 10px;">
-  <h3>Jianyu X.</h3>
+  <h3>Jianyu X. (TA) </h3>
     Preferred Pronouns: He, Him, His <br/>
     Major: Computer Science <br/>
     Previous experience as a TA: This is my first time being a TA. <br/>

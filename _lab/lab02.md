@@ -4,7 +4,7 @@ desc: Writing Functions, Tests, and using tkinter
 due: 2019-10-23 08:59
 layout: lab
 num: lab02
-ready: false
+ready: true
 
 ---
 
@@ -55,7 +55,7 @@ Refer to [lab00](lab/lab00) for how to create a new file.
 
 ### Step 3.0: Add the preliminary information
 
-To start out {{page.num}}, **, write a comment with your name and PERM number in lab02.py (in general, you should write this on each of your submitted source files).**
+To start out {{page.num}}, **, write a comment with your name and PERM number in `{{page.num}}.py` (in general, you should write this on each of your submitted source files).**
    
 Next, write the line:
 
@@ -161,7 +161,7 @@ Once you've submitted and you see that you got more than 0 points, you are ready
 
 # Step 7: Write an `areaTriangle` function and test cases.
 
-You will write your own function `areaTriangle(base, height)` and some test cases in your {{page.num}}.py file.
+You will write your own function `areaTriangle(base, height)` and some test cases in your `{{page.num}}.py` file.
 Be sure you define your function's signature with the** exact name** shown here (otherwise, the tests on Gradescope are not going to pass).
 
 It's also a good habit to define comments for all the functions you write. Include a comment for `areaTriangle` to describe what this function does. Note that the function comments have to either be in a string (as explained in the textbook), enclosed in triple single-quotes or in triple double-quotes (as shown in the `perimRect` function). Your function should return the area of a triangle using the base and height parameter values.
@@ -202,7 +202,7 @@ Once everything passes correctly with `pytest`, submit your `{{page.num}}.py` fi
 
 # Step 8: Write and test a function using `namedtuples`.
 
-In this step, you will write a function that computes the price of `n` copies of a `namedtuple` representing a Book object. Copy and paste the following code in your {{page.num}}.py file.
+In this step, you will write a function that computes the price of `n` copies of a `namedtuple` representing a Book object. Copy and paste the following code in your `{{page.num}}.py` file.
 
 ```
 from collections import namedtuple
@@ -265,7 +265,7 @@ canvas.create_line(5, 5, 5, 500, fill="red")
 canvas.create_line(5, 5, 500, 5, fill="blue")
 ```
 
-The above code draws a circle centered at (5, 5) to mark a point near the origin, it draws the y axis in red, and it draws the x axis in blue. You can see the origin in the upper left: this is a common convention in computer graphics, and it reflects the convention used in matrix indexing, where the top left matrix element is usually referred to as element (0, 0)
+The above code draws a circle centered at (5, 5) to mark a point near the origin, it draws the y axis in red, and it draws the x axis in blue. You can see the origin in the **upper left**: this is a common convention in computer graphics, and it reflects the convention used in matrix indexing, where the top left matrix element is usually referred to as element (0, 0).
 
 Copy and paste the following function definition and function call in your `{{page.num}}_face.py` file.
 
@@ -313,13 +313,19 @@ An example face can look like this
 
 # Step 9.5: Bonus! Draw a Mickey Mouse face
 
-Below is a reference image. You'll need to use your skills from step 9 to create the head, ears, eyes, nose, and mouth, and some approximation will be necessary since the mouth is not a perfect ellipse.
+This is an extra credit, bonus exercise for you to have fun with tkinter.
+
+Below is a reference image. You'll need to use your skills from step 9 to create the head, ears, eyes, nose, and mouth - they won't look exactly like the picture, and some approximation will be necessary since the mouth is not a perfect ellipse. Feel free to be creative. :-)
+
+Save your file as `{{page.num}}_bonus.py` and upload it to Gradescope.
 
 ![Mickey Mouse face](mickeymouse.png)
 
 # Step 10: Uploading your files to Gradescope
 
-Navigate to the Lab assignment "Lab02" on Gradescope and upload your `{{page.num}}.py` and `{{page.num}}_face.py`. Even though Gradescope will not auto-check your drawing, you must upload {{page.num}}_face.py file to receive credit for this step.
+Navigate to the Lab assignment "Lab02" on Gradescope and upload your `{{page.num}}.py` and `{{page.num}}_face.py`. 
+Even though Gradescope will not auto-check your drawing, you must upload `{{page.num}}_face.py` file to receive credit for this step.
+If you did the bonus part, upload that file here as well.
 
 Your Gradescope submission containing the functions you wrote will be autograded. Our TAs will grade your `pytest` functions and your face drawing manually.
 This lab is out of 100 points. 

@@ -257,6 +257,16 @@ We can draw ovals on our canvas using the `create_oval(x1, y1, x2, y2)` function
 * `x2` and `y2` defines the lower right point of a rectangle.
 * `create_oval` draws an oval within this rectangle boundary defined by the upper-left and lower-right points.
 
+Run the following code to illustrate the coordinate system. This code does not necessarily need to be part of your final submission, but it is a helpful visualization:
+
+```python
+canvas.create_oval(0, 0, 10, 10, fill="black")
+canvas.create_line(5, 5, 5, 500, fill="red")
+canvas.create_line(5, 5, 500, 5, fill="blue")
+```
+
+The above code draws a circle centered at (5, 5) to mark a point near the origin, it draws the y axis in red, and it draws the x axis in blue. You can see the origin in the upper left: this is a common convention in computer graphics, and it reflects the convention used in matrix indexing, where the top left matrix element is usually referred to as element (0, 0)
+
 Copy and paste the following function definition and function call in your `{{page.num}}_face.py` file.
 
 ```python

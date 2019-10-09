@@ -87,6 +87,16 @@ iframe { width: 90%; height: 700px; overflow: scroll; }
   <i> "Hello! I am a 4th year Computer Science. I was a tutor for this course last quarter so I have a lot of experience with questions that commonly arise. I came to UCSB with no prior programming experience and CS8 was my introduction to the field. Due to this I know how overwhelming and confusing some topics in Computer Science are and I can hopefully help you all get a better understanding based on my experience. I'm always glad to help with any sort of questions related to the class or the major. Some of my hobbies include  creating mobile applications, playing video games and going out hiking. A random tidbit about myself, my favorite animals are reptiles in particular turtles and snakes :). With that said, I look forward to helping you succeed in the course!" </i>
 </tr>
 <tr>
+  <td>
+  <img src="/f19/info/mentorPhotos/jianyu.jpg"  width="300px"  alt="" style="float: left; margin: 0px 10px 20px 10px;">
+  <h3>Jianyu X.</h3>
+    Preferred Pronouns: He, Him, His <br/>
+    Major: Computer Science <br/>
+    Previous experience as a TA: This is my first time being a TA. <br/>
+  <i> "Hello everyone! My name is Jianyu Xu and I'm a first year PhD student in CS. I'm looking forward to help all of you succeed in CS8 course and Python programming. I was major in engineering as an undergraduate, and hope to learn more on computer science with you together! Besides, I like combinatorics a lot, so do not hesitate if you find some math problem interesting!" </i>
+  </td>
+</tr>
+<tr>
 <td>
   <img src="/f19/info/mentorPhotos/Kevin.png"  width="300px"  alt="" style="float: left; margin: 0px 10px 20px 10px;">
   <h3>Kevin H. (Tutor) </h3>

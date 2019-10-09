@@ -1,7 +1,7 @@
 ---
 assigned: 2019-10-02
 desc: FtoC and CtoF with test cases
-due: 2019-10-09 08:59
+due: 2019-10-16 08:59
 layout: lab
 num: lab01
 ready: true

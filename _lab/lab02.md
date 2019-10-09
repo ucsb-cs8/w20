@@ -301,6 +301,12 @@ An example face can look like this
 
 ![tkinter Face](face.png)
 
+# Step 9.5: Bonus! Draw a Mickey Mouse face
+
+Below is a reference image. You'll need to use your skills from step 9 to create the head, ears, eyes, nose, and mouth, and some approximation will be necessary since the mouth is not a perfect ellipse.
+
+![Mickey Mouse face](mickeymouse.png)
+
 # Step 10: Uploading your files to Gradescope
 
 Navigate to the Lab assignment "Lab02" on Gradescope and upload your `{{page.num}}.py` and `{{page.num}}_face.py`. Even though Gradescope will not auto-check your drawing, you must upload {{page.num}}_face.py file to receive credit for this step.

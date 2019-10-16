@@ -9,8 +9,9 @@ ready: false
 
 In this lab you'll learn to:
 
-* create encryption/decryption functions using a "key".
-* Write helper functions that are called by the main encryption/decryption functions
+* Understand the essential cryptographic processes of encryption and decryption
+* Create encryption and decryption algorithms that use a secret key
+* Write "helper" functions that are called by other functions
 * Use built-in string methods
 * Convert an integer to a binary representation
 * Decode a message from your instructor :-)
@@ -23,22 +24,25 @@ In this lab you'll learn to:
 
  If you do not have a partner, your TAs can pair you up with another student. You will switch back and forth between the roles of Driver and Navigator. Again, the TAs can help you synchronize this.
 
-# Step 1: Log on & bring up a terminal window
-
-This is done following the steps you have performed in lab00.
+# Step 1: Log on and bring up a terminal window
 
 # Step 2: Create a directory in your cs8 directory named lab04.
 
-This is done by following the sequence of steps in the first lab (lab00). There you created a directory named lab00. Now you go through the same steps, but
-instead of mkdir lab00 you type mkdir lab04 when you are in your directory cs8.
+(Remember the commands `cd`, `ls`, and `mkdir`)
 
 # Step 3: Start IDLE
 
-The terminal command for this is idle3.  When you have the IDLE window up, you are ready for some programming!
+The terminal command for this is `idle3`.  When you have the IDLE window up, you are ready for some programming!
 
 # Step 4: What to program?
 
-Encryption is a procedure that is used to transform a message (referred to as plaintext) in order to prevent anyone except the intended recipient from reading that data. The result of the process is called ciphertext. The reverse procedure of making the encrypted data readable again is called decryption.  In cryptography, a Caesar cipher is one of the simplest and most widely known encryption algorithms. In this algorithm, each letter in the plaintext is replaced by a letter some fixed number of positions down the alphabet. For example, with a shift of 4, A would be replaced by E, B would become F, and so on.
+First, some important background on cryptography.
+
+Encryption is a procedure that is used to transform a message (referred to as plaintext) in order to prevent anyone except the intended recipient from reading that data. The output of the process is called ciphertext, and it should be unintelligible without knowledge of the key and decryption algorithm.
+
+Decryption is the reverse procedure: the process of making the encrypted data readable.
+
+A Caesar cipher is one of the simplest and most widely known encryption algorithms. In this algorithm, each letter of the plaintext is replaced by a letter some fixed number of positions later in the alphabet. For example, with a shift number of 4, A would be replaced by E, B would become F, and so on. Later in this step, you will figure out how to write a decryption algorithm for the Caesar cipher.
 
 Functions to Implement:
 
@@ -53,34 +57,33 @@ Function Details:
 
     Hint: Numerical values (ord) between and including 32 and 126 seem to include all of the characters contained in most text.
 
-2. `createBinKeyFromKey(key)` - return binKey. Write a function that converts your key (which is an integer) to binary format (as a string of 0's and 1's). The built-in Python function bin takes an integer parameter and converts to a binary string starting with 0b followed by the binary conversion. For example, bin(9) returns '0b1001'. Can you think of a way to slice off the first two characters?
+2. `createBinKeyFromKey(key)` - return binKey. Write a function that converts your key (which is an integer) to binary format (as a string of 0's and 1's). The built-in Python function `bin` takes an integer parameter and converts to a binary string starting with 0b followed by the binary conversion. For example, bin(9) returns '0b1001'. Can you think of a way to slice off the first two characters?
 
 3. `encryptCS8Cipher(plainText, key)` - return cipherText.  Now write a function that uses the same idea as the Caesar Cipher but instead of using the key by itself to find the character in the alphabet that will replace the current character, it will also use the binKey. The first few lines of this function need to:
 
-    - create your alphabet,
-    - create binKey,
+    - create your alphabet
+    - create binKey
 
     To do these you will call the helper functions you created in steps 1-2.
 Then you will have to use a for loop to go through the characters of your plaintext and for each character you will have to perform the following procedure. Pick the next character of the binKey (if the length of the binKey is smaller than the length of the plainText, then you have to cycle back around from the beginning). If the character in binKey is ‘0’ then you will have to choose the character from the alphabet that is key positions forward in the alphabet. If the character in binKey is ‘1’ then you will have to choose the character from the alphabet that is key position backward in the alphabet. Be careful for the cases that you will have to cycle around the alphabet.
 
     We have the following example: `{Alphabet: 'abcdefghijklmnopqrstuvwxyz', plainText: 'always', key: 4, binKey (repeated): '100100', cipherText: 'wpawcw'}`.
 
-4. `decryptCS8Cipher(plainText, key)` - return cipherText.  Finally, write a function that decrypts the CS8 Cipher. This should be trivial if you did part 3 correctly. Your function should be of the form decryptCS8Cipher(plainText, key) and should return cipherText.
+4. `decryptCS8Cipher(plainText, key)` - return cipherText. Finally, write a function that decrypts the CS8 Cipher. This might take some thought!
 
-    Hint: Make a copy of encryptCS8Cipher, change its name to `decryptCS8Cipher`, change the cases for the characters ‘0’ and ‘1’ and you are done.
 
-5. Test your functions by encoding any string of length more than 20 characters.  For example plainText = "That Sam-I-Am. That Sam-I-Am.  I do not like that Sam-I-Am." using a key of your choice.  Now, apply `decryptCS8Cipher` to the cipherText to verify that it returns your original expression.
+5. Test your functions by encrypting any string, and then decrypting the result to verify that you can recover the original input string. Try interesting test cases: short strings, long strings, strings with odd characters, creative key choices, etc.
 
-    Note: `encryptCS8Cipher` and `decryptCS8Cipher` may be used in reverse order, that is we can use decyptCS8Cipher to encrypt a string and correspondingly encryptCS8Cipher to decrypt it. They are very much like inverse functions from math.
+    Note: what happens if you first "decrypt" some plaintext, and then "encrypt" it? Why does this happen?
 
-6. Decode this message from your instructor:
+6. Decode this message from your instructor, using key = `513`:
 
-    ```|65.9(;<3;N065:GF 6OY(9,F>,33YI5F@6<9F>;SF;6F),\*6GC5.F(F/(\*E?9FaSO``` using key = 513.
+    ```|65.9(;<3;N065:GF 6OY(9,F>,33YI5F@6<9F>;SF;6F),\*6GC5.F(F/(\*E?9FaSO```
 
 # Step 5: Saving your files
 
-Save your functions in a Python file named lab04_functions.py in your directory lab04.
+Save your functions in a Python file named lab04.py in your directory lab04.
 
 # Step 6: Submit your work via Gauchospace
 
-Each individual must turn in their own assignment, even if you worked in pairs.  In addition to lab04_functions.py, you also need to include a file called pairPartners.txt.  This file should contain two lines: your name and your Pair Programming partner's name exactly as they appear on Gauchospace.
+Each individual must turn in their own assignment, even if you worked in pairs.  In addition to lab04.py, you also need to include a file called pairPartners.txt.  This file should contain two lines: your name and your Pair Programming partner's name exactly as they appear on Gauchospace.

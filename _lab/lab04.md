@@ -89,3 +89,5 @@ Save your functions in a Python file named lab04.py in your directory lab04.
 # Step 6: Submit your work via Gauchospace
 
 Each individual must turn in their own assignment, even if you worked in pairs.  In addition to lab04.py, you also need to include a file called pairPartners.txt.  This file should contain two lines: your name and your Pair Programming partner's name exactly as they appear on Gauchospace.
+
+End of Lab04.  Thanks to Ana Nika.

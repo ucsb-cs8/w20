@@ -16,9 +16,6 @@ In this lab you'll learn to:
 * Convert an integer to a binary representation
 * Decode a message from your instructor :-)
 
-![Blowfish](blowfish.jpg)
-
-"Yes, the file is encrypted with the Blowfish algorithm....I'll have to hack it.  Give me five minutes."
 
 # Step 0:  Partner with another student at the beginning of this lab.
 
@@ -68,6 +65,11 @@ Function Details:
 
     To do these you will call the helper functions you created in steps 1-2.
 Then you will have to use a for loop to go through the characters of your plaintext and for each character you will have to perform the following procedure. Pick the next character of the binKey (if the length of the binKey is smaller than the length of the plainText, then you have to cycle back around from the beginning). If the character in binKey is ‘0’ then you will have to choose the character from the alphabet that is key positions forward in the alphabet. If the character in binKey is ‘1’ then you will have to choose the character from the alphabet that is key position backward in the alphabet. Be careful for the cases where you will have to cycle around the ends of the alphabet.
+
+Here is a visualization of the encyption process:
+
+![cipher visualization](cipher.gif)
+
 
 4. `decryptCS8Cipher(plainText, key)` - return cipherText. Finally, write a function that decrypts the CS8 Cipher. Think: what process would you follow if you were doing the decryption by hand?
 

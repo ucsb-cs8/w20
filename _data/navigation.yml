@@ -28,15 +28,15 @@ offerings:
         baseurl: /f19
 
 offering_links:
-#  - title: Calendar
-#    url: /info/calendar/
-#    description: "Assignment Calendar"
   - title: Syllabus
     url: /info/syllabus/
     description: "University and course policies"    
   - title: Calendar
     url: /info/calendar/
     description: "Assignment Calendar"
+  - title: Assignments
+    url: /work_list/
+    description: "Homework and Lab Assignments"
   - title: Lectures
     url: /lec_list/
     description: "Lecture-related information"

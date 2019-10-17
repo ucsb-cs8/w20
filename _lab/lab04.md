@@ -41,7 +41,7 @@ Decryption is the reverse procedure: the process of making the encrypted data re
 
 A Caesar cipher is one of the simplest and most widely known encryption algorithms. In this algorithm, each letter of the plaintext is replaced by a letter some fixed number of positions later in the alphabet. For example, with a shift number of 4, A would be replaced by E, B would become F, and so on. Later in this step, you will figure out how to write a decryption algorithm for the Caesar cipher.
 
-Note that for this algorithm to work, the letters of the alphabet (and any other characters that should be allowed in the plaintext), as well as their order, must be fixed. For example, if you encrypt with the 26 letter English alphabet and decrypt with the 27 letter Spanish alphabet (including ñ), you won't get the correct decrypted plaintext back.
+Note that for this algorithm to work, the letters of the alphabet (and any other characters that should be allowed in the plaintext), as well as their order, must be fixed and the same for both encryption and decryption. For example, if you encrypt with the 26 letter English alphabet and decrypt with the 27 letter Spanish alphabet (including ñ), you won't get the correct decrypted plaintext back.
 
 Also note! Our version of the Caesar cipher has a twist: the binary key. Read on...
 
@@ -64,7 +64,7 @@ Function Details:
     - create binKey
 
     To do these you will call the helper functions you created in steps 1-2.
-Then you will have to use a for loop to go through the characters of your plaintext and for each character you will have to perform the following procedure. Pick the next character of the binKey (if the length of the binKey is smaller than the length of the plainText, then you have to cycle back around from the beginning). If the character in binKey is ‘0’ then you will have to choose the character from the alphabet that is key positions forward in the alphabet. If the character in binKey is ‘1’ then you will have to choose the character from the alphabet that is key position backward in the alphabet. Be careful for the cases where you will have to cycle around the ends of the alphabet.
+Then you will have to use a for loop to go through the characters of your plaintext and for each character you will have to perform the following procedure. Pick the next character of the binKey (if the length of the binKey is smaller than the length of the plainText, then you have to cycle back around from the beginning). If the character in binKey is ‘1’ then you will have to choose the character from the alphabet that is `key` positions **forward** in the alphabet. If the character in binKey is ‘0’ then you will have to choose the character from the alphabet that is `key` positions **backward** in the alphabet. Be careful for the cases where you will have to cycle around the ends of the alphabet.
 
 Here is a visualization of the encyption process:
 

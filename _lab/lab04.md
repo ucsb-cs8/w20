@@ -43,50 +43,57 @@ A Caesar cipher is one of the simplest and most widely known encryption algorith
 
 Note that for this algorithm to work, the letters of the alphabet (and any other characters that should be allowed in the plaintext), as well as their order, must be fixed and the same for both encryption and decryption. For example, if you encrypt with the 26 letter English alphabet and decrypt with the 27 letter Spanish alphabet (including ñ), you won't get the correct decrypted plaintext back.
 
-Also note! Our version of the Caesar cipher has a twist: the binary key. Read on...
-
 Functions to Implement:
 
 1. `createAlphabet()` - return alphabet
-2. `createBinKeyFromKey(key)` - return binKey
-3. `encryptCS8Cipher(plainText, key)` - return cipherText
-4. `decryptCS8Cipher(cipherText, key)` - return plainText
+2. `encryptCaesarCipher(plainText, key)` - return cipherText
+3. `decryptCaesarCipher(cipherText, key)` - return plainText
 
 Function Details:
 
 1. `createAlphabet()` - return alphabet. Write a function that returns a string of all the characters that you want to include in your encryption algorithm.  We will call this string alphabet and it should include all the lower case letters, then all the upper case letters, then space, comma, period, hyphen, tilde, and pound symbol.
 
-2. `createBinKeyFromKey(key)` - return binKey. Write a function that converts your key (which is an integer) to binary format (as a string of 0's and 1's). The built-in Python function `bin` takes an integer parameter and converts to a binary string starting with 0b followed by the binary conversion. For example, bin(9) returns '0b1001'. Can you find a way to slice off the first two characters?
 
-3. `encryptCS8Cipher(plainText, key)` - return cipherText.  Now write a function that uses the same idea as the Caesar Cipher but instead of using the key by itself to find the character in the alphabet that will replace the current character, it will also use the binKey. The first few lines of this function need to:
+2. `encryptCaesarCipher(plainText, key)` - return cipherText.  Now write a function to perform encryption using the Caesar cipher. The first few lines of this function need to create your alphabet using the helpher function you created.
+
+    Then you will have to use a for loop to go through the characters of your plaintext and for each character you will have to choose the character from the alphabet that is `key` positions forward in the alphabet. Be careful for the cases where you will have to cycle around the ends of the alphabet.
+
+
+3. `decryptCaesarCipher(plainText, key)` - return cipherText. Finally, write a function that decrypts the Caesar Cipher. Think: what process would you follow if you were doing the decryption by hand?
+
+
+4. Test your functions by encrypting any string, and then decrypting the result to verify that you can recover the original input string. Try interesting test cases: short strings, long strings, strings with odd characters, creative key choices, etc.
+
+    Note: what happens if you first "decrypt" some plaintext, and then "encrypt" it? Why does this happen?
+
+# Step 5: Binary Key
+
+In this step we'll introduce a variation to the Caesar cipher, resulting in a new cipher called the CS8 Cipher. Now, the offset defined by the key will still be constant, but sometimes the shift will be a forward shift and other times it will be a backward shift. Whether it is forward or backward will be dictated by the binary representation of the key, which we will call the binary key. At each step of the encryption, the algorithm will look at the next bit of the binary key. If it is `1`, the shift will be **forward**, and if it is `0`, the shift will be **backward**.
+
+Here are the new functions you will need to implement:
+
+1. `createBinKeyFromKey(key)` - return binKey. Write a function that converts your key (which is an integer) to binary format (as a string of 0's and 1's). The built-in Python function `bin` takes an integer parameter and converts to a binary string starting with 0b followed by the binary conversion. For example, bin(9) returns '0b1001'. Can you find a way to slice off the first two characters?
+
+2. `encryptCS8Cipher(plainText, key)` - return cipherText.  Now write a function that uses the same idea as the Caesar Cipher but instead of using the key by itself to find the character in the alphabet that will replace the current character, it will also use the binKey. The first few lines of this function need to:
 
     - create your alphabet
     - create binKey
 
-    To do these you will call the helper functions you created in steps 1-2.
-Then you will have to use a for loop to go through the characters of your plaintext and for each character you will have to perform the following procedure. Pick the next character of the binKey (if the length of the binKey is smaller than the length of the plainText, then you have to cycle back around from the beginning). If the character in binKey is ‘1’ then you will have to choose the character from the alphabet that is `key` positions **forward** in the alphabet. If the character in binKey is ‘0’ then you will have to choose the character from the alphabet that is `key` positions **backward** in the alphabet. Be careful for the cases where you will have to cycle around the ends of the alphabet.
+    To do these you will call the helper functions you created earlier. Then you will have to use a for loop to go through the characters of your plaintext and for each character you will have to perform the following procedure. Pick the next character of the binKey (if the length of the binKey is smaller than the length of the plainText, then you have to cycle back around from the beginning). If the character in binKey is ‘1’ then you will have to choose the character from the alphabet that is `key` positions **forward** in the alphabet. If the character in binKey is ‘0’ then you will have to choose the character from the alphabet that is `key` positions **backward** in the alphabet.
 
-Here is a visualization of the encyption process:
+    Here is a visualization of the encyption process:
 
-![cipher visualization](cipher.gif)
+    ![cipher visualization](cipher.gif)
 
-
-4. `decryptCS8Cipher(plainText, key)` - return cipherText. Finally, write a function that decrypts the CS8 Cipher. Think: what process would you follow if you were doing the decryption by hand?
-
-
-5. Test your functions by encrypting any string, and then decrypting the result to verify that you can recover the original input string. Try interesting test cases: short strings, long strings, strings with odd characters, creative key choices, etc.
-
-    Note: what happens if you first "decrypt" some plaintext, and then "encrypt" it? Why does this happen?
-
-6. Decode this message from your instructor using key = `513`, and paste it into your Python interpreter for a fun surprise:
+3. Decode this message from your instructor using key = `513`, and paste it into your Python interpreter for a fun surprise:
 
     `#vyxACdjwk#pAjErCHdRWdCqrBdlxddnwCdrBdsljCdqnAndCfRvjtndCqnRZryqnACnGkRuxxtduxw-,AdjwmdlxfcnA`
 
-# Step 5: Saving your files
+# Step 6: Saving your files
 
 Save your functions in a Python file named lab04.py in your directory lab04.
 
-# Step 6: Submit your work via Gauchospace
+# Step 7: Submit your work via Gauchospace
 
 Each individual must turn in their own assignment, even if you worked in pairs.  In addition to lab04.py, you also need to include a file called pairPartners.txt.  This file should contain two lines: your name and your Pair Programming partner's name exactly as they appear on Gauchospace.
 

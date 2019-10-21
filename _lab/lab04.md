@@ -17,10 +17,6 @@ In this lab you'll learn to:
 * Decode a message from your instructor :-)
 
 
-# Step 0:  Partner with another student at the beginning of this lab.
-
- If you do not have a partner, your TAs can pair you up with another student. You will switch back and forth between the roles of Driver and Navigator. Again, the TAs can help you synchronize this.
-
 # Step 1: Log on and bring up a terminal window
 
 # Step 2: Create a directory in your cs8 directory named lab04.
@@ -95,6 +91,6 @@ Save your functions in a Python file named lab04.py in your directory lab04.
 
 # Step 7: Submit your work via Gauchospace
 
-Each individual must turn in their own assignment, even if you worked in pairs.  In addition to lab04.py, you also need to include a file called pairPartners.txt.  This file should contain two lines: your name and your Pair Programming partner's name exactly as they appear on Gauchospace.
+End of Lab04.  
 
-End of Lab04.  Thanks to Ana Nika.
+Thanks to Ana Nika.

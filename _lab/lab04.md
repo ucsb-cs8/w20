@@ -47,12 +47,12 @@ Functions to Implement:
 
 Function Details:
 
-1. `createAlphabet()` - return alphabet. Write a function that returns a string of all the characters that you want to include in your encryption algorithm.  We will call this string alphabet and it should include all the lower case letters, then all the upper case letters, then space, comma, period, hyphen, tilde, and pound symbol.
+1. `createAlphabet()` - return alphabet. Write a function that returns a string of all the characters that you want to include in your encryption algorithm.  We will call this string alphabet and it should include all the lower case letters, followed by all the uppercase letters, then a space, comma, period, hyphen ('-'), tilde ('\~'), and pound symbol ('#').
 
 
-2. `encryptCaesarCipher(plainText, key)` - return cipherText.  Now write a function to perform encryption using the Caesar cipher. The first few lines of this function need to create your alphabet using the helpher function you created.
+2. `encryptCaesarCipher(plainText, key)` - return cipherText.  Now write a function to perform encryption using the Caesar cipher. The first few lines of this function need to create your alphabet using the helper function you created.
 
-    Then you will have to use a for loop to go through the characters of your plaintext and for each character you will have to choose the character from the alphabet that is `key` positions forward in the alphabet. Be careful for the cases where you will have to cycle around the ends of the alphabet.
+    Then you will have to use a for loop to go through the characters of your plaintext and for each character you will have to choose the character from the alphabet that is `key` positions forward in the alphabet. Be very careful for the cases where you will have to cycle around the ends of the alphabet. Be mindful of the values of `key`. Furthermore, you can assume that the value of `key` will never be negative. In the case where the value of `key` < 0 the function will (placeholder).
 
 
 3. `decryptCaesarCipher(plainText, key)` - return cipherText. Finally, write a function that decrypts the Caesar Cipher. Think: what process would you follow if you were doing the decryption by hand?
@@ -77,11 +77,13 @@ Here are the new functions you will need to implement:
 
     To do these you will call the helper functions you created earlier. Then you will have to use a for loop to go through the characters of your plaintext and for each character you will have to perform the following procedure. Pick the next character of the binKey (if the length of the binKey is smaller than the length of the plainText, then you have to cycle back around from the beginning). If the character in binKey is ‘1’ then you will have to choose the character from the alphabet that is `key` positions **forward** in the alphabet. If the character in binKey is ‘0’ then you will have to choose the character from the alphabet that is `key` positions **backward** in the alphabet.
 
-    Here is a visualization of the encyption process:
+    Here is a visualization of the encryption process:
 
     ![cipher visualization](cipher.gif)
 
-3. Decode this message from your instructor using key = `513`, and paste it into your Python interpreter for a fun surprise:
+3. `decryptCS8Cipher(plainText, key)`- return cipherText. Finally, write a function that will decrypt our CS8 Cipher. The process should be straightforward if you completed the previous part of the lab. Try to work out the solutions by hand first if stuck. 
+
+4. Decode this message from your instructor using key = `513`, and paste it into your Python interpreter for a fun surprise:
 
     `#vyxACdjwk#pAjErCHdRWdCqrBdlxddnwCdrBdsljCdqnAndCfRvjtndCqnRZryqnACnGkRuxxtduxw-,AdjwmdlxfcnA`
 

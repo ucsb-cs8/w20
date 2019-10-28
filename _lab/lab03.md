@@ -4,7 +4,7 @@ num: lab03
 ready: true
 desc: "Conditionals, Nested Control Structures, and Loops"
 assigned: 2019-10-16 09:00:00.00-7
-due: 2019-10-30 17:00:00.00-7
+due: 2019-10-30 8:59:00.00-7
 ---
 
 In this lab, you'll get more practice with:

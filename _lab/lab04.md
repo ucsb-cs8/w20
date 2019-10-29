@@ -1,7 +1,7 @@
 ---
-assigned: 2019-10-23
+assigned: 2019-10-30
 desc: encryption and decryption
-due: 2019-10-30 08:59
+due: 2019-11-06 08:59
 layout: lab
 num: lab04
 ready: false
@@ -91,7 +91,7 @@ Here are the new functions you will need to implement:
 
 Save your functions in a Python file named lab04.py in your directory lab04.
 
-# Step 7: Submit your work via Gauchospace
+# Step 7: Submit your work to Gradescope
 
 End of Lab04.  
 

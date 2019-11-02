@@ -1,6 +1,28 @@
 # Lecture 10: Cryptography Hints and Mutable vs. Immutable
 
-Remember `range()`? And control flow nesting? There's more!
+Codemakers and codebreakers back in the day didn't have to learn Python (despite their job title), but it probably would've made their lives much easier if they did. Or maybe it would've done the opposite. Eh, depends on how you look at it.
+
+Oh, right, cryptography! Here's more on `range()` and control flow nesting so that you too can live out your childhood dreams of slow-motion dives and personal theme songs.*
+
+\**Disclaimer: Slow-motion dives and personal theme songs not included.*
+
+# Function function, what's your function?
+
+Hooking up variables and keywords and statements! Let's make a function.
+
+```python
+def print_range(num):
+```
+
+The **`def`** keyword tells Python to, well, *def*ine a function, so always include this. After `def` is `print_range`, which is the name you want to give your function.
+
+Then there's a set of parentheses and that `num` thing. `num` is a variable, but if you really want to be specific, you would say that this variable is a **parameter** because it's inside of a function. Putting a ~~variable~~ parameter in like this allows you to use `num` inside your function and do cool things with it.
+
+It's important to note that `num`, here, is just a placeholder for when you give it a value later in the program with a **function call**, like `print_range(42)`. You could call `num` anything else, like `mac_and_cheese` or `absurdly_long_parameter_that_no_one_should_have_to_read` or good old `x`, but we'll stick with `num` because it's short and sweet and descriptive all the same. As long as you spell `num` as `num` when you use it inside of your function, all will be fine.
+
+(If you don't want or need a parameter for your function, you would just define the function without one, like `def print_range()`. Note that you'd still keep the parentheses, though.)
+
+Oh, and don't forget the colon at the end. A function definition isn't complete without a colon. It'd be a little like if a spy didn't have at least one trench coat in their closet, in which case it would, without question, completely and utterly invalidate their life's work. You heard it here first.
 
 # String iteration using `range()`
 

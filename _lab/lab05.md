@@ -62,13 +62,13 @@ u        1
 i        1
 ```
 
-So, how did our program know which letter combinations were valid words?......We have to specify a file of words, which you can find here: [wordlist.txt](https://ucsb-cs8.github.io/m19-wang/lab/lab07/wordlist.txt).
+So, how did our program know which letter combinations were valid words?......We have to specify a file of words, which you can find here: [wordlist.txt](https://ucsb-cs8.github.io/f19/lab/lab05/wordlist.txt).
 
 This file must be downloaded (right click and "save as") and put into your `{{page.num}}` directory before you begin, so do that now.  Note that this file contains a fairly complete list of English words, so beware that there may be some expletive and/or raunchy words - please don't hold me personally responsible if you are offended.  Perhaps this will be motivation for some of you to complete the assignment.  
 
 You can choose to start from scratch or use the starter code we have provided here (you may need to refresh the page if the links do not load immediately):
-* <https://ucsb-cs8.github.io/m19-wang/lab/lab07/lab07.py>
-* <https://ucsb-cs8.github.io/m19-wang/lab/lab07/lab07_student_tests.py>
+* <https://ucsb-cs8.github.io/f19/lab/lab05/lab05.py>
+* <https://ucsb-cs8.github.io/f19/lab/lab05/lab05_tests.py>
 
 ### Functions to Implement:
 
@@ -92,7 +92,7 @@ You can choose to start from scratch or use the starter code we have provided he
 
 * When `toFile` is `False`,  print all the words followed by their point value.  Format the output so that your word is left justified in a field of width 4 more than the number of letters in `myLetters`, and the point value follows immediately afterwards.  You can do this with the format string method by carefully forming the `'{...}'` string first.
 
-* If `toFile` is `True`, write the same text as your formatted screen output from above to a text file.  Name the file the string of letters contained in `myLetters` followed by .txt.  So in the example above with scrabbleWords("buoni"), the file that is created is `buoni.txt`.  Note that every time you want to write to a new line, you will need to include the newline character '\n' in your file.write() statement.  You can see what the output should look like in the example here: [buoni.txt](https://ucsb-cs8.github.io/m19-wang/lab/lab07/buoni.txt).
+* If `toFile` is `True`, write the same text as your formatted screen output from above to a text file.  Name the file the string of letters contained in `myLetters` followed by .txt.  So in the example above with scrabbleWords("buoni"), the file that is created is `buoni.txt`.  Note that every time you want to write to a new line, you will need to include the newline character '\n' in your file.write() statement.  You can see what the output should look like in the example here: [buoni.txt](https://ucsb-cs8.github.io/f19/lab/lab05/buoni.txt).
 
 You can simply verify that when you run your program you produce this same file if `myletters` == `"buoni"`.
 
@@ -195,6 +195,6 @@ You can load your `{{page.num}}.py` and run `scrabbleWords` in IDLE's interactiv
 
 # Upload `{{page.num}}.py` and `{{page.num}}_tests.py` to Gradescope.
 
-Once you're done with writing your functions, navigate to the Lab assignment "{{page.num}}" on Gradescope and upload your `{{page.num}}.py` and `{{page.num}}_student_tests.py` files. <strong>*Remember to add your partner to Groups Members for this submission on Gradescope if applicable. At this point, if you worked in a pair, it is a good idea for both partners to log into Gradescope and see if you can see the uploaded files for {{page.num}}.*</strong>
+Once you're done with writing your functions, navigate to the Lab assignment "{{page.num}}" on Gradescope and upload your `{{page.num}}.py` and `{{page.num}}_tests.py` files. <strong>*Remember to add your partner to Groups Members for this submission on Gradescope if applicable. At this point, if you worked in a pair, it is a good idea for both partners to log into Gradescope and see if you can see the uploaded files for {{page.num}}.*</strong>
 
 Thanks to Matt Buoni for this lab!

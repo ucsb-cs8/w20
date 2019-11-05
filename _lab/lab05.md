@@ -16,18 +16,7 @@ In this lab, you'll get more practice with:
 * use list method sort() to sort words in order of descending point value
 * write formatted output to the screen and a file
 
-## This lab may be done solo, or in pairs.
-
-Before you begin working on the lab, please decide if you will work solo or with a partner.
-
-A reminder about working with a pair programming partner:
-
-* Your partner must be enrolled in the same lab section as you.
-* You and your partner must agree to work together outside of lab section in case you do not finish the lab during your lab time. You must agree to reserve at least two hours outside of lab section to work together if needed (preferably during an open lab hour where you can work in Phelps 3525 and ask a mentor for help). You are responsible for exchanging contact information in case you need to reach your partner.
-* If you choose to work with a partner, then you must choose a partner you have not worked with before.
-* You MUST add your partner on Gradescope when submitting your work <strong>*<u>EACH TIME</u>*</strong> you submit a file(s). After uploading your file(s) on Gradescope, there is a "Group Members" link at the bottom (or "Add Group Member" under "Groups") where you can select the partner you are working with. Whoever uploaded the submission must make sure your partner is part of your Group. Click on "Group Members" -> "Add Member" and select your partner from the list.
-
-Once you and your partner are in agreement, choose an initial driver and navigator, and have the driver log into their account.
+## This lab should be done solo.
 
 ## Getting started
 
@@ -64,7 +53,7 @@ i        1
 
 So, how did our program know which letter combinations were valid words?......We have to specify a file of words, which you can find here: [wordlist.txt](https://ucsb-cs8.github.io/f19/lab/lab05/wordlist.txt).
 
-This file must be downloaded (right click and "save as") and put into your `{{page.num}}` directory before you begin, so do that now.  Note that this file contains a fairly complete list of English words, so beware that there may be some expletive and/or raunchy words - please don't hold me personally responsible if you are offended.  Perhaps this will be motivation for some of you to complete the assignment.  
+This file must be downloaded (right click and "save as") and put into your `{{page.num}}` directory before you begin, so do that now.  Note that this file contains a fairly complete list of English words, so beware that there may be some expletive and/or raunchy words.
 
 You can choose to start from scratch or use the starter code we have provided here (you may need to refresh the page if the links do not load immediately):
 * <https://ucsb-cs8.github.io/f19/lab/lab05/lab05.py>
@@ -195,6 +184,6 @@ You can load your `{{page.num}}.py` and run `scrabbleWords` in IDLE's interactiv
 
 # Upload `{{page.num}}.py` and `{{page.num}}_tests.py` to Gradescope.
 
-Once you're done with writing your functions, navigate to the Lab assignment "{{page.num}}" on Gradescope and upload your `{{page.num}}.py` and `{{page.num}}_tests.py` files. <strong>*Remember to add your partner to Groups Members for this submission on Gradescope if applicable. At this point, if you worked in a pair, it is a good idea for both partners to log into Gradescope and see if you can see the uploaded files for {{page.num}}.*</strong>
+Once you're done with writing your functions, navigate to the Lab assignment "{{page.num}}" on Gradescope and upload your `{{page.num}}.py` and `{{page.num}}_tests.py` files.
 
 Thanks to Matt Buoni for this lab!

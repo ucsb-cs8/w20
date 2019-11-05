@@ -145,7 +145,7 @@ if __name__=="__main__":
   # manual tests
 
 ```
-### What {{page.num}}_student_tests.py should look like
+### What {{page.num}}_tests.py should look like
 
 ```
 import pytest

@@ -117,7 +117,7 @@ You should test the other two functions manually, although you are welcome to wr
 Put your test code in `{{page.num}}_student_test.py` and submit it along with your `{{page.num}}.py` file.
 We recommend writing at least 3-5 test cases per function, but feel free to write more until you're confident with your solution.
 
-Gradescope will use test cases different from the tests that you will wrote in `{{page.num}}_student_test.py`.
+Gradescope will use test cases different from the tests that you will wrote in `{{page.num}}_test.py`.
 
 ### What {{page.num}}.py should look like
 

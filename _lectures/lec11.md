@@ -1,5 +1,5 @@
 ---
-num: "lect11"
+num: "lec11"
 desc: "File I/O + Dictionaries"
 ready: true
 lecture_date:  2019-11-05

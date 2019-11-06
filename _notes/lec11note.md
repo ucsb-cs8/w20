@@ -25,11 +25,13 @@
         print("You got", fruit_dict[fruit], fruit)
 
     fruit_dict.pop('banana')
-    fruit_dict -> {'apple': 18, 'orange': 19}
+    fruit_dict
+    {'apple': 18, 'orange': 19}
 
     my_fruit = {'apple': 5, 'kiwi': 3}
     fruit_dict.update(my_fruit)
-    fruit_dict -> {'apple': 5, 'orange': 19, 'kiwi': 3}
+    fruit_dict
+    {'apple': 5, 'orange': 19, 'kiwi': 3}
 
     fruit_dict.get('banana') # banana is not in the dictionary
     fruit_dict.get('banana') == None

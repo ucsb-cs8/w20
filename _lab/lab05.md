@@ -2,7 +2,7 @@
 layout: lab
 num: lab05
 ready: false
-desc: "Scrabble word finder: Python lists, dictionaries and file I/O"
+desc: "Scrabble Word Finder: Python lists, dictionaries and file I/O"
 assigned: 2019-11-06 10:00am
 due: 2019-11-13 09:59am
 ---
@@ -16,7 +16,9 @@ In this lab, you'll get more practice with:
 * using list method `sort()` to sort words in order of descending point value
 * writing formatted output to the screen and a file
 
-## This lab should be done solo. Make sure that you adhere to the [Academic Integrity](https://studentconduct.sa.ucsb.edu/academic-integrity) standards and do/submit your own work.
+## This lab should be done solo. 
+
+Make sure that you adhere to the [Academic Integrity](https://studentconduct.sa.ucsb.edu/academic-integrity) standards and do/submit your own work.
 
 ## Getting started
 
@@ -75,17 +77,17 @@ Use the starter code we have provided at the end of the lab.
 
 ### Function Details:
 
-1. **createWordList(filename)** - return a list of strings.  Write a function which reads the file `filename` and returns a list containing all words in the file.  Note that the last character of every line of the file is the invisible "new line" character `'\n'` and needs to be sliced off.
+1) **createWordList(filename)** - return a list of strings.  Write a function which reads the file `filename` and returns a list containing all words in the file.  Note that the last character of every line of the file is the invisible "new line" character `'\n'` and needs to be sliced off.
 
-2. **canWeMakeIt(myWord, myLetters)** - return True or False.  Write a function which answers the question: Can I form the word `myWord` from the string of letters `myLetters`?  The function should return a boolean True or False.  If the input is not the correct type then return `False`. 
+2) **canWeMakeIt(myWord, myLetters)** - return True or False.  Write a function which answers the question: Can I form the word `myWord` from the string of letters `myLetters`?  The function should return a boolean True or False.  If the input is not the correct type then return `False`. 
 
 Try to write an algorithm on paper first before attempting to write the code. Think about the list functions at your disposal and the tools you've learned up till now.
 
 _Hint:_ Converting `myLetters` to a list and using its `pop()` or `remove()` method may come in handy. You do not need to use all letters in `myLetters`. It's possible that `myLetters` will contain multiples of the same letters. In the example above if `myLetters = "buoni"`  and `myWord = "boon"` then `canWeMakeIt` should return False. 
 
-3. **getWordPoints(myWord, letterPoints)** - return an int representing the points for `myWord`.  Write a function that calculates and returns the total point value of `myWord` given the Python dictionary object `letterPoints` which consists of `letter : pointValue` pairs. If a character in `myWord` is not a key in the provided dictionary then its score value is 0. If any of the input is incorrect type then return 0. Note that you **do not need to create the `letterPoints` dictionary in this step** - it is a parameter to our function and will be created in `scrabbleWords()`.
+3) **getWordPoints(myWord, letterPoints)** - return an int representing the points for `myWord`.  Write a function that calculates and returns the total point value of `myWord` given the Python dictionary object `letterPoints` which consists of `letter : pointValue` pairs. If a character in `myWord` is not a key in the provided dictionary then its score value is 0. If any of the input is incorrect type then return 0. Note that you **do not need to create the `letterPoints` dictionary in this step** - it is a parameter to our function and will be created in `scrabbleWords()`.
 
-4. **outputWordPointPairs(pointWordList, myLetters, toFile)** - NO return (just prints a formatted list or writes it to file).
+4) **outputWordPointPairs(pointWordList, myLetters, toFile)** - NO return (just prints a formatted list or writes it to file).
 
 * Write a function which will output the (pointValue, word) pairs in `pointWordList` to the screen or to a file depending on the bool value `toFile`
 
@@ -133,7 +135,7 @@ You can simply verify that when you run your program you produce the same file i
 
 * Call your `outputWordPointPairs()` and print your formatted string output to terminal. Then make a second call to `outputWordPointPairs()` to output to a ".txt" file named after the string in `myLetters`.
 
-## Write test code in {{page.num}}_student_tests.py
+## Write test code
 
 You must write your own tests using pytest for the following functions: 
 * `createWordList(filename)`
@@ -144,80 +146,12 @@ Write the test code before you implement the functions. This is a way of demonst
 
 You should test the other two functions manually, although you are welcome to write test code for them as well.
 
-Put your test code in `{{page.num}}_student_test.py` and submit it along with your `{{page.num}}.py` file.
+Put your test code in `{{page.num}}_tests.py` and submit it along with your `{{page.num}}.py` file.
 We recommend writing at least 3-5 test cases per function, but feel free to write more until you're confident in your solution.
 
-Gradescope will use test cases different from the tests that you will wrote in `{{page.num}}_test.py`.
+Gradescope will use test cases different from the tests that you will wrote in `{{page.num}}_tests.py`.
 
 ### What {{page.num}}.py could look like
-
-```
-import pytest
-#other import statements"
-
-def createWordList(filename):
-  #Your code
-
-def canWeMakeIt(myWord, myLetters):
-  #Your code
-
-def getWordPoints(myWord, letterPoints):  
-  #Your code
-
-def outputWordPointPairs(pointWordList, myLetters, toFile):
-  #Your code
-
-def scrabbleWords(myLetters):
-  #Your code
-
-if __name__== "__main__":
-  print("Manual test cases can be done here and/or in IDLE's command line")
-  # manual tests
-
-```
-### What {{page.num}}_tests.py should look like
-
-```
-import pytest
-from {{page.num}} import createWordList
-
-def test_createWordList_0():
-  #Your test code
-
-
-def test_createWordList_1():
-  #Your test code
-....
-
-
-from {{page.num}} import canWeMakeIt
-
-def test_canWeMakeIt_0():
-  assert(canWeMakeIt('ape','pae') == True)
-
-...
-from {{page.num}} import getWordPoints
-letterPoints = {'a':1, 'b':3, 'c':3, 'd':2, 'e':1, 'f':4,\
-                'g':2, 'h':4, 'i':1, 'j':8, 'k':5, 'l':1,\
-                'm':3, 'n':1, 'o':1, 'p':3, 'q':10, 'r':1,\
-                's':1, 't':1, 'u':1, 'v':4,  'w':4, 'x':8,\
-                'y':4, 'z':10}
-
-def test_getWordPoints_0():
-  assert(getWordPoints('ape',letterPoints) == 5)
-...
-```
-
-# Running the final product
-
-You can load your `{{page.num}}.py` and run `scrabbleWords` in IDLE's interactive shell. In `scrabbleWords` you <strong>must</strong> make one call to print to the console with `outputWordPointPairs` where `toFile = True`, and another call to write to a file with `outputWordPointPairs` where `toFile = False`. Gradescope test cases will fail if you forget to write your output to a file.
-
-# Upload `{{page.num}}.py` and `{{page.num}}_tests.py` to Gradescope.
-
-Once you're done with writing your functions, navigate to the Lab assignment "{{page.num}}" on Gradescope and upload your `{{page.num}}.py` and `{{page.num}}_tests.py` files.
-
-Thanks to Matthew Buoni for this lab!
-
 
 # `{{page.num}}.py`
 ```python
@@ -264,7 +198,8 @@ def outputWordPointPairs(pointWordList, myLetters, toFile):
 	:param pointWordList: a list of tuples to output to, with each tuple 
 	 containing a (pointValue, word) pair
 	:param myLetters: a string that you will name the file with if toFile is True
-	:param toFile: a boolean to decide whether I want to print to file or not. If True then output to file else output to terminal.
+	:param toFile: a boolean to decide whether I want to print to file or not. 
+	If True then output to file else output to terminal.
 	:return: None
 	'''
 	return
@@ -282,3 +217,46 @@ def scrabbleWords(myLetters):
 ```
 
 
+### What {{page.num}}_tests.py should look like
+
+```python
+# Student: (insert your name here)
+import pytest
+from {{page.num}} import createWordList
+
+def test_createWordList_0():
+	#Your test code
+
+
+def test_createWordList_1():
+	#Your test code
+....
+
+
+from {{page.num}} import canWeMakeIt
+
+def test_canWeMakeIt_0():
+	assert(canWeMakeIt('ape','pae') == True)
+
+...
+from {{page.num}} import getWordPoints
+letterPoints = {'a':1, 'b':3, 'c':3, 'd':2, 'e':1, 'f':4,\
+								'g':2, 'h':4, 'i':1, 'j':8, 'k':5, 'l':1,\
+								'm':3, 'n':1, 'o':1, 'p':3, 'q':10, 'r':1,\
+								's':1, 't':1, 'u':1, 'v':4,	'w':4, 'x':8,\
+								'y':4, 'z':10}
+
+def test_getWordPoints_0():
+	assert(getWordPoints('ape',letterPoints) == 5)
+...
+```
+
+# Running the final product
+
+You can load your `{{page.num}}.py` and run `scrabbleWords` in IDLE's interactive shell. In `scrabbleWords` you <strong>must</strong> make one call to print to the console with `outputWordPointPairs` where `toFile = True`, and another call to write to a file with `outputWordPointPairs` where `toFile = False`. Gradescope test cases will fail if you forget to write your output to a file.
+
+# Upload `{{page.num}}.py` and `{{page.num}}_tests.py` to Gradescope.
+
+Once you're done with writing your functions, navigate to the Lab assignment "{{page.num}}" on Gradescope and upload your `{{page.num}}.py` and `{{page.num}}_tests.py` files.
+
+Thanks to Matthew Buoni for this lab!

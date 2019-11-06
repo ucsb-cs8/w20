@@ -1,7 +1,7 @@
 ---
 layout: lab
 num: lab05
-ready: false
+ready: true
 desc: "Scrabble Word Finder: Python lists, dictionaries and file I/O"
 assigned: 2019-11-06 10:00am
 due: 2019-11-13 09:59am
@@ -14,7 +14,7 @@ In this lab, you'll get more practice with:
 * reading data (words) from a text file and putting them into a list
 * creating a Scrabble word finder
 * using list method `sort()` to sort words in order of descending point value
-* writing formatted output to the screen and a file
+* formatting output and writing it to the screen and a file
 
 ## This lab should be done solo. 
 
@@ -25,9 +25,7 @@ Make sure that you adhere to the [Academic Integrity](https://studentconduct.sa.
 * Step 1: Log on and open up a terminal window
 This is done following the steps you have performed in lab00.
 * Step 2: Create a directory in your cs8 directory named {{page.num}}.
-* Step 3: Start IDLE
-
-The terminal command for this is "`idle3 &`".  When you have the IDLE window up, you are ready for some programming!
+* Step 3: Start IDLE. The terminal command for this is "`idle3 &`".  When you have the IDLE window up, you are ready for some programming!
 
 ## What is Scrabble?
 [Scrabble](https://en.wikipedia.org/wiki/Scrabble) is a word game in which players take turns placing tiles with individual letters onto a game board. The words that players create earn points by counting the points for the letters according to the game rules. 
@@ -127,7 +125,7 @@ You can simply verify that when you run your program you produce the same file i
 
 * Create a dictionary of letter: pointValue pairs - name it `letterPoints`.  The image below shows the Scrabble point value for each letter, but note that your dictionary keys should be the lower case letters. Any character that is not shown in this image has a point value of 0. You don't have to add 0 point keys to your dictionary, rather make sure that your `getWordPoints` _uses a point value of 0 if a letter is not in the provided dictionary_.
 
-![letter points](scrabble_letters.png){:height="200px"}
+![letter points](scrabble_letters.png){:height="250px"}
 
 * Create a list of tuples consisting of (pointValue, word) pairs by looping through the list `myWords` and getting the point value for each word - name this list of tuples `pointWordList`.  To calculate pointValue, you will want to call helper function `getWordPoints()`.
 
@@ -241,10 +239,10 @@ def test_canWeMakeIt_0():
 ...
 from {{page.num}} import getWordPoints
 letterPoints = {'a':1, 'b':3, 'c':3, 'd':2, 'e':1, 'f':4,\
-								'g':2, 'h':4, 'i':1, 'j':8, 'k':5, 'l':1,\
-								'm':3, 'n':1, 'o':1, 'p':3, 'q':10, 'r':1,\
-								's':1, 't':1, 'u':1, 'v':4,	'w':4, 'x':8,\
-								'y':4, 'z':10}
+		'g':2, 'h':4, 'i':1, 'j':8, 'k':5, 'l':1,\
+		'm':3, 'n':1, 'o':1, 'p':3, 'q':10, 'r':1,\
+		's':1, 't':1, 'u':1, 'v':4,	'w':4, 'x':8,\
+		'y':4, 'z':10}
 
 def test_getWordPoints_0():
 	assert(getWordPoints('ape',letterPoints) == 5)

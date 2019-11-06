@@ -50,7 +50,7 @@
 
     for line in infile:
         print(line)
-        mline = line.strip("\n").split('\t'))
+        mline = line.strip("\n").split('\t')
         major_dict[mline[0]] = mline[1]
     ```
     + common commands

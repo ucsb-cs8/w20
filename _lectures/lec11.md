@@ -220,7 +220,8 @@ Common ways to read data from files
 * creating a text file with the data from <https://registrar.sa.ucsb.edu/faculty-staff/resources-for-faculty-staff/major-minor-codes>
 * reading a file with major codes/descriptions 
 * creating a dictionary 
-```py
+
+```python
 infile = open("major-codes.txt", 'r')
 
 major_dict = {} # an empty dictionary

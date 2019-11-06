@@ -214,3 +214,24 @@ Common ways to read data from files
         open file.
 '''
 ```
+
+### An example from class 
+
+* creating a text file with the data from <https://registrar.sa.ucsb.edu/faculty-staff/resources-for-faculty-staff/major-minor-codes>
+* reading a file with major codes/descriptions 
+* creating a dictionary 
+```py
+infile = open("major-codes.txt", 'r')
+
+major_dict = {} # an empty dictionary
+for line in infile:  # for every line in the input file
+    print(line)
+    mline = line.strip().split('\t') # strip the whitespace, split it by tabs
+    
+    print(mline[0], ":", mline[1]) 
+    major_dict[mline[0]] = mline[1] # add the key and value to the dictionary
+
+print(major_dict)
+
+infile.close()
+```

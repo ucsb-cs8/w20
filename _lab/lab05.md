@@ -224,11 +224,11 @@ from {{page.num}} import createWordList
 
 def test_createWordList_0():
 	# Example test
-	#Write to a file with words in it
+	# Write to a file with words in it
 	words = ['computer', 'science', 'python']
 	outfile = open('test_file_0.txt', 'w')
 	for item in words:
-	outfile.write(item +'\n')
+		outfile.write(item +'\n')
 
 	outfile.close()
 
@@ -238,7 +238,7 @@ def test_createWordList_0():
 	assert(len(newlist) == len(words))
 
 	for i in range(len(words)):
-	assert(words[i] == newlist[i])
+		assert(words[i] == newlist[i])
 
 def test_createWordList_1():
 	#Your test code

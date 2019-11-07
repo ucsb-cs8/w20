@@ -223,8 +223,22 @@ import pytest
 from {{page.num}} import createWordList
 
 def test_createWordList_0():
-	#Your test code
+	# Example test
+	#Write to a file with words in it
+	words = ['computer', 'science', 'python']
+	outfile = open('test_file_0.txt', 'w')
+	for item in words:
+	outfile.write(item +'\n')
 
+	outfile.close()
+
+	# Read the file with words created in it to test if createWordList
+	# creates a list of words correctly.
+	newlist = createWordList('test_file_0.txt')
+	assert(len(newlist) == len(words))
+
+	for i in range(len(words)):
+	assert(words[i] == newlist[i])
 
 def test_createWordList_1():
 	#Your test code

@@ -87,8 +87,12 @@ _Hint:_ Converting `myLetters` to a list and using its `pop()` or `remove()` met
 
 4) **outputWordPointPairs(pointWordList, myLetters, toFile)** - NO return (just prints a formatted list or writes it to file).
 
-* Write a function which will output the (pointValue, word) pairs in `pointWordList` to the screen or to a file depending on the bool value `toFile`
+* Write a function which will output the (pointValue, word) pairs in `pointWordList` to the screen or to a file depending on the bool value `toFile`. Refer to the function `scrabbleWords` for more details on `pointWordList`. When myLetters is "buoni", `pointWordList` might look like:
 
+```
+>>> pointWordList
+[(5, 'obi'), (5, 'nub'), (5, 'nob'), (5, 'nib'), (5, 'bun'), (5, 'bio'), (5, 'bin'), (4, 'bi'), (3, 'uni'), (3, 'ion'), (2, 'on'), (2, 'nu'), (2, 'no'), (2, 'in'), (1, 'u'), (1, 'i')]
+```
 * When `toFile` is `False`,  print all the words followed by their point value.  Format the output so that your word is left justified in a field of width 4 more than the number of letters in `myLetters`, and the point value follows immediately afterwards.  You can do this with the `format` string method by carefully forming the `'{...}'` string first.
 
 * If `toFile` is `True`, write the same text as your formatted screen output from above to a text file.  Name the file the string of letters contained in `myLetters` followed by ".txt".  So in the example above with scrabbleWords("buoni"), the file that is created is `buoni.txt`.  Note that every time you want to write to a new line, you will need to include the newline character `\n` in your `file.write()` statement.  You can see what the output should look like in the example here: 

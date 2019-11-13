@@ -41,7 +41,7 @@
     print("==={:8}===".format(True) # here True has a boolean value of 1 which is considered as an integer
     '===       1==='
     '''
-    In conclusion, int, float and boolean value is right justified, whereas string is left justified
+    In conclusion, int, float and boolean value are right justified, whereas string is left justified
     '''
     ```
     + center / left / right

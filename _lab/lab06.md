@@ -115,7 +115,7 @@ for i in range(0,100):
 
 Below is the histogram of distances for D=10, and nTrials = 10000 using nBins = 20.
 
-     ![Histogram_of_distance_and_nTrials](histogram_of_distance_and_trials.PNG)
+![Histogram of distance and nTrials](histogram_of_distance_and_trials.PNG){:height="450px"}
 
 ## 3. `plotRandomUniformSum(M, N, nBins)` 
 
@@ -127,13 +127,13 @@ What values should you use for `binMin` and `binMax`?  To answer this, consider 
 
 <table>
    <tr>
-      <td><center><img src='/lab06/histogram1.PNG' width="400px" /></center></td>
-      <td><center><img src='/lab06/histogram2.PNG' width="400px" /></center></td>
+      <td><center><img src='histogram1.PNG' width="400px" /></center></td>
+      <td><center><img src='histogram2.PNG' width="400px" /></center></td>
    </tr>
 
    <tr>
-      <td><center><img src='/lab06/histogram3.PNG' width="400px" /></center></td>
-      <td><center><img src='/lab06/histogram10.PNG' width="400px" /></center></td>
+      <td><center><img src='histogram3.PNG' width="400px" /></center></td>
+      <td><center><img src='histogram10.PNG' width="400px" /></center></td>
    </tr>
 </table>
 

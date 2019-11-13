@@ -4,7 +4,7 @@ num: lab06
 ready: false
 desc: "More practice writing functions, more accumulator patterns, Monte-Carlo simulation, using plotHistogram function"
 assigned: 2019-11-13 9:00am
-due: 2019-11-19 08:59am
+due: 2019-11-20 08:59am
 ---
 
 The goals for this lab are:
@@ -21,6 +21,12 @@ The goals for this lab are:
 
 Make sure that you adhere to the [Academic Integrity](https://studentconduct.sa.ucsb.edu/academic-integrity) standards and do/submit your own work.
 
+## A brief introduction to Monte Carlo Method
+
+In short, the *Monte Carlo Method*, or a *Monte Carlo Experiment* is to repeat random samplings in order to get numerical results. We adopt this method in order to look behind the randomness and figure out something deterministic from it. For example, we can repeat a random experiment (e.g. flip a coin) for many times and count the numbers for each result (e.g. head or tail of the coin), in order to estimate the **possibility** of each result happens (e.g. number of heads or tails is usually about a half of total flips). For more information, please see [here](https://en.wikipedia.org/wiki/Monte_Carlo_method).
+
+
+
 ## Getting started
 
 ## Step 1: Log on and open up a terminal window
@@ -35,28 +41,63 @@ This is done by following the sequence of steps in the first lab (lab00).
 
 The terminal command for this is `idle3`, or `idle3 &` if you want to be able to type commands on your terminal window after IDLE opens.  When you have the IDLE window up, you are ready for some programming!
 
-Remember, you will need to have the cTurtle module, [cTurtle.py](https://sites.cs.ucsb.edu/~buoni/cs8/cTurtle.py), in your home directory or in some other directory in your Python path.
+## Step 4: Download `cTurtle.py` and `hist.py` files
+
+Remember, you will need to have the hist module [hist.py](https://sites.cs.ucsb.edu/~buoni/cs8/hist.py), and cTurtle module [cTurtle.py](https://sites.cs.ucsb.edu/~buoni/cs8/cTurtle.py) in your home directory or in some other directory in your Python path.
 
 
 ## What to program?
 <u>Note: In this lab and all labs that follow, unless otherwise stated please write your functions with the exact same name and parameter list as what is specified. </u>
 
-## Functions to Implement:
+### Functions to Implement:
 
-### Basic:
+# Basic:
 1. **coinFlipExperiment(M, N, nTrials)** - return True or False
 2. **monteCarloRandomWalkFirstPassage(D, nTrials)** - return a list [average_steps, list_of_steps], and plot a histogram of steps
 3. **plotRandomUniformSum(M, N, nBins)** -plot a histogram , and return a list
 
-# Function Details:
+### Function Details:
 
 ## 1. coinFlipExperiment(M, N, nTrials)
 
-Write a function that estimates the probability of getting **M** or more heads out of **N** fair coin flips (by fair we mean the coin has equal chance of turning up heads or tails), repeating this sequence of flips a total of  **nTrials** times.  To perform this experiment, you should define a helper function **coinFlipTrial(M, N)** that performs one sequence of **N** coin flips and returns **True** if the number of heads is greater than or equal to **M**, and **False** otherwise.  A test you can use for your functions is to estimate the probability of getting 8 or more heads out of 10 coin flips, which should be around 5 percent (0.05).
+Write a function that estimates the probability of getting ** M ** or more heads out of ** N ** fair coin flips (by fair we mean the coin has equal chance of turning up heads or tails), repeating this sequence of flips a total of  ** nTrials ** times.  To perform this experiment, you should define a helper function ** coinFlipTrial(M, N) ** that performs one sequence of ** N ** coin flips and returns ** True ** if the number of heads is greater than or equal to **M**, and **False** otherwise.  A test you can use for your functions is to estimate the probability of getting 8 or more heads out of 10 coin flips, which should be around 5 percent (0.05).
 
 ## 2. monteCarloRandomWalkFirstPassage(D, nTrials) - return a list [average_steps, list_of_steps], and plot a histogram of steps.
 
-Consider a random walk in two dimensions.  A walker starts at the origin (0, 0) and takes steps each of unit length and each in a completely random direction until reaching a distance **D** or further away from the origin.  Write a function **monteCarloRandomWalkFirstPassage** that performs **nTrials** of such an experiment, return a list **[average_steps, list_of_steps]**, where the **average_steps** means the average number of steps required to first reach a distance **D** or more from the origin, and the **list_of_steps** is a list of **nTrials** numbers, recording the number of steps for each trial. Also, plots a histogram of the distribution of number of steps required.  You will want to use the **plotHistogram** function from [hist.py](https://sites.cs.ucsb.edu/~buoni/cs8/hist.py). 
+Consider a random walk in two dimensions.  A walker starts at the origin (0, 0) and takes steps each of unit length and each in a completely random direction until reaching a distance **D** or further away from the origin.  Write a function **monteCarloRandomWalkFirstPassage** that performs **nTrials** of such an experiment, return a list **[average_steps, list_of_steps]**, where the ** average_steps ** means the average number of steps required to first reach a distance **D** or more from the origin, and the ** list_of_steps** is a list of **nTrials** numbers, recording the number of steps for each trial. Also, plots a histogram of the distribution of number of steps required.  
+
+You will want to use the **plotHistogram(myList, binMin, binMax, nBins, title)** function from [hist.py](https://sites.cs.ucsb.edu/~buoni/cs8/hist.py). This function will help you plot a [histogram]( https://en.wikipedia.org/wiki/Histogram). Again, remember to download the `hist.py` module and the `cTurtle.py` module **in your working directory first.** In this function, 
+
+* `myList` means a list of values that you would like to plot into a histogram; 
+
+* `binMin` means the minimal (left) boundary of the histogram. For those elements in `myList` that are less than `binMin`, they will be put into the first bin. If `binMin` is a boolean value, then the minimal boundary will be the minimal element in `myList`. `binMin` is defaulted as `False`. 
+
+* `binMax` means the maximal (right) boundary of the histogram. For those elements in `myList` that are greater than `binMax`, they will be put into the last bin. If `binMax` is a boolean value, then the maximal boundary will be the maximal element in `myList`. `binMax` is defaulted as `False`. 
+
+* `nBins` means the number of bins in the histogram. `nBins` is defaulted as 20.
+
+* `title` is the title of the histogram. `title` is defaulted as `''`.
+
+Maybe you would like to firstly define a list of random numbers `randomList`, and then test the function `plotHistogram`. Here are some examples:
+
+```Python
+import random
+import hist
+randomList = [] # make an empty list
+for i in range(0,100):
+	random_item = random.uniform(1,10) # get a random number from 1-10 uniform distribution
+	randomList.append(random_item) # append the random number to the list.
+
+# Test each of the following calls, and see what happens and what are the differences.
+# hist.plotHistogram(randomList)
+# hist.plotHistogram(randomList, False, False, 20)
+# hist.plotHistogram(randomList, False, False, 10)
+# hist.plotHistogram(randomList, False, False, 10, 'testHistogram')
+# hist.plotHistogram(randomList, 2, 9, 20)
+# hist.plotHistogram(randomList, 5, 6, 6, 'partial Histogram')
+#You can also write down your own calls:
+# hist.plotHistogram(...)
+```
 
 Please pay attention that to return means to exit the function. Therefore, you should first plot the histogram and then return the list.
 
@@ -73,16 +114,15 @@ Let's consider what happens when we add **M** uniform random numbers together.  
 Please pay attention that to return means to exit the function. Therefore, you should first plot the histogram and then return the list.
 
 What values should you use for binMin and binMax?  To answer this, consider the minimum and maximum values that **randomUniformSum** may assume.   Try calling your function four times with **M = 1, 2, 3, 10** setting **N = 1000000** and **nBins = 100** in each case.  You will notice that as **M** increases, the distribution looks more and more like a Normal (or Gaussian) distribution.  This is an illustration of the Central Limit Theorem, a very important theorem from Statistics which states that as you add more and more independent random variables (from any distribution, doesn't have to be uniform) the sum approaches a Normal distribution - very cool :-).
-
 <table>
    <tr>
-      <td><center><img src="histogram1.png" /></center></td>
-      <td><center><img src="histogram2.png" /></center></td>
+      <td><center><img src=”histogram1.png” /></center></td>
+      <td><center><img src=”histogram2.png” /></center></td>
    </tr>
 
    <tr>
-      <td><center><img src="histogram3.png" /></center></td>
-      <td><center><img src="histogram10.png" /></center></td>
+      <td><center><img src=”histogram3.png” /></center></td>
+      <td><center><img src=”histogram10.png” /></center></td>
    </tr>
 </table>
 
@@ -95,7 +135,7 @@ A2. Improve the efficiency of your helper function **coinFlipTrial** so that the
 
 ## Saving your files
 
-Save your functions in a Python file named **{{page.num}}.py** in your directory **{{page.num}}**.
+Save your functions in a Python file named **{{page.num}}.py** in your directory **"{{page.num}}"**.
 
 ## Upload `{{page.num}}.py` to Gradescope.
 

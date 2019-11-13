@@ -154,6 +154,6 @@ Save your functions in a Python file named `{{page.num}}.py` in your directory `
 
 Once you're done with writing your functions, navigate to the Lab assignment "{{page.num}}" on Gradescope and upload your `{{page.num}}.py` files.
 
-Thanks to Matthew Buoni for this lab!
+Thanks to Matthew Buoni for this lab, and to Jianyu Xu for adapting it to this assignment.
 
 

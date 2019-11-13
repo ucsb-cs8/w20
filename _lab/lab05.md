@@ -87,15 +87,17 @@ _Hint:_ Converting `myLetters` to a list and using its `pop()` or `remove()` met
 
 4) **outputWordPointPairs(pointWordList, myLetters, toFile)** - NO return (just prints a formatted list or writes it to file).
 
-* Write a function which will output the (pointValue, word) pairs in `pointWordList` to the screen or to a file depending on the bool value `toFile`. Refer to the function `scrabbleWords` for more details on `pointWordList`. When myLetters is "buoni", `pointWordList` might look like:
+* Write a function which will output the (pointValue, word) pairs in `pointWordList` to the screen or to a file **depending on the bool value** `toFile`.
+
+Refer to the function `scrabbleWords` for more details on `pointWordList` (you can also search this page for `pointWordList` to see where else on this page it appears). When myLetters is "buoni", `pointWordList` might look like:
 
 ```
 >>> pointWordList
 [(5, 'obi'), (5, 'nub'), (5, 'nob'), (5, 'nib'), (5, 'bun'), (5, 'bio'), (5, 'bin'), (4, 'bi'), (3, 'uni'), (3, 'ion'), (2, 'on'), (2, 'nu'), (2, 'no'), (2, 'in'), (1, 'u'), (1, 'i')]
 ```
-* When `toFile` is `False`,  print all the words followed by their point value.  Format the output so that your word is left justified in a field of width 4 more than the number of letters in `myLetters`, and the point value follows immediately afterwards.  You can do this with the `format` string method by carefully forming the `'{...}'` string first.
-
-* If `toFile` is `True`, write the same text as your formatted screen output from above to a text file.  Name the file the string of letters contained in `myLetters` followed by ".txt".  So in the example above with scrabbleWords("buoni"), the file that is created is `buoni.txt`.  Note that every time you want to write to a new line, you will need to include the newline character `\n` in your `file.write()` statement.  You can see what the output should look like in the example here: 
+* `toFile` parameter is a binary switch that indicates if the output should be written to a file (`toFile = True`) or if the output should be displayed on the screen (`toFile = False`).
+    * When `toFile` is `False`,  print all the words followed by their point value.  Format the output so that your word is left justified in a field of width 4 more than the number of letters in `myLetters`, and the point value follows immediately afterwards.  You can do this with the `format` string method by carefully forming the `'{...}'` string first.
+    * If `toFile` is `True`, write the same text as your formatted screen output from above to a text file.  Name the file the string of letters contained in `myLetters` followed by ".txt".  So in the example above with scrabbleWords("buoni"), the file that is created is `buoni.txt`.  Note that every time you want to write to a new line, you will need to include the newline character `\n` in your `file.write()` statement.  You can see what the output should look like in the example here: 
 
 **buoni.txt**
 ```
@@ -151,7 +153,9 @@ You should test the other two functions manually, although you are welcome to wr
 Put your test code in `{{page.num}}_tests.py` and submit it along with your `{{page.num}}.py` file.
 We recommend writing at least 3-5 test cases per function, but feel free to write more until you're confident in your solution.
 
-Gradescope will use test cases different from the tests that you will wrote in `{{page.num}}_tests.py`.
+Gradescope will use test cases different from the tests that you wrote in `{{page.num}}_tests.py`.
+
+Make sure that your code is neatly formatted, variable names are reasonable, and every function **includes a docstring**.
 
 ### What {{page.num}}.py could look like
 

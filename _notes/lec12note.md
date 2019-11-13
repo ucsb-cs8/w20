@@ -38,5 +38,5 @@
     >>> "{2}:{1}:{0}".format(18,7,6) #index
     "6:7:18"
 
-    {a:b} # a is the index of output; b is the space left for the string output
+    {a:b} # a is the index of output; b is the total length for the string output
     ```

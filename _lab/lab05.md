@@ -54,7 +54,7 @@ u        1
 i        1
 ```
 
-You will first define four helper functions, which you will then use in the main `scrabbleWords()` method. The section "Putting it all together" describes what `scrabbleWords()` method is supposed to do and how to call the helper functions, so if you want to set the big picture, you can start reading that section first.
+You will first define four helper functions, which you will then use in the main `scrabbleWords()` method. The section "Putting it all together" describes what `scrabbleWords()` method is supposed to do and how to call the helper functions, so if you want **to see the big picture, start reading the section "Putting it all together" first**.
 
 
 ## Getting started
@@ -78,6 +78,8 @@ Use the starter code we have provided at the end of the lab.
 1) **createWordList(filename)** - return a list of strings.  Write a function which reads the file `filename` and returns a list containing all words in the file.  Note that the last character of every line of the file is the invisible "new line" character `'\n'` and needs to be sliced off.
 
 2) **canWeMakeIt(myWord, myLetters)** - return True or False.  Write a function which answers the question: Can I form the word `myWord` from the string of letters `myLetters`?  The function should return a boolean True or False.  If the input is not the correct type then return `False`. 
+
+Note that according to the rules of the game, each available letter can only be used once in creating a word. 
 
 Try to write an algorithm on paper first before attempting to write the code. Think about the list functions at your disposal and the tools you've learned up till now.
 
@@ -138,6 +140,8 @@ You can simply verify that when you run your program you produce the same file i
 * Sort `pointWordList` in descending order.  Now, you can use the list method `sort()` to sort the tuples according to their first entry, pointValue.  But `sort()` arranges a list in ascending order by default... can you think of a way to _reverse_ this?
 
 * Call your `outputWordPointPairs()` and print your formatted string output to terminal. Then make a second call to `outputWordPointPairs()` to output to a ".txt" file named after the string in `myLetters`.
+
+Test your function, run the example shown above (`scrabbleWords('buoni')`) and compare that you got the same output as what was shown in the instructions.
 
 ## Write test code
 
@@ -275,8 +279,13 @@ def test_getWordPoints_0():
 
 You can load your `{{page.num}}.py` and run `scrabbleWords` in IDLE's interactive shell. In `scrabbleWords` you <strong>must</strong> make one call to print to the console with `outputWordPointPairs` where `toFile = True`, and another call to write to a file with `outputWordPointPairs` where `toFile = False`. Gradescope test cases will fail if you forget to write your output to a file.
 
+Make sure that you `return` the correct value(s) when the docstring or instruction ask you to `return` and `print` when you need to display/print the values.
+
 # Upload `{{page.num}}.py` and `{{page.num}}_tests.py` to Gradescope.
 
 Once you're done with writing your functions, navigate to the Lab assignment "{{page.num}}" on Gradescope and upload your `{{page.num}}.py` and `{{page.num}}_tests.py` files.
 
 Thanks to Matthew Buoni for this lab!
+
+
+Last updated: November 15, 2019 (to clarify the rules of the game and remind students how to test the function `scrabbleWords`).

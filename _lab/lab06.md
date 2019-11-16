@@ -140,9 +140,9 @@ What values should you use for `binMin` and `binMax`?  To answer this, consider 
 
 ## Advanced (if you are curious and time permits):
 
-**A1**. Generalize your `coinFlipExperiment` function to include one extra parameter, `p`, the probability that a coin flip results in heads, thus allowing for a "weighted" coin.
+**A1**. Generalize your `coinFlipExperiment` function to include one extra parameter, `p`, the probability that a coin flip results in heads, thus allowing for a "weighted" coin. After generalization, the function should be `coinFlipExperiment(M, N, nTrials, p)`.
 
-**A2**. Improve the efficiency of your helper function `coinFlipTrial` so that the function returns `True` as soon as `M` flips resulting in heads is achieved, or `False` as soon as it is impossible to achieve `M` heads.
+**A2**. Improve the efficiency of your helper function `coinFlipTrial` so that the function returns `True` as soon as `M` flips resulting in heads is achieved, or `False` as soon as it is impossible to achieve `M` heads. Here you **DO NOT** need to include the probability parameter we've just mentioned in A1. After generalization, the function should still be `coinFlipTrial(M, N)`.
 
 Submit your code as a file callled `{{page.num}}_advanced.py` to the separate assignment on Gradescope: **{{page.num}} Advanced**.
 

@@ -22,12 +22,9 @@ In this lab, you will need to create two files:
 * `{{page.num}}.py` - file containing function definitions
 * `{{page.num}}_tests.py` - file containing test cases
 * <strong>Please comment your name / perm at the top of each file.</strong>
+* <strong>Make sure to have a docstring for every function.</strong>
 
-Starter code is provided for you and are located at (you may need to refresh the page if the links do not load immediately):
-* <https://ucsb-cs8.github.io/m19-wang/lab/lab06/lab06.py>
-* <https://ucsb-cs8.github.io/m19-wang/lab/lab06/lab06_tests.py>
-* <https://ucsb-cs8.github.io/m19-wang/lab/lab06/input1.txt>
-* <https://ucsb-cs8.github.io/m19-wang/lab/lab06/input2.txt>
+Starter code is provided for you at the bottom of this page.
 
 1.  Create a directory called ~/cs8/{{page.num}} (using the `mkdir` command) and `cd` into that directory.
 2.  Use `idle3` (you might try `idle3 &` if you want to be able to type commands on your terminal window after IDLE opens).
@@ -84,3 +81,106 @@ Note that all words are separated by a whitespace character, and a word contains
 # Upload `{{page.num}}.py` and `{{page.num}}_tests.py` to Gradescope.
 
 Once you're done with writing your functions, navigate to the Lab assignment "Lab06" on Gradescope and upload your `{{page.num}}.py` and `{{page.num}}_tests.py` files.
+
+
+# `{{page.num}}.py`
+
+```python
+# lab06.py
+
+# Student(s): (insert name and perm number here)
+
+from random import randrange
+
+def rollDice():
+    '''
+    (10 points)
+    Function that returns the sum of rolling two six-sided dice.
+    - Note that the possible sum of rolling two dice is [2-12].
+    However, this distribution is not uniform (i.e. rolling a 2 does
+    not have the same probability as rolling a 6). Your function must
+    use randrange correctly to account for this.
+    '''
+    return "stub"
+
+
+def rollDistribution(n):
+    '''
+    (10 points)
+    Function that rolls a pair of dice n number of times. Returns a
+    list of ints, diceTally, that keeps track of the number of times
+    a certain sum occurs.
+    - Use the technique discussed in lecture where you can create a
+    list of 13 integers, where the index of the list represents a
+    particular dice roll value, and the value of that position represents
+    the number of times that dice roll occurred.
+    - Note: diceTally[0] and diceTally[1] will always be 0 since
+    having rolling a pair of dice will never result in 0 or 1.
+    - Your algorithm should call rollDice() n number of times when
+    populating your list.
+    '''
+    return "stub"
+
+
+def printDistribution(diceTally):
+    '''
+    (20 points)
+    Function that prints the diceTally distribution in a specific
+    format (see lab instructions for more details).
+    - This function does not return anything since it is simply
+    printing to the console.
+    - Note: Your algorithm must iterate and print each dice roll value in
+    a loop. Do not simply have 11 print statements for each dice roll value.
+    - Be VERY PRECISE in your format. Each character matters for full credit.
+    '''
+    return
+
+
+def totalWords(filename):
+    '''
+    (20 points)
+    Reads the file with filename into your function and returns
+    the number of words in the file.
+    - Words are separated by whitespace characters, but does not include
+    the following punctuation characters (,.!?;). You can assume contractions
+    count as one word (i.e. "don't", "you'll", etc. are one word).
+    - The split and strip functions may be useful in your implementation.
+    - Your function should open the file for reading, and close
+    the file before returning.
+    '''
+    return "stub"
+
+
+def longestWord(filename):
+    '''
+    (20 points)
+    Reads the file with filename into your function and returns
+    the longest word in the text file.
+    - Words are separated by whitespace characters, but does not include
+    the following punctuation characters (,.!?;). You can assume contractions
+    count as one word (i.e. "don't", "you'll", etc. are one word).
+    - In the case of a tie, the 1st occurrence of the longest word
+    is returned.
+    - The split and strip functions may be useful.
+    - Your function should open the file for reading, and close
+    the file before returning.
+    '''
+    return "stub"
+
+
+def charactersPerWord(filename):
+    '''
+    (20 points)
+    Reads the file with filename into your function and returns
+    the average number of characters per word.
+    - Words are separated by whitespace characters, but does not include
+    the following punctuation characters (,.!?;). You can assume contractions
+    count as one word (i.e. "don't", "you'll", etc. are one word).
+    - The split and strip functions may be useful.
+    - Your function should open the file for reading, and close
+    the file when done.
+    '''
+    return "stub"
+
+```
+

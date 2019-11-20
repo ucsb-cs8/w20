@@ -3,8 +3,57 @@ num: "lec15"
 desc: "2D lists"
 ready: true
 lecture_date:  2019-11-19
-reading: Chapter 5.3
+reading: Chapter 5.2 and 5.3
 ---
+
+# Variations of `for` loops
+
+```python
+
+word = "hello"
+lst = [word, 1,2,3,4]
+
+if (len(word) == len(lst)):
+    for e in word:
+        print(e)
+        lst[e] = lst[e]*2
+        print(e, lst[e], word[e])
+    
+
+
+# Adding your own index
+
+word = "hello"
+lst = [word, 1,2,3,4]
+
+index = 0
+step = 3
+if (len(word) == len(lst)):
+    for letter in word:
+        print(e)
+        index += step
+        #lst[e] = lst[e]*2
+        print(e, lst[index], word[index])
+    
+
+# Iterating through a list
+
+word = "helloo"
+lst = [word, 42, 1,2,3,4]
+
+index = 0
+step = 3
+if (len(word) == len(lst)):
+    for item in lst:
+        print(item)
+        """
+        index += step
+        #lst[e] = lst[e]*2
+        print(e, lst[index], word[index])
+        """
+    
+```
+
 
 # 2D (two-dimensional) Lists
 

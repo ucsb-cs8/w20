@@ -44,6 +44,9 @@ Note that all words are separated by a whitespace character, and a word contains
 If you run `mostCommonWords("input1.txt", 1)`, this function should essentially return the mode value from the file (the word that occurs most often). To be able to return **the list** of most common words, you will need to count how many times each word occurred in a file. Implement `wordFrequency` to help you first count the words in a file, then `mostCommonWords()` can sort them by the frequencies and store `N` of them into the returned list.
 
 * Test your function by making sure your input file has something like "hello hello hello world" and that you are able to return "hello" as the most frequently occuring word. 
+* Test your function by making sure if your "input1.txt" has something like "hello hello hello world" and you call `mostCommonWords("input1.txt", 2)`, the function correctly returns `['hello', 'world']`.
+* Test your function by making sure if your "input2.txt" has something like "hello world world world" and you call `mostCommonWords("input2.txt", 2)`, the function correctly returns `['world', 'hello']`.
+* Test your function by making sure if your "input2.txt" has something like "hello world world world" and you call `mostCommonWords("input2.txt", 3)`, the function correctly prints `[Error] The "input2.txt" contains 2 unique words.`. Check that it also returns `None`.
 
 
 
@@ -128,9 +131,10 @@ def mostCommonWords(filename, N):
     '''
     (20 points)
     Reads the file from filename in your function and returns a list of N most
-    common words in the text file (i.e., N words with the highest frequency).
+    common words in the text file (i.e., N words with the highest frequency),
+    sorted by the number of times they occured in the file (most common first).
     - Use wordFrequency() helper function to count the frequency of each word.
-    - Print "[Error] The "<filename>" contains <X> words." and return None
+    - Print "[Error] The "<filename>" contains <X> unique words." and return None
     if N is larger than the number of words in the file (substitute "<filename>"
     and <X> with the actual values).
     '''

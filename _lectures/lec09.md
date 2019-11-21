@@ -17,10 +17,10 @@ s = "Halloween"
     #012345678  positive index
     #        -1 negative index
 ```
-* iteration (using `range()`) 
+
+* iteration (using `range()`)
 ```python
 s = "Halloween"
-
 # print index values
 for i in range(len(s)):
     print (i)
@@ -161,11 +161,19 @@ range(start, end, step)
 
 Let's go through each of those arguments one by one.
 
+
+   <style>
+   div.explain-pytest table * td:first-of-type { width: 18em; font-size: 90%; }
+   </style>
+   <div class="explain-pytest" markdown="1">
+   
 | Argument | What it means | Optional? | Default value |
 | -------- | ------------- | --------- | ------------- |
 | `start` | The number you, well, start counting from. | yes | `0` |
 | `end` | The number you stop counting at, plus 1. For example, writing `3` means `range()` will only return up to `2` at the most, and writing `10` means `range()` will only return up to `9` at the most. (You must specify an end value. Otherwise, you'll get a nasty `TypeError`.) | no | N/A |
 | `step` | How many numbers you count by from the start value to the end value. Remember how, when you were younger, you used to count by 2's and 3's and 5's and whatnot? You might've even made a game out of it. 2, 4, 6, 8, 10, and so on until you got tired. Same thing in `range()`. | yes | `1` |
+
+</div>
 
 # Messing around with strings (or, the main course)
 
@@ -251,11 +259,15 @@ for i in range(start, end, step):
 
 Remember those negative indices? Time to put them to use.
 
+<div class="explain-pytest" markdown="1">
+
 | Argument | Value | But why? |
 | -------- | ----- | -------- |
 | `start` | `-1` | Printing a string backwards means you start from the last character in the string, which in this case is `-1`. You could also write `8`, but `8` is specific to string `s = "Halloween"`, and it would be a little tedious having to modify that value every time you wanted to use a new string. |
 | `end` | `-len(s) - 1` | Okay, okay. Start from `-1` as discussed in the previous row, and count backwards by 1 until you hit the character `'H'` in the string `s = "Halloween"`. You should get `-9` (refer to the table of indices up above if you're confused). But remember that thing about automation? "Try not to hard-code values into your programs." So to get `-9` automatically, the function `len()` (which gets the length of a string) seems like a good place to start.<ul><li>`len(s)` returns a value of `8`, since there are 8 characters in string `s`.</li><li>`-len(s)` thus returns the negative value of `len(s)`, meaning `-8`.</li><li>`-len(s) - 1`, which subtracts `-1` from `-len(s)`, thusly returns `-9`, which is what we want.</li></ul>Notice that now, if we redefine string `s` to something like `s = "candy"`, `end` will automatically change to `-6` so that we don't have to change it ourselves. Hooray.|
 | `step` | `-1` | You counted backwards by 1 to get the `end` value. That's exactly the same thing as `step`! "Backwards by 1" is just an informal way of saying `-1`. In other words, `range()` increments, or steps, by `-1` per iteration. |
+
+</div>
 
 All of this outputs:
 
@@ -505,4 +517,6 @@ print(decrypted)
 
 
 
-Acknowledgment: Big thanks to Yiu-On Li and Kevin Wang for their help with creating these notes and adding the narrative. :smile:
+#### Acknowledgement
+Big thanks to Yiu-On Li and Kevin Wang for their help with creating these notes and adding the narrative. 
+

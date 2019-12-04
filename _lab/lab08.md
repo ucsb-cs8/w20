@@ -192,6 +192,19 @@ Two strings are anagrams if the letters can be rearranged to form each other. Fo
 
 Write your own implementation of a function called `isAnagram` that takes two strings as arguments and returns a boolean true if the two strings are anagrams, otherwise, it returns false. The function should not be case sensitive and should disregard any punctuation or spaces. 
 
+```python
+
+def test_isAnagram_1():
+    assert isAnagram("Eleven plus two", "Twelve plus one") == True
+
+def test_isAnagram_2():
+    assert isAnagram("School master","The Classroom") == True
+
+def test_isAnagram_3():
+    assert isAnagram("Hello", "Helo") == False
+
+```
+
 #### Function to check if an input string is a palindrome
 
 A palindrome is a word, number, or other sequence of characters which reads the same backward as forward, such as "madam" or "racecar".
@@ -199,3 +212,16 @@ A palindrome is a word, number, or other sequence of characters which reads the 
 Write your own implementation of a function `isPalindrome` to check if a string is a palindrome. For example: “redivide” is not a palindrome, while “detartrated” is a palindrome. Ignore case when comparing characters of the string.
 
 The function returns true if an input string is a palindrome and false if it is not. You can do this by checking if the first character equals the last character, and so on. You should use a recursive implementation. Hint: remember how string slicing works.
+
+```python
+
+def test_isPalindrome_1():
+    assert isPalindrome("Redivider") == True
+
+def test_isPalindrome_2():
+    assert isPalindrome("detartrated") == True
+
+def test_isPalindrome_3():
+    assert isPalindrome("Racingcar") == False
+
+```

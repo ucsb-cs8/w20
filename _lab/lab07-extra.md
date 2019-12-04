@@ -136,7 +136,7 @@ Now that we've added an option to run our code with the stopwords file, let's ch
 For example:
 
 ```python
-def totalWords(filename, stopwords_file = none):
+def totalWords(filename, stopwords_file = None):
     '''
     Reads the file from filename in your function and returns
     the number of words in the file.
@@ -154,7 +154,7 @@ Doing so will allow you to run the function with and without the default argumen
 * `totalWords(input_file)`
 * `totalWords(input_file, stopwords_file)`
 
-Check that adding `stopwords_file = none` to all your functions still workscorrectly  with all the tests from Part 2.
+Check that adding `stopwords_file = None` to all your functions still workscorrectly  with all the tests from Part 2.
 
 Below are the tests for checking whether the stopwords are being removed correctly.
 

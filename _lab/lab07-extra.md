@@ -23,7 +23,7 @@ Looking up how to solve a problem counts as a violation of academic integrity, s
 
 # Part 0
 
-If you open and close the file within every functionto get the list of words, consider writing a helper function, which you can call instead.
+If you open and close the file within every function to get the list of words, consider writing a helper function, which you can call instead.
 
 ```python
 def getAllWords(filename):
@@ -36,7 +36,7 @@ def getAllWords(filename):
 
 If you correctly implemented the previous lab, you should be able to run the following test file and pass all tests.
 
-Note that the [input file "the-gift-of-the-magi.txt"](the-gift-of-the-magi.txt) contains double-quotes, which is technically not an alpha-numeric character, however, it should not be a problem if you stuck to our original assumption that "the text only contains the `,.!?;` punctuation characters". 
+Note that the [input file "the-gift-of-the-magi.txt"](the-gift-of-the-magi.txt) (source: [Gutenberg project](https://www.gutenberg.org/files/7256/7256-h/7256-h.htm)) contains double-quotes and dollar signs, which are not alpha-numeric characters, however, it should not be a problem if you stuck to our original assumption that "the text only contains the `,.!?;` punctuation characters". 
 
 ```python
 #test_functions.py (lab 07)

@@ -1,6 +1,6 @@
 ---
 layout: lab
-num: lab07-extra
+num: lab07_extra
 ready: true
 desc: "String Formatting and File IO (cont'd)"
 assigned: 2019-12-04 09:00am
@@ -113,7 +113,69 @@ Now that you verified that your previous code works as expected, let's add a few
 These will be the new tests that you can run if you correctly implemented these modifications.
 
 ```python
-# TBA
+#test_functions.py (lab 07_extra)
+
+import pytest
+
+input_file = "the-gift-of-the-magi.txt"
+total_words = 2065
+unique_words = 772
+
+def test_totalWords_prophet():
+	'''Test totalWords("input1")'''
+	from lab07_extra import totalWords
+	assert totalWords(input_file) == total_words
+
+# Tests for longestWord
+def test_longestWord_prophet():
+	'''Test longestWord(input1)'''
+	from lab07_extra import longestWord
+	assert longestWord(input_file) == "sterling—something"
+
+
+def test_charactersPerWord_prophet():
+	'''Test charactersPerWord(input1)'''
+	from lab07_extra import charactersPerWord
+	assert round(charactersPerWord(input_file), 5) == 4.24358
+
+def test_mostCommomWords_1():
+	''' Test mostCommomWords, N=1 '''
+	from lab07_extra import mostCommonWords
+	assert mostCommonWords(input_file, 1) == ['the']
+
+def test_mostCommomWords_3():
+	''' Test mostCommomWords, N=3 '''
+	from lab07_extra import mostCommonWords
+	assert mostCommonWords(input_file, 3) == ['the', 'and', 'a']
+
+def test_mostCommomWords_5():
+	''' Test mostCommomWords, N=5 '''
+	from lab07_extra import mostCommonWords
+	assert mostCommonWords(input_file, 5) == ['the', 'and', 'a', 'of', 'to']
+
+def test_mostCommomWords_30():
+	''' Test mostCommomWords, N=30 '''
+	from lab07_extra import mostCommonWords
+	words = mostCommonWords(input_file, 30)
+	assert words[29] == "as"
+
+def test_mostCommomWords_last():
+	''' Test mostCommomWords, last word '''
+	from lab07_extra import mostCommonWords
+	words = mostCommonWords(input_file, unique_words)
+	assert words[unique_words-1] == "$20"
+
+
+def test_mostCommomWords_prophet_neg():
+	''' Test mostCommomWords, N is negative '''
+	from lab07_extra import mostCommonWords
+	assert mostCommonWords(input_file, -1) == None
+
+def test_mostCommomWords_prophet_too_large():
+	''' Test mostCommomWords, N is too large '''
+	from lab07_extra import mostCommonWords
+	assert mostCommonWords(input_file, unique_words+1) == None
+
 ```
 
 # Part 3

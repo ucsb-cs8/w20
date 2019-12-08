@@ -35,6 +35,19 @@ Guidelines last updated: Sunday, Dec 8, 2019
 
 * * * 
 
+Book Chapters:
+* Perkovic Ch1 (Introduction to CS)
+* Perkovic Ch 2.1 (Expressions Variables and Assignments), 2.2 (Strings), Perkovic Ch2.3 (Lists and Tuples), Perkovic 2.4 (Objects and Classes)
+* Perkovic 3.1 (Python Programs), 3.2 (Execution Control Structures), Perkovic 3.3 (User-Defined Functions), 3.4 (Python Variables and Assignments), 3.5 (Parameter Passing)
+* Perkovic 4.1 (Strings, Revisited), 4.2 (Formatted Output), Perkovic 4.3 (Files), 4.4 (Errors and Exceptions)
+* Perkovic 5.1 (Decision Control and the if Statement), 5.2 (for Loop and Iteration Patterns), Perkovic 5.3 - 5.6 (More loop patterns, 2D lists, while Loop)
+* Perkovic 6.1 (Dictionaries) and 6.4 (Random)
+* Perkovic 10.1 (Introduction to Recursion)
+
+including whatever was addressed on the homework and in the labs.
+
+* * * 
+
 ### Practice Problems
 
 **Look over the clicker questions on the slides, Exam 1 and Exam 2, and homework problems to make sure you know and understand those _concepts_ not just the answers to those specific questions.**
@@ -170,5 +183,72 @@ For instance `s = “abc”` and `t = “abdc”`, output should be `d`.
   * Note: In the case where the amount of words matching startWith is less than n then  there are not enough choices to randomly select. The returned words will always contain the same words (but potentially in a different order). 
   
 It is helpful to design a pseudocode first, before trying to write down the code.
+
+
+* Assuming the following assignment statements have been entered at the Python prompt:
+
+```python
+students = ["Joyce", "Brain","Muhammad","George","Charlotte"]
+courses = [("CS40", 5), ("Phys1", 4), ("Eng101", 3),("ARTHI6A", 4), ("Psych1", 4)]
+total_units = [ 21, 16, 15, 18, 13]
+```
+
+What would be the result of entering the following at the Python interactive shell prompt? (Be very precise. Note that `True` is not the same in Python as `true`; upper vs. lower case matters. You will not get full credit for answers that are not precisely correct. And note that `"UCSB"` and `["UCSB"]` are not the same in Python—one is a string, and the other is a list of length one containing a single string.)
+
+```python
+
+len(courses)
+“Joyce” in students
+len(courses[0])
+“CS” in course[0][0]
+
+max(total_units)
+“Phys1” in courses
+“Eng101” in courses[2]
+“4” in courses[1]
+```
+
+* Write a line of Python code that creates a tuple of length 1, containing the single string `"Computer Science 8"` and then adds this tuple to the end of courses list.
+
+* Assume that the following assignment statement has been executed:
+`mixture = ["UCSB", "3.14", 170, ("apple", 4) , True]`
+
+What would be the result of entering the following at the Python interactive shell prompt? You should omit the `<class '___'>` part and only write down the `___` part.
+
+
+```python
+
+type(mixture)
+type(4*mixture[1])
+type(mixture[-1])
+
+
+type(mixture[3])
+type(3.14)
+type(mixture[1][1])
+
+```
+
+* Write a python expression that converts the integer 170 in `mixture` above to a string in Python.
+
+* Write a python expression that converts the string “3.14” in `mixture` to a float value in Python.
+
+* Given the following codes, please answer questions:
+
+```python
+from collections import namedtuple
+Student = namedtuple('Student', 'name perm major gpa')
+
+s1 = Student("Nitya", 123443,"CS", 3.8)
+s2 = Student("Young", 8932737, "CE", 3.6)
+studentsList = [s1, s2]
+```
+
+  * Write a line of Python code to print the name and perm of s1
+  * Write Python codes that create the third student s3, who has name = “Jordan”, perm = 7947583, major = Physics, gpa = 3.7). The add s3 to the end of studentList.
+  
+  
+  * Write a recursive Python function `firstUpper()` that finds the first uppercase letter in a given string, and returns 0 if there is no uppercase letter in the given string. (Hint: use `isupper()` to check whether a character is upper or not.)
+
 
 

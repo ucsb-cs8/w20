@@ -20,10 +20,10 @@ Th Final Exam is on **Wednesday, 12/11** in the regular lecture classroom but it
   * Handwritten notes also mean that you should not print anything and/or tape it to your note sheet: research has shown that to best digest the material and understand what you are doing you need to hand-write the notes yourself. 
   * Please write your name in the **top right corner** (portrait orientation) on **both** sides of that sheet.
   * **Do not attach** anything to your notesheet: you will need to turn in your notesheet with your exam. If something is glued/taped/stapled/attached in any way to it, it will jam up the scanner and will cause you to lose points for not following instructions.
-  * Rememeber to **turn in your exam and notesheet _before_** you leave the exam room. We will not accept it once you leave the classroom.
+  * Remember to **turn in your exam and notesheet _before_** you leave the exam room. We will not accept it once you leave the classroom.
   * If you do not need/want to create a notesheet, please turn in a blank sheet with your name in the **top right corner (portrait orientation) on both sides** of that sheet.
 
-*    No books, calculators, phones, laptops or other materials or devices are allowed during the exam. Using them during the exam are a violation of academic integrity and can result in receiving a 0 for the exam.
+*    No books, calculators, phones, laptops or other materials or devices are allowed during the exam. Using them during the exam is a violation of academic integrity and can result in receiving a 0 for the exam.
 
 * You may turn in your exam and the notesheet early. Have all of your belongings with you when you turn in your exam so that as soon as you hand it to us you can leave the classroom immediately, without needing to back to your seat.
 

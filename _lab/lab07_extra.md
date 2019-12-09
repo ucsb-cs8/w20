@@ -6,6 +6,14 @@ desc: "String Formatting and File IO (cont'd)"
 assigned: 2019-12-04 09:00am
 due: 2019-12-11 08:59am
 ---
+---
+layout: lab
+num: lab07_extra
+ready: true
+desc: "String Formatting and File IO (cont'd)"
+assigned: 2019-12-04 09:00am
+due: 2019-12-11 08:59am
+---
 
 In this lab, you'll get more practice with:
 
@@ -40,12 +48,13 @@ Note that the [input file "the-gift-of-the-magi.txt"](the-gift-of-the-magi.txt) 
 
 ```python
 #test_functions.py (lab 07)
+# test file without the em dash
 
 import pytest
 
 input_file = "the-gift-of-the-magi.txt"
-total_words = 2065
-unique_words = 863
+total_words = 2093
+unique_words = 859
 
 def test_totalWords_prophet():
 	'''Test totalWords("input1")'''
@@ -56,13 +65,13 @@ def test_totalWords_prophet():
 def test_longestWord_prophet():
 	'''Test longestWord(input1)'''
 	from lab07 import longestWord
-	assert longestWord(input_file) == "sterling—something"
+	assert longestWord(input_file) == "inconsequential"
 
 
 def test_charactersPerWord_prophet():
 	'''Test charactersPerWord(input1)'''
 	from lab07 import charactersPerWord
-	assert round(charactersPerWord(input_file), 5) == 4.27167
+	assert round(charactersPerWord(input_file), 5) == 4.22121
 
 def test_mostCommomWords_1():
 	''' Test mostCommomWords, N=1 '''
@@ -83,7 +92,7 @@ def test_mostCommomWords_30():
 	''' Test mostCommomWords, N=30 '''
 	from lab07 import mostCommonWords
 	words = mostCommonWords(input_file, 30)
-	assert words[29] == "out"
+	assert words[29] == "all"
 
 def test_mostCommomWords_last():
 	''' Test mostCommomWords, last word '''
@@ -107,76 +116,9 @@ def test_mostCommomWords_prophet_too_large():
 
 Now that you verified that your previous code works as expected, let's add a few modifications to it.
 
-* Let's add double-quotes to the list of symbols we are removing when we read-in the words.
+* Let's also remove double-quotes we read-in the words (in addition to the `,.!?;` characters that you are already removing; don't remove any other characters).
 * The lower/upper case or capitalization shouldn't matter when counting words, so let's enforce that by converting words to lowercase. Notice that "hi", "Hi" and "HI" will all be counted as the same word "hi". Dealing with cases like acronyms and state abbreviations is outside the scope of this assignment.
 
-These will be the new tests that you can run if you correctly implemented these modifications.
-
-```python
-#test_functions.py (lab 07_extra)
-# Without stopwords
-
-import pytest
-
-input_file = "the-gift-of-the-magi.txt"
-total_words = 2065
-unique_words = 772
-
-def test_totalWords_input1():
-	'''Test totalWords("input1")'''
-	from lab07_extra import totalWords
-	assert totalWords(input_file) == total_words
-
-# Tests for longestWord
-def test_longestWord_input1():
-	'''Test longestWord(input1)'''
-	from lab07_extra import longestWord
-	assert longestWord(input_file) == "sterling—something"
-
-
-def test_charactersPerWord_input1():
-	'''Test charactersPerWord(input1)'''
-	from lab07_extra import charactersPerWord
-	assert round(charactersPerWord(input_file), 5) == 4.24358
-
-def test_mostCommomWords_1():
-	''' Test mostCommomWords, N=1 '''
-	from lab07_extra import mostCommonWords
-	assert mostCommonWords(input_file, 1) == ['the']
-
-def test_mostCommomWords_3():
-	''' Test mostCommomWords, N=3 '''
-	from lab07_extra import mostCommonWords
-	assert mostCommonWords(input_file, 3) == ['the', 'and', 'a']
-
-def test_mostCommomWords_5():
-	''' Test mostCommomWords, N=5 '''
-	from lab07_extra import mostCommonWords
-	assert mostCommonWords(input_file, 5) == ['the', 'and', 'a', 'of', 'to']
-
-def test_mostCommomWords_30():
-	''' Test mostCommomWords, N=30 '''
-	from lab07_extra import mostCommonWords
-	words = mostCommonWords(input_file, 30)
-	assert words[29] == "as"
-
-def test_mostCommomWords_last():
-	''' Test mostCommomWords, last word '''
-	from lab07_extra import mostCommonWords
-	words = mostCommonWords(input_file, unique_words)
-	assert words[unique_words-1] == "$20"
-
-
-def test_mostCommomWords_input1_neg():
-	''' Test mostCommomWords, N is negative '''
-	from lab07_extra import mostCommonWords
-	assert mostCommonWords(input_file, -1) == None
-
-def test_mostCommomWords_input1_too_large():
-	''' Test mostCommomWords, N is too large '''
-	from lab07_extra import mostCommonWords
-	assert mostCommonWords(input_file, unique_words+1) == None
-```
 
 # Part 3
 If you have noticed, the most common words usually include articles and prepositions, which are not very interesting for text analysis.
@@ -224,14 +166,14 @@ Notice now that by looking at the top 3 common words you can get a better sense 
 
 ```python
 #test_functions.py (lab 07_extra)
-# With stopwords
+# With stopwords (no em dash)
 
 import pytest
 
 input_file = "the-gift-of-the-magi.txt"
 stopwords_file = "stopwords.txt"
-total_words = 1026
-unique_words = 660
+total_words = 1041
+unique_words = 654
 
 def test_totalWords_input1_sw():
 	'''Test totalWords("input1")'''
@@ -242,13 +184,13 @@ def test_totalWords_input1_sw():
 def test_longestWord_input1_sw():
 	'''Test longestWord(input1)'''
 	from lab07_extra import longestWord
-	assert longestWord(input_file, stopwords_file) == "sterling—something"
+	assert longestWord(input_file, stopwords_file) == "inconsequential"
 
 
 def test_charactersPerWord_sw():
 	'''Test charactersPerWord(input1)'''
 	from lab07_extra import charactersPerWord
-	assert round(charactersPerWord(input_file, stopwords_file), 5) == 5.65107
+	assert round(charactersPerWord(input_file, stopwords_file), 5) == 5.54467
 
 def test_mostCommomWords_1_sw():
 	''' Test mostCommomWords, N=1 '''
@@ -263,13 +205,13 @@ def test_mostCommomWords_3_sw():
 def test_mostCommomWords_5_sw():
 	''' Test mostCommomWords, N=5 '''
 	from lab07_extra import mostCommonWords
-	assert mostCommonWords(input_file, 5, stopwords_file) == ['jim', 'della', 'hair', 'said', 'look']
+	assert mostCommonWords(input_file, 5, stopwords_file) == ['jim', 'della', 'hair', '--', 'said']
 
 def test_mostCommomWords_30_sw():
 	''' Test mostCommomWords, N=30 '''
 	from lab07_extra import mostCommonWords
 	words = mostCommonWords(input_file, 30, stopwords_file)
-	assert words[29] == "time"
+	assert words[29] == "without"
 
 def test_mostCommomWords_last_sw():
 	''' Test mostCommomWords, last word '''
@@ -287,7 +229,6 @@ def test_mostCommomWords_too_large_sw():
 	''' Test mostCommomWords, N is too large '''
 	from lab07_extra import mostCommonWords
 	assert mostCommonWords(input_file, unique_words+1, stopwords_file) == None
-
 ```
 
 

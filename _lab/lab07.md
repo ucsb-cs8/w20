@@ -2,7 +2,7 @@
 layout: lab
 num: lab07
 ready: true
-desc: "String Formatting, Random, and File IO"
+desc: "String Formatting, and File IO"
 assigned: 2019-11-20 9:00am
 due: 2019-11-27 08:59am
 ---
@@ -32,7 +32,7 @@ Starter code is provided for you at the bottom of this page.
 
 # Some notes about the File I/O functions
 
-Create two files `input1.txt` and `input2.txt` in the `~/cs8/{{page.num}}` directory. Use these two input files to test your functionality: add a small number of words (2-10) first to make sure that you can verify that your function is working correctly. Add punctuation next to make sure you can correctly remove it; test for contractions, e.g., "don't".
+Create two files `input1.txt` and `input2.txt` in the `~/cs8/{{page.num}}` directory. Use these two input files to test your functionality: add a small number of words (2-10) first to make sure that you can verify that your function is working correctly. Add punctuation next to make sure you can correctly remove it; test for contractions, e.g., "don't". Make sure to test a file that contains more than one line.
 
 These files are used when running pytest on `{{page.num}}_tests.py`. We will be using additional input files to test your submission on Gradescope.
 
@@ -43,25 +43,40 @@ Note that all words are separated by a whitespace character, and a word contains
 
 If you run `mostCommonWords("input1.txt", 1)`, this function should essentially return the mode value from the file (the word that occurs most often). To be able to return **the list** of most common words, you will need to count how many times each word occurred in a file. Implement `wordFrequency` to help you first count the words in a file, then `mostCommonWords()` can sort them by the frequencies and store `N` of them into the returned list.
 
-* Test your function by making sure your input file has something like "hello hello hello world" and that you are able to return "hello" as the most frequently occuring word. 
-* Test your function by making sure if your "input1.txt" has something like "hello hello hello world" and you call `mostCommonWords("input1.txt", 2)`, the function correctly returns `['hello', 'world']`.
-* Test your function by making sure if your "input2.txt" has something like "hello world world world" and you call `mostCommonWords("input2.txt", 2)`, the function correctly returns `['world', 'hello']`.
-* Test your function by making sure if your "input2.txt" has something like "hello world world world" and you call `mostCommonWords("input2.txt", 3)`, the function correctly prints `[Error] The "input2.txt" contains 2 unique words (you asked for 3).`. Check that it also returns `None`.
+Here are simple examples you should try:
+
+**input1.txt**
+```
+hello
+hello
+hello world
+```
+
+**input2.txt**
+```
+hello world
+world
+world
+```
+
+* `mostCommonWords("input1.txt", 1)` Test that you are able to return "hello" as the most frequently occuring word. 
+* `mostCommonWords("input1.txt", 2)`, the function should return `['hello', 'world']`.
+* `mostCommonWords("input2.txt", 2)`, the function should return `['world', 'hello']`.
+* `mostCommonWords("input2.txt", 3)`, the function correctly prints `[Error] The "input2.txt" contains 2 unique words (you asked for 3).`. Check that it also returns `None`.
+
+Test the other functions accordingly, verifying on a simple input file that the results are correct.
 
 
 
 # Upload `{{page.num}}.py` and `{{page.num}}_tests.py` to Gradescope.
 
-Once you're done with writing your functions, navigate to the Lab assignment "Lab06" on Gradescope and upload your `{{page.num}}.py` and `{{page.num}}_tests.py` files.
+Once you're done with writing your functions, navigate to the Lab assignment "{{page.num}}" on Gradescope and upload your `{{page.num}}.py` and `{{page.num}}_tests.py` files.
 
 
 # `{{page.num}}.py`
 
 ```python
-# lab07.py
-
 # Student: (insert name and perm number here)
-
 
 def totalWords(filename):
     '''

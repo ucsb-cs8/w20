@@ -1,8 +1,8 @@
 ---
-title: "CS 8: Introduction to Computer Science, Fall 2019"
+title: "CS 8: Introduction to Computer Science, Winter 2020"
 ---
 
-# CS 8: Introduction to Computer Science, Fall 2019 (Prof. K)
+# CS 8: Introduction to Computer Science, Winter 2020 (Prof. K)
 
 ## Welcome to CS 8!
 

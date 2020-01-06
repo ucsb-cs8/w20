@@ -19,13 +19,13 @@ home:
    baseurl: /
 
 offerings:
-   title: F19
+   title: W20
    url: /	
-   baseurl: /f19
+   baseurl: /w20
    items:
-      - title: F19
+      - title: W20
         url: /
-        baseurl: /f19
+        baseurl: /w20
 
 offering_links:
   - title: Syllabus

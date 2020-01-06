@@ -6,48 +6,45 @@ remote_theme: ucsb-cs-course-repos/course-repo-jekyll-theme
 
 suppress_footer: true
 
-name: "CS 8 Fall 2019"
-github_url: https://github.com/ucsb-cs8/f19
-baseurl: "/f19"
-url: "https://ucsb-cs8.github.io/f19"
+name: "CS 8 Winter 2020"
+github_url: https://github.com/ucsb-cs8/w20
+baseurl: "/w20"
+url: "https://ucsb-cs8.github.io/w20"
 slides_url: ""
 
 instances:
   -
     instructor: "Kharitonova"
-    site_url: "https://ucsb-cs8.github.io/f19"
+    site_url: "https://ucsb-cs8.github.io/w20"
     github_org:
-       name: ucsb-cs8/f19
-       url: https://github.com/ucsb-cs8/f19
+       name: ucsb-cs8/w20
+       url: https://github.com/ucsb-cs8/w20
     piazza_url:  https://piazza.com/class/
     gradescope_url: https://www.gradescope.com
 
 
-start_week: 0
-start_date: 2019-09-22 00:00:00.00-8:00 # Has to start on a Sunday
-num_weeks: 11
+start_week: 1
+start_date: 2020-01-05 00:00:00.00-8:00 # Has to start on a Sunday
+num_weeks: 10
 extra_exam_week: true
 lecture_days_of_week: TR
 
-cal_dates: >
-  [
-  {"label":"First day of Fall Quarter", "date":"2019-09-26" },
-  {"label":"No classes: Veterans' Day", "date":"2019-11-11", "holiday":true },
-  {"label": "DST ends", "date":"2019-11-03" },
-  {"label":"Labs are cancelled. Enjoy Thanksgiving!", "date":"2019-11-27", "holiday":true },
-  {"label":"No classes: Thanksgiving Break", "date":"2019-11-28", "holiday":true },
-  {"label":"No classes: Thanksgiving Break", "date":"2019-11-29", "holiday":true },
-  {"label":"Last day of classes", "date":"2019-12-06" },
-  {"label":"Finals Begin", "date":"2019-12-07" },
-  {"label":"Finals End", "date":"2019-12-13" },
-  {"label":"Drop deadline (no W grade)", "date":"2019-10-23" }
-  ]
- 
+cal_dates: >                                                                    
+  [                                                                            
+    {"label":"W20 begins", "date":"2020-01-06" },              
+    {"label":"Univ Holiday", "date":"2020-01-20" },                            
+    {"label":"Univ Holiday", "date":"2020-02-17" },                            
+    {"label":"W20 instruction ends", "date":"2020-03-13" },                    
+    {"label":"W20 finals start", "date":"2020-03-14" },                        
+    {"label":"W20 finals end", "date":"2020-03-20" },                          
+    {"label":"W20 qtr ends", "date":"2020-03-20" }                              
+  ] 
+
 future: false
 
 course: "CS 8"
-qtr: "f19"
-quarter: "Fall 2019"
+qtr: "W20"
+quarter: "Winter 2020"
 
 kramdown:
   parse_block_html: false

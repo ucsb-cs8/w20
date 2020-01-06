@@ -176,12 +176,14 @@ In Python 3, this program is very short.  It looks like this:
 print ('Hello, World!')
 ```
 
+We want to make sure that the result (output) of your program matches the following <strong>exactly</strong>: `Hello, World!`. Pay close attention to punctuation,capitalization and white spaces. If it does not match exactly the Gradescope system will not give you full credit for your work. This will also be the case in future labs when a specific output is expected.
+
 We will save the file under the name `hello.py`&mdash;it is <strong>very important</strong> that is has exactly that name, or the gradescope system will not run your program correctly.
 
 That's it!   Now, you can also add, on the first line, a *comment* with your name, and information about the course, for example:
 
 ```python
-# Chris Gaucho, for CMPSC 8, Winter 2019
+# Chris Gaucho, for CMPSC 8, Fall 2019
 print ('Hello, World!')
 ```
 

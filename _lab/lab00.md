@@ -76,6 +76,8 @@ Here's how:
 Next, we'll arrange things for efficiency -- when using a programming language, ensuring that the correct windows are simultaneously visible is a huge help!
 
 Try arranging and resizing your windows so that you can see **both** the browser (these instructions) and your text editor side-by-side.
+***Note*** To resize the window, double-click the top of the window
+
 * It's amazing how much more efficient you can be when you don't need to click to different windows!
 * For the artistically or cooking-show inclined: [mise en place](https://en.wikipedia.org/wiki/Mise_en_place) matters! 
 

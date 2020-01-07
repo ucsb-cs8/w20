@@ -176,7 +176,7 @@ When you have the IDLE window up, you are ready for the next step.
 
 ## Step 6: Save a file in IDLE
 
-In IDLE, select **"File=&gt;New File"** to open a new "untitled" window for Python code.
+In IDLE, select **"File=&gt;New File"** to open a new "untitled" window for Python code. Make sure you see the new window and work inside that new file.
 
 When it comes up, click and drag the window by its title bar over to the right
 of your Python Shell window.
@@ -194,24 +194,14 @@ print ('Hello, World!')
 
 Save the file under the name `hello.py`-—it is **very important** that is has **exactly** that name, or the Gradescope system will not run your program correctly, resulting in a score of 0.
 
+**Note:** When you save the file `hello.py` there should not be any of the `>>>` marks, which are the IDLE shell prompt.
+
 Make sure that the result (output) of your program matches the following <strong>exactly</strong>: `Hello, World!`. 
-For this and future labs, **pay close attention to the spelling, punctuation, capitalization and spacing** of the output that your code needs to produce. 
+For this and future labs, **pay close attention to the spelling, punctuation, capitalization and spacing** of the output that your code needs to produce. (Note that there is a _space_ after the comma!)
+
 If it does not match exactly the Gradescope system will not give you full credit for your work. 
 
-
-**Add a "header comment"**. For this and all future labs,  add a *comment* with your name, and information about the course on the first line of the file you are working with:
-
-```python
-# Chris Gaucho, for CMPSC 8, Winter 2020
-print ('Hello, World!')
-```
-
-You are encouraged to do that, because it helps someone looking at your code know that *you* wrote it.  
-In general, in computer programming, a *comment* is something that is intended only for human readers of the code, and is otherwise "ignored by the system".   Nearly every programming language has some way to express comments, though the exact rules for formatting of comments--that is, the *syntax* of comments--differs from one language to another.
-
-In Python, a `#` starts a comment.  Everything from the `#` to the end of that line is part of the comment and is ignored by the system.
-
-Now that you enter this program in IDLE, and saved it under the name `hello.py`, you are ready to see it in action.
+Now that you entered this program in IDLE, and saved it under the name `hello.py`, you are ready to see it in action (see the next step).
 
 ## Step 7: Running your program.
 
@@ -221,6 +211,20 @@ If you need a further demonstration of IDLE, you can find one on YouTube. For ex
 [This video starting at 4:53](https://www.youtube.com/watch?v=kXbpB5_ywDw&t=4m53s)  (That video is for Python 3.1, but the stuff shown in the video is the same across all versions of Python 3.x).
 
 ## Step 8: Uploading your program to Gradescope
+
+Before you submit your assignment, **add a "header comment"**. For this and all future labs,  add a *comment* with your name, and information about the course on the first line of the file you are working with:
+
+```python
+# Chris Gaucho, for CMPSC 8, Winter 2020
+print ('Hello, World!')
+```
+
+Remember to change `Chris Gaucho` to your name and **save your file**.
+
+You are encouraged to do that, because it helps someone looking at your code know that *you* wrote it.  
+In general, in computer programming, a *comment* is something that is intended only for human readers of the code, and is otherwise "ignored by the system".   Nearly every programming language has some way to express comments, though the exact rules for formatting of comments--that is, the *syntax* of comments--differs from one language to another.
+
+In Python, a `#` starts a comment.  Everything from the `#` to the end of that line is part of the comment and is ignored by the system.
 
 Next, try submitting your program to Gradescope, which is an autograder system we will utilize for this course. You'll get some immediate feedback on whether you properly followed the instructions.
 

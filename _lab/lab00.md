@@ -194,7 +194,7 @@ In Python 3, this program is very short.  It looks like this:
 print ('Hello, World!')
 ```
 
-Save the file under the name `hello.py` and put 'hello.py' to cs8 folder.-—it is **very important** that is has **exactly** that name, or the Gradescope system will not run your program correctly, resulting in a score of 0.
+Save the file under the name **`hello.py`** inside the `lab00` folder that you created earlier-—it is **very important** that is has **exactly** that name (**`hello.py`**), or the Gradescope system will not run your program correctly, resulting in a score of 0.
 
 **Note:** When you save the file `hello.py` there should not be any of the `>>>` marks, which are the IDLE shell prompt.
 

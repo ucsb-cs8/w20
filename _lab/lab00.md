@@ -1,7 +1,7 @@
 ---
 assigned: 2020-01-06
 desc: Getting Started
-due: 2020-01-13 08:59
+due: 2020-01-14 08:59
 layout: lab
 num: lab00
 ready: true

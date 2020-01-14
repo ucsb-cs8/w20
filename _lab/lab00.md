@@ -1,7 +1,7 @@
 ---
 assigned: 2020-01-06
 desc: Getting Started
-due: 2020-01-13 08:59
+due: 2020-01-14 08:59
 layout: lab
 num: lab00
 ready: true
@@ -76,6 +76,8 @@ Here's how:
 Next, we'll arrange things for efficiency -- when using a programming language, ensuring that the correct windows are simultaneously visible is a huge help!
 
 Try arranging and resizing your windows so that you can see **both** the browser (these instructions) and your text editor side-by-side.
+***Note*** To resize the window, double-click the top of the window
+
 * It's amazing how much more efficient you can be when you don't need to click to different windows!
 * For the artistically or cooking-show inclined: [mise en place](https://en.wikipedia.org/wiki/Mise_en_place) matters! 
 
@@ -192,7 +194,7 @@ In Python 3, this program is very short.  It looks like this:
 print ('Hello, World!')
 ```
 
-Save the file under the name `hello.py`-—it is **very important** that is has **exactly** that name, or the Gradescope system will not run your program correctly, resulting in a score of 0.
+Save the file under the name **`hello.py`** inside the `lab00` folder that you created earlier-—it is **very important** that is has **exactly** that name (**`hello.py`**), or the Gradescope system will not run your program correctly, resulting in a score of 0.
 
 **Note:** When you save the file `hello.py` there should not be any of the `>>>` marks, which are the IDLE shell prompt.
 

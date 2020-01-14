@@ -1,7 +1,7 @@
 ---
-assigned: 2020-01-13
+assigned: 2020-01-14
 desc: Writing Test Cases
-due: 2020-01-20 08:59
+due: 2020-01-21 08:59
 layout: lab
 num: lab01
 ready: true
@@ -582,14 +582,15 @@ convert.py ....
 169-231-175-204:lab01 cgaucho$ 
 ```
 
-Make sure that your file 
+# Step 9: Submit your `convert.py` file to Gradescope
+
+Before you submit your code to Gradescope, make sure that your file 
 * is named `convert.py`
 * does not have any `TODO` comments left in the code.
 * contains a comment at the top of the file that says `Submitted by <name>, PERM, for CS 8 (W20)`. (Please, replace `<name>` and `PERM` with your first and last name and PERM number respectively.)
 
 You are ready to submit your work to Gradescope.
 
-# Step 9: Submit your `convert.py` file to Gradescope
 
 Navigate to the Lab assignment "Lab01" and upload your `convert.py`, similar to how you submitted `hello.py` for Lab00. Gradescope will check if your functions are correct. If your tests do not pass, go back to these functions and double-check your conversion formulas and function syntax.
 

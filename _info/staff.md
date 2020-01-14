@@ -68,6 +68,17 @@ iframe { width: 90%; height: 700px; overflow: scroll; }
   <i> "I'm a third year Computer Science major. I came to UCSB as an Economics and Accounting major with little programming experience, but switched into CS by the end of my freshman year. This is my first time tutoring for CS8 and I’m looking forward to getting to work with everyone in this class.  My goal is to help as many students as possible walk away feeling confident in their programming abilities. Please feel free to reach out to me for any advice or help, or if you just need someone to chat with :) " </i><br/>
   </td>
 </tr>
+    
+ <tr>
+  <td>
+  <img src="/w20/info/mentorPhotos/SaraMandic.jpeg"  width="250px"  alt="" style="float: left; margin: 0px 10px 20px 10px;">
+  <h3> Sara Mandic. (Tutor)</h3>
+  Preferred Pronouns: She, Her, Hers<br/>
+  Major: Computer Science <br/>
+  Previous experience as a tutor: This is my first time tutoring CS8. <br/>
+  <i> "Hey everyone :) I’m a second year CS major. CS8 was my first CS class at UCSB and I remember being so afraid coming to class as a freshmen. I thought that everyone knew so much more than I did and I felt so intimidated. If you feel this way trust me you are not alone. With the help of great professors and tutors who helped me feel welcome I improved so much in my abilities and gained a lot of confidence. I’m excited to be a tutor because I want to do the same and make you realize how interesting and rewarding coding is. I know that the course is fast paced and in moments you might feel extremely overwhelmed, but I, along with an amazing staff of TA’s, tutors, and a stellar professor, am more than eager to help. I want to share some tricks that I found helpful when taking CS8 and help you see that you can do it. I know that people think of CS as being extremely difficult and stressful, but I want to help you see how fun it can actually be. In addition to the Python you learn in this class, feel free to reach out to me and ask about C++, Java, or Mathematica and I will do my best to answer any questions that you have. Also, If you have any questions in regards to course material, study methods, tips I have for being successful in this class, or if you just want to talk feel free to reach out to me. I’m a super friendly and social person and am always open to conversation. Outside of school I love playing volleyball and play for the UCSB women’s club volleyball team so you might see me on the beach courts over the weekends. Other than volleyball I love to paint (although I am not the best at it) and I love to travel. I look forward to meeting you all and I hope that this quarter will be an awesome experience. " </i><br/>
+  </td>
+</tr>
 </table>
 
 <table style="width:90%">

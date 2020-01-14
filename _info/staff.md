@@ -54,7 +54,21 @@ iframe { width: 90%; height: 700px; overflow: scroll; }
 </tr>
 </table>
 
+
 ## CS 8 Mentor profiles
+
+<table style="width:80%">
+<tr>
+  <td>
+  <img src="/w20/info/mentorPhotos/aprilsanchez.png"  width="250px"  alt="" style="float: left; margin: 0px 10px 20px 10px;">
+  <h3> April S. (Tutor)</h3>
+  Preferred Pronouns: She, Her, Hers<br/>
+  Major: Computer Science <br/>
+  Previous experience as a tutor: Last quarter I tutored for CS16. <br/>
+  <i> "I'm a third year Computer Science major. I came to UCSB as an Economics and Accounting major with little programming experience, but switched into CS by the end of my freshman year. This is my first time tutoring for CS8 and I’m looking forward to getting to work with everyone in this class.  My goal is to help as many students as possible walk away feeling confident in their programming abilities. Please feel free to reach out to me for any advice or help, or if you just need someone to chat with :) " </i><br/>
+  </td>
+</tr>
+</table>
 
 <table style="width:90%">
 <tr>

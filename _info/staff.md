@@ -148,6 +148,19 @@ If you have any questions about anything, feel free to talk to me! I’ll be mor
   </td>
 </tr>
 
+<tr>
+  <td>
+  <img src="/w20/info/mentorPhotos/SherryChen.png"  width="300px"  alt="" style="float: left; margin: 20px 10px 0px 0px;">
+  <h3>Sherry Chen (TA)</h3>
+    Preferred Pronouns: She, Her, Hers<br/>
+    Major: Computer Science<br/>
+    Previous experience as a TA: I was the TA for CS24 last quarter.<br/>
+    <i> Hi!. I am Sherry Chen and I am a first year computer science Ph.D. interested in Computer Vision and Human Computer Interface (HCI). Before came to UCSB, I got my Bachelor's degree in CS and Applied Math in the University of Washington. For hobbies, I like VR games, playing puzzles, and painting. This is my first time TAing for CS8, and I am really looking forward to working with all of you! Please feel free to reach out to me if you have any questions, inside and outside the class!
+    </i><br/>
+  
+  </td>
+</tr>
+
 </table>
 
 <table style="width:90%">

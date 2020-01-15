@@ -81,7 +81,7 @@ iframe { width: 75%; height: 950px; overflow: scroll; }
     Preferred Pronouns: She, Her, Hers <br/>
     Major: Statistics and Data Science <br/>
     Previous experience as a tutor: This is my first time tutoring at UCSB. <br/>
-  <i> ":)" </i><br/>
+  <i> Hi guys, my name is Noemi (she/her/hers) and I am a first-time tutor for CS8! I am a third year Statistics and Data Science major, and I am currently involved in Data Science Club, as well as undergraduate research focusing on sustainable forms of energy and image processing with a professor on campus. (Feel free to ask me about either!) I took CS8 the summer before my freshman year during FSSP. I remember how much the class intimidated me at first, as I went into it with no computer science or programming knowledge beforehand. By the end of the summer, I was enjoying the class a lot, and had learned a lot too. This is why I’m excited to be a tutor and help enhance other the CS8 experience for other students as well. I’ll be attending Tuesday lectures, two sections, and varied open lab hours throughout the week, as well as answering questions on Piazza, posting notes, and helping students in any other ways I can. I’m excited to bring the perspective of a non- computer science student to the class. Feel free to ask me about data science, or how I use computer programming as a Statistics major! When I’m not super busy with school, research, or work, I like to do yoga (I’m a certified yoga teacher!), spend time outside, cook, and travel. I just got back from spending a quarter abroad in the Netherlands and I’d be more than happy to talk about my experiences. I’m looking forward to getting to know all of you and having a great quarter. (: </i><br/>
   </td>
 </tr>
 

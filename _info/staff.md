@@ -79,6 +79,17 @@ iframe { width: 90%; height: 700px; overflow: scroll; }
   <i> "Hey everyone :) I’m a second year CS major. CS8 was my first CS class at UCSB and I remember being so afraid coming to class as a freshmen. I thought that everyone knew so much more than I did and I felt so intimidated. If you feel this way trust me you are not alone. With the help of great professors and tutors who helped me feel welcome I improved so much in my abilities and gained a lot of confidence. I’m excited to be a tutor because I want to do the same and make you realize how interesting and rewarding coding is. I know that the course is fast paced and in moments you might feel extremely overwhelmed, but I, along with an amazing staff of TA’s, tutors, and a stellar professor, am more than eager to help. I want to share some tricks that I found helpful when taking CS8 and help you see that you can do it. I know that people think of CS as being extremely difficult and stressful, but I want to help you see how fun it can actually be. In addition to the Python you learn in this class, feel free to reach out to me and ask about C++, Java, or Mathematica and I will do my best to answer any questions that you have. Also, If you have any questions in regards to course material, study methods, tips I have for being successful in this class, or if you just want to talk feel free to reach out to me. I’m a super friendly and social person and am always open to conversation. Outside of school I love playing volleyball and play for the UCSB women’s club volleyball team so you might see me on the beach courts over the weekends. Other than volleyball I love to paint (although I am not the best at it) and I love to travel. I look forward to meeting you all and I hope that this quarter will be an awesome experience. " </i><br/>
   </td>
 </tr>
+
+<tr>
+  <td>
+  <img src="/w20/info/mentorPhotos/rk.jpeg"  width="200px"  alt="" style="float: left; margin: 0px 10px 20px 10px;">
+  <h3>Radha Kumaran (TA)</h3>
+    Preferred Pronouns: She, Her, Hers<br/>
+    Major: Computer Science<br/>
+    Previous experience as a TA: This is my first time TAing CS8.<br/>
+  <i> "Hi everyone! I'm a first year PhD student, and my areas of interest are Machine Learning, HCI and Affective Computing. Computer programming was something I had a hard time understanding initially, and I've realised how important it is to have someone who can explain (multiple times, as is often necessary) all of the ideas and concepts that seem super intimidating (until you get to the point where you realize they were a lot simpler than they seemed). I hope to be able to help all of you find out just how fun programming can be, this quarter! When I'm not working I can be found reading, listening to music, baking, travelling, and attempting (usually unsuccessfully) to learn new languages." </i>
+  </td>
+</tr>
 </table>
 
 <table style="width:90%">

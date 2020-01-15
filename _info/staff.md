@@ -101,11 +101,11 @@ iframe { width: 90%; height: 700px; overflow: scroll; }
     Major: Computer Science<br/>
     Previous experience as a tutor: This is my first time tutoring<br/>
 
-Hello! I’m Olivia (she/her/hers) and I am a first year CS major. Although I don’t have an extensive background in CS, I will help in the ways that I can! I took CS8 just last quarter, so the material should hopefully still be fresh in my mind. I will answer questions on Piazza and questions you have during lab hours. If I cannot answer a question, I will direct you to someone who can! 
+<i>Hello! I’m Olivia (she/her/hers) and I am a first year CS major. Although I don’t have an extensive background in CS, I will help in the ways that I can! I took CS8 just last quarter, so the material should hopefully still be fresh in my mind. I will answer questions on Piazza and questions you have during lab hours. If I cannot answer a question, I will direct you to someone who can! 
 
 People come into CS8 with very different backgrounds in coding, some with quite a lot, some with none. It can be intimidating when people are finishing labs before you’ve even finished reading the instructions. I hope that when you guys are struggling, you are not afraid to ask for help, or if you are afraid, you ask for help anyway. We are here to help (not judge) and we’ve all struggled at some point, too. Last quarter, after spending more than 45 minutes on the first lab, I was made aware (by Prof K) that I was still logged into the previous user’s account. I had to redo the lab, but thankfully it went much faster the second time.
 
-Some other things about me: I am a member of the Society of Women Engineers (SWE), so feel free to ask me questions about that. In my free time I like to be outdoors. I often rollerblade to and from class, and I go to the beach most days of the week. I like to climb trees and go indoor rock climbing. I used to sail and hopefully will start sailing again during some future quarter at UCSB. I like board games (like one-night Werewolf) and card games (like Egyptian War). Feel free to contact me on Piazza or by email: oliviagillam@ucsb.edu.
+Some other things about me: I am a member of the Society of Women Engineers (SWE), so feel free to ask me questions about that. In my free time I like to be outdoors. I often rollerblade to and from class, and I go to the beach most days of the week. I like to climb trees and go indoor rock climbing. I used to sail and hopefully will start sailing again during some future quarter at UCSB. I like board games (like one-night Werewolf) and card games (like Egyptian War). Feel free to contact me on Piazza.</i>
   </td>
 </tr>
 

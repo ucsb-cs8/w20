@@ -87,7 +87,7 @@ iframe { width: 90%; height: 700px; overflow: scroll; }
     Preferred Pronouns: She, Her, Hers<br/>
     Major: Computer Science<br/>
     Previous experience as a TA: This is my first time TAing CS8.<br/>
-  <i> "Hi Everyone! I'm a first year PhD student, and my areas of interest are Machine Learning, HCI and Affective Computing. Computer programming was something I had a hard time understanding initially, and I've realised how important it is to have someone who can explain (multiple times, as is often necessary) all of the ideas and concepts that seem super intimidating (until you get to the point where you realize they were a lot simpler than they seemed). I hope to be able to help all of you find out just how fun programming can be, this quarter! When I'm not working I can be found reading, listening to music, baking, travelling, and attempting (usually unsuccessfully) to learn new languages." </i>
+  <i> "Hi everyone! I'm a first year PhD student, and my areas of interest are Machine Learning, HCI and Affective Computing. Computer programming was something I had a hard time understanding initially, and I've realised how important it is to have someone who can explain (multiple times, as is often necessary) all of the ideas and concepts that seem super intimidating (until you get to the point where you realize they were a lot simpler than they seemed). I hope to be able to help all of you find out just how fun programming can be, this quarter! When I'm not working I can be found reading, listening to music, baking, travelling, and attempting (usually unsuccessfully) to learn new languages." </i>
   </td>
 </tr>
 </table>

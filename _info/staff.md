@@ -73,6 +73,20 @@ iframe { width: 90%; height: 700px; overflow: scroll; }
 <table style="width:90%">
 <tr>
   <td>
+  <img src="_info/mentorPhotos/IMG_1218.jpeg"  width="300px"  alt="" style="float: left; margin: 0px 10px 20px 10px;">
+  <h3> Noemi R. (Tutor) </h3>
+    Preferred Pronouns: She, Her, Hers <br/>
+    Major: Statistics and Data Science <br/>
+    Previous experience as a tutor: This is my first time tutoring at UCSB. <br/>
+  <i> ":)" </i>
+  </td>
+</tr>
+
+</table>
+
+<table style="width:90%">
+<tr>
+  <td>
   <img src="/w20/info/mentorPhotos/404.gif"  width="300px"  alt="" style="float: left; margin: 0px 10px 20px 10px;">
   <h3>(TA/Tutor)</h3>
     Preferred Pronouns: <br/>

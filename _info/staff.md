@@ -134,6 +134,20 @@ Some other things about me: I am a member of the Society of Women Engineers (SWE
   </td>
 </tr>
 
+<tr>
+  <td>
+  <img src="/w20/info/mentorPhotos/CS08-W20-Cindy-Z.jpg"  width="300px"  alt="" style="float: left; margin: 20px 10px 0px 0px;">
+  <h3> Cindy Zhao (Tutor)</h3>
+  Preferred Pronouns: She, Her, Hers<br/>
+  Major: Computer Science <br/>
+  Previous experience as a tutor: This is my first time tutoring. <br/>
+  <i> Hi! I’m Cindy Zhao (she/her/hers) and I am a second year computer science major. I came into UCSB with not a lot of coding experience except for the classes I have taken in school, so I can relate to a lot of those who may be a bit slow at understanding and processing information. I believe CS8 is a very crucial part of everyone’s CS journey because it helps build the foundation of coding experience. When I first started coding, I was very scared and didn’t have the courage to ask that many questions in fear of sounding unintelligent. I hope to provide a safe and casual environment where asking questions is the norm and that no one would feel embarrassed or scared to ask them. I am very excited to tutor for this class and to work with everyone!
+Some organizations I am a part of are SB Hacks and Theta Tau. SB Hacks is a weekend long hackathon event that gathers around 350 college level students to build innovative technology to solve everyday problems. As an organizer for one of UC Santa Barbara’s biggest hackathons, I learned how to communicate and relay information, which will hopefully be useful when I tutor. Applications normally come out mid-fall quarter so be on the lookout for that if you’re interested in participating! 
+Outside of school I like to play soccer or lacrosse, and I also dance. I’ve played soccer for about ten years and lacrosse for four, but I enjoy playing all different kinds of sports. I also like hanging out with friends and going to places to eat good food. My favorite music artists are Niki and Illenium.
+If you have any questions about anything, feel free to talk to me! I’ll be more than happy to help you with any questions you have in CS8 or about life in general! :) </i><br/>
+  </td>
+</tr>
+
 </table>
 
 <table style="width:90%">

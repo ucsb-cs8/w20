@@ -130,7 +130,7 @@ Some other things about me: I am a member of the Society of Women Engineers (SWE
 <tr>
   <td>
   <img src="/w20/info/mentorPhotos/AbtinBateni.jpg"  width="300px"  alt="" style="float: left; margin: 0px 10px 20px 10px;">
-  <h3> Noemi R. (Tutor) </h3>
+  <h3> Abtin B. (TA) </h3>
     Preferred Pronouns: He, Him, His <br/>
     Major: Computer Science <br/>
     Previous experience as a tutor: This is my first time TAing CS8. <br/>

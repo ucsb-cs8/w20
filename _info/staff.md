@@ -161,8 +161,21 @@ If you have any questions about anything, feel free to talk to me! I’ll be mor
   </td>
 </tr>
 
+<tr>
+  <td>
+  <img src="/w20/info/mentorPhotos/Rakshith.png"  width="300px"  alt="" style="float: left; margin: 20px 10px 0px 0px;">
+  <h3>Rakshith Gopalakrishna (TA)</h3>
+    Preferred Pronouns: He, Him, His<br/>
+    Major: Computer Science<br/>
+    Previous experience as a TA: I was the TA for CS176A last quarter. This is the first time I am TAing CS8<br/>
+    <i> Hi!. I am Rakshith Gopalakrishna and I am a first year computer science Ph.D. interested in Distributed Systems, Security and Privacy. I am also an avid open source enthusiast. Please do not hesitate to reach out to me if you have any questions. Looking forward to working with you all!
+    </i><br/>
+  
+  </td>
+</tr>
 </table>
 
+<!--
 <table style="width:90%">
 <tr>
   <td>
@@ -171,10 +184,7 @@ If you have any questions about anything, feel free to talk to me! I’ll be mor
     Preferred Pronouns: <br/>
     Major: <br/>
     Previous experience as a tutor: <br/>
-  
   </td>
 </tr>
-
-</table>
-
-
+</table> 
+-->

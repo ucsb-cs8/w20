@@ -264,7 +264,7 @@ Choose “File => New File” in IDLE to bring up an “untitled” window, then
 **IMPORTANT**: Make sure to save your file with the exact filename we requested. Naming it with some other name will confuse Gradescope and result in a score of 0, even if your work is correct.
 
 
- ## Step 1.1: Add the preliminary information 
+## Step 1.1: Add the preliminary information 
 
 Write a comment with your name and PERM number in that file (in general, you should write this on each of your submitted source files).
 
@@ -374,8 +374,10 @@ There are many ways to approach the solution of this problem.
 We recommend you to use a **list** that includes the spelled-out name of each number from 0 to 10 (inclusive) in English.
 
 ```python
-numbers = [ "one", "two", "three", ...]
+numbers = [ "one", "two", "three", ...] # TODO: update it to include all correct values
 ```
+
+**Note**: you will need to change `numbers` shown above.
 
 Keeping in mind that list indexing starts at **`0`**, how could you use this to your advantage to return the correct value? (E.g., `numToStr(1)` should return `"one"`.)
 Implement your answer by updating your definition of the function `numToStr()`.
@@ -387,20 +389,7 @@ Once you have the code correct, try testing both using interactive testing as we
 
 At each step, you should first try to get the test cases to pass by running pytest at the Unix command line as discussed above.
 
-*   Please do this BEFORE submitting to Gradescope.
-*   Please DO NOT upload your file to Gradesope without testing locally first.
-
-Once you see your tests are passing, THEN submit a version to Gradescope.
-
-You are by no means finished with this lab. But, we want to encourage you to make a submission to Gradescope now anyway. Here is why:
-
-1. After you upload your file, it will provide a backup copy of your work in case something goes wrong with your computer (yes, this happens and you want to make sure there is a backup somewhere).
-    
-2. You also will be able to see some progress towards completion of the lab&mdash; partial credit for completion of this step.
-
-Once you've submitted and you see that you got more than 0 points, you are ready to continue with the rest of the lab.
-
-# Step 1.7: Seeing the magic in action
+## Step 1.7: Seeing the magic in action
 
 Below is the skeleton code for printing the riddle for any number between 0 and 10.
 
@@ -453,6 +442,19 @@ Some of you might get the error `Test Failed: None != Hello, 'World!'` when tryi
 
 # Last Step: Submit your files to Gradescope
 
+*   Please DO NOT upload your file to Gradesope without testing locally first (i.e., using `pytest`).
+
+Once you see your tests are passing, THEN submit a version to Gradescope.
+
+Even if you are not finished with this lab, make a submission to Gradescope now anyway. Here is why:
+
+1. After you upload your file, it will provide a backup copy of your work in case something goes wrong with your computer (yes, this happens and you want to make sure there is a backup somewhere).
+    
+2. You also will be able to see some progress towards completion of the lab&mdash; partial credit for completion of this step.
+
+Once you've submitted and you see that you got more than 0 points, you are ready to continue with the rest of the lab.
+
+
 Before you submit your code to Gradescope, make sure that your files 
 * are named `hello.py` and `magic_number.py`
 * do not have any `TODO` comments left in the code.
@@ -462,8 +464,7 @@ You are ready to submit your work to Gradescope.
 
 
 Navigate to the Lab assignment on Gradescope and upload your `.py` files, similar to how you submitted `hello.py` for Lab00. 
-
-**Important**: you need to upload **both** files _at the same time_. You can hold down Ctrl (or Cmd/command) key while clicking on the files to select them to upload.
+**Important**: you need to upload **both** files _at the same time_. You can hold down Ctrl (or Cmd/command) key while clicking on the files to select them to uploadOr, you can drag them one by one into the submission box on Gradescope.
 
 Gradescope will run a few tests to check if your functions are correct. If your tests do not pass, go back to these functions and double-check your logic and function syntax.
 

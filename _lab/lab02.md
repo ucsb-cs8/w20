@@ -4,7 +4,7 @@ desc: Magic number
 due: 2020-01-28 08:59
 layout: lab
 num: lab02
-ready: false
+ready: true
 ---
 
 # {{page.num}}: {{page.desc}}
@@ -315,7 +315,7 @@ def test_numToStr_10():
    assert numToStr(10) == "ten"
 
 def test_numToStr_11():
-   assert numToStr(10) == None
+   assert numToStr(11) == None
 ```
 
 Finally, run the code, and ensure that you don’t have any syntax errors in your Python code.

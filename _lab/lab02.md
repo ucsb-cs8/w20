@@ -446,6 +446,8 @@ If you are getting `IndexError: list index out of range`, then double-check that
 
 Another error you might run into is `TypeError: object of type 'int' has no len()`. If you see it, verify that when you call `len()`, the variable you give it contains a string object. If you accidentally gave it an integer object or `None`, it will produce this error. (Note that you can check the type by printing the value or `type()` of that object as part of debugging your code.)
 
+Some of you might get the error `Test Failed: None != Hello, 'World!'` when trying to submit on Gradescope. Make sure that the function that is failing is actually returning something, not just printing. Remember, `return` and `print` do not function the same way.
+
 
 # Bonus (optional) TO BE ADDED
 

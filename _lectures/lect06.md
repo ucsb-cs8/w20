@@ -6,13 +6,13 @@ ready: false
 pdfurl:
 ---
 
-# Thursday Lectture06 Notes
+# Thursday Lecture 06 Notes
 
 ## Announcements:
 * Pay attention to minor details! They matter a lot. 
-* The review is tomorrow at 1:30pm. If any details about the time or location change, we will post on Piazza.
+* The review is tomorrow (Fri, Jan 24) at 1:30pm in **HFH 1132**. If any details about the time or location change, we will post on Piazza.
 * We will post a link to the notes and slides from the review session on Piazza.
-* Bring a pencil and eraser to the exam. No bluebook/scantron
+* Bring a pencil and eraser to the exam. No bluebook/scantron.
 
 
 # Review
@@ -27,7 +27,7 @@ pdfurl:
   >>> alpha[-9:-7]
   "ab"
   ```
-  As a shortcut if you don’t want to count the characters, use the length function!
+  As a shortcut if you don’t want to count the characters, use the length of the string provided by the `len` function!
   ```python
   alpha = "abcdefghi"
   >>> alpha[-len(alpha):-7]
@@ -35,18 +35,17 @@ pdfurl:
   ```
   
 * Q: Does capitalization matter when you compare strings?
-  * A: Yes! "y" is not the same as "Y"
+  * A: Yes! `'y'` is not the same as `'Y'`
   
-* Q: Do you use the return in the hello() function because of the conditional??
-  * A: No. Return  vs print has nothing to do with the conditional of the function. The instructions 
-  were what specified to return rather than just print.
+* Q: Do you use the `return` in the `hello()` function because of the `if`/`else` conditional??
+  * A: No. `return`  vs `print` has nothing to do with the conditional of the function. We used `return` because the instructions specified to `return` rather than just `print`.
 
 # Using Conditionals
 
 Example:
 ```python
 
-raining = input("is it raining? [y/n]")
+raining = input("is it raining? [y/n] ")
 
 if (raining == 'y')
     print("It is raining")
@@ -59,8 +58,8 @@ else:
     
 ```
 
-if you wanted to be able to use other inputs ('y' 'yes' 'Y') to be able to output "It is raining", 
-you would do so by changing the conditional like this:
+if you wanted to be able to use other inputs (e.g., `'y' 'yes' 'Y'`) to be able to output "It is raining", 
+you would do so by changing the comparison in the conditional like this:
 
 ```python
 
@@ -79,5 +78,7 @@ if raining in ('y','Y','yes'):
     
 ```
 
-  
+Q: 
+
+We posted a follow-up about it on Piazza: <https://piazza.com/class/k54kv5vmxdu67o?cid=41>.
 

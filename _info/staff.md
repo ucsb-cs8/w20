@@ -18,7 +18,7 @@ ready: true
 
 ## TA Office Hours
 
-TA Office Hours will be held in the Building 936, which is next to the Phelps building unless the spreadsheet below shows otherwise.
+Unless the spreadsheet below shows otherwise, TA Office Hours will be held in the Building 936 (also known as the TA Trailer), which is next to the Phelps building.
 
 ## Open labs
 

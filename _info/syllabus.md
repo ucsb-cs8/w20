@@ -97,7 +97,7 @@ You are not allowed to look up or use information and solutions from the Interne
 If you are not sure about whether some kind of collaboration is permitted or not, it is your responsibility to **verify with the instructor** and ask questions.
 
 We will be using plagiarism detection services and we will report the violation of academic integrity cases to the Office of Student Conduct.
-Penalties for cheating are severe — they range from a zero grade for the assignment or exam up to dismissal from the University, for a second offense.
+Penalties for cheating are severe — they range from a zero grade for the assignment up to dismissal from the University, for a second offense.
 **If you are caught cheating on an exam, you will receive a failing grade for the course**.
 
 Rather than copying someone else's work, ask for help. You are not alone in this course! We are here to help you succeed: read the book, solve practice problems, stop by the office hours and the open lab hours to ask questions, post on Piazza. If you invest the time to learn the material and complete the projects, you won't need to copy any answers.

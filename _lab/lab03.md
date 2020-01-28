@@ -124,7 +124,7 @@ def buzzfeedQuizTrip(number):
     Return the corresponding trip destination based on the value of the user
     input using the following guidelines:
     [1-4]: "Hawai'i"
-    (5-8]: "Bahamas"
+    (4-8]: "Bahamas"
     (8-12]: "Madagascar"
     (12-16]: "Fiji"
     (16-20]: "Iceland"

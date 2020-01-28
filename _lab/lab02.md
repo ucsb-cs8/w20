@@ -464,7 +464,7 @@ You are ready to submit your work to Gradescope.
 
 
 Navigate to the Lab assignment on Gradescope and upload your `.py` files, similar to how you submitted `hello.py` for Lab00. 
-**Important**: you need to upload **both** files _at the same time_. You can hold down Ctrl (or Cmd/command) key while clicking on the files to select them to uploadOr, you can drag them one by one into the submission box on Gradescope.
+**Important**: you need to upload **both** files _at the same time_. You can hold down Ctrl (or Cmd/command) key while clicking on the files to select them to upload. Or, you can drag them one by one into the submission box on Gradescope.
 
 Gradescope will run a few tests to check if your functions are correct. If your tests do not pass, go back to these functions and double-check your logic and function syntax.
 

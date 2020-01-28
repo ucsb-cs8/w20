@@ -150,7 +150,7 @@ def isPhoneNumber(digits):
     '''
     - Nithya asked for Nassim's phone number. She wants to write a function 
       to check if the number is a real phone number.
-    - Returns True if `digits` is of type int and is nine numbers long.
+    - Returns True if `digits` is of type int and is nine numbers long. Otherwise return False.
     - Hint 1: You can check if digits is an int with type(digits) == int
     - Hint 2: To check the length of digits, you must convert it to a string first 
       using str(digits).

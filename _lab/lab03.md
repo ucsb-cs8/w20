@@ -355,7 +355,7 @@ def spongebobFont(message):
         if ...  # TODO: if num is even; replace ... with the expression to check if num is even
             SpongebobText += ... # TODO: make the letter at index i in message lowercase and add it to SpongebobText
         else:   # otherwise num is odd
-            SpongebobText += ... # TODO: make the letter at index i in message lowercase and add it to SpongebobText
+            SpongebobText += ... # TODO: make the letter at index i in message uppercase and add it to SpongebobText
         i = ... # TODO: update i by 1
     
     return SpongebobText

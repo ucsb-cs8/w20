@@ -14,6 +14,8 @@ In this lab, you'll get more practice with:
 * Using conditionals and nested control statements
 * Using `while` loops to iterate through list and string indexes
 
+Because we want to make sure you understand the structure and the elements of the loops, throughout this lab you should use **only `while` loops** and direct comparisons (e.g., using `==`), if you want to receive full credit for this lab (no other loops or `in` operator).
+
 
 # Instructions
 
@@ -169,6 +171,8 @@ def isPhoneNumber(digits):
 # lab03_tests.py
 ####################
 
+# TODO: add a line of code to include pytest
+
 from lab03 import charInWord
 # Test cases for charInWord:
 
@@ -279,9 +283,20 @@ def test_isPhoneNumber_4():
     
 def test_isPhoneNumber_5():
     assert isPhoneNumber([0]) == False
-    
 
 ```
+
+# Running test functions using `pytest` 
+
+The steps are the same as in [Lab01](../lab01).
+
+You need to make sure that you are in the **Terminal** and run the following command (substituting the correct **test file's file name** instead of `tests_file.py`:
+
+```
+python3 -m pytest tests_fiele.py
+```
+
+
 # Bonus! Make your own Spongebob Font generator!
 
 ![Mocking Spongebob Meme](mockingSpongebob.jpg) 

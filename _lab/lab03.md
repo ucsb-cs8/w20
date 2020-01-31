@@ -16,6 +16,9 @@ In this lab, you'll get more practice with:
 
 Because we want to make sure you understand the structure and the elements of the loops, throughout this lab you should use **only `while` loops** and direct comparisons (e.g., using `==`), if you want to receive full credit for this lab (no other loops or `in` operator).
 
+# Lab03 Slides
+
+You can view the accompanying slides to lab03 [here](https://drive.google.com/open?id=18EgS1uLfVu8ahae9RcIcH5bTIURLGeQK).
 
 # Instructions
 

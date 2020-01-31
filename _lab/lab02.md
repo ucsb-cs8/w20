@@ -23,6 +23,10 @@ New skills you'll practice include:
 * Indexing strings and lists
 * Writing `if`/`else` conditional statements
 
+# Lab02 Slides
+
+You can view the accompanying slides to lab02 [here](https://drive.google.com/open?id=1OA7xF50ffKJbs5mdWFAsuEenmQV5O22S).
+
 # Carefully read and follow all instructions below
 
 ### Set up your working environment

@@ -17,9 +17,13 @@ In this lab, you'll practice:
 * Running those test cases
 * Submitting your functions and test cases to Gradescope for grading
 
+
 ### Set up your working environment
 Before you get started, remember to **arrange and resize your windows** like you did in the "Quick Detour" in Lab00, so that you can see **both** the browser (these instructions) and your files side-by-side.
 
+# Lab01 Slides
+
+You can view the accompanying slides to lab01 [here](https://drive.google.com/open?id=1OA7xF50ffKJbs5mdWFAsuEenmQV5O22S).
 
 # Step 0: Install pytest for your account (or on your machine)
 

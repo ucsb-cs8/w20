@@ -331,7 +331,7 @@ def tax(income):
         the amount of tax owed according to the tax brackets above.
         Return the total tax owed.
         - Example: if income = 70000, then 
-        tax owed = 40000 * 0.12 + (income - 40000) * 0.22
+        tax owed = 30000 * 0.12 + (income - 40000) * 0.22
         '''
 
         return "stub"   # TODO: replace return "stub" with a correct return statement

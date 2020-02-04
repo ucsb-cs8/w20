@@ -12,6 +12,10 @@ baseurl: "/w20"
 url: "https://ucsb-cs8.github.io/w20"
 slides_url: ""
 
+head_scripts:
+  - https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML
+
+
 instances:
   -
     instructor: "Kharitonova"

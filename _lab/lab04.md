@@ -214,7 +214,7 @@ $$ (100 + 201.252) * (1 + 0.00417) = 302.507 $$
 
 and so on.
 
-Before you begin writing any code, try writing out the pseudocode for your function. Think about how you would calculate the taxed owed if you did the math by hand and use this to help you in the implementation. 
+Before you begin writing any code, try writing out the pseudocode for your function. Think about how you would calculate the compound interest if you did the math by hand and use this to help you in the implementation. 
 
 
 Write a function `savings` that computes and returns the savings amount after the given month, given a monthly contribution amount (e.g., 100), the annual interest rate (e.g., 5), and the number of months (e.g., 6), .

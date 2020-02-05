@@ -73,7 +73,7 @@ import random
 print("Random", random.randint(1, 10))
 ```
 
-    ('Random', 7)
+    'Random' 7
 
 
 
@@ -81,7 +81,7 @@ print("Random", random.randint(1, 10))
 print("Random", random.randint(1, 10))
 ```
 
-    ('Random', 7)
+    'Random' 7
 
 
 
@@ -89,7 +89,7 @@ print("Random", random.randint(1, 10))
 print("Random", random.randint(1, 10))
 ```
 
-    ('Random', 1)
+    'Random' 1
 
 
 The number really is random! We get a different output everytime.
@@ -102,9 +102,9 @@ guess = input("Select a number between 0 and 10: ") # Asking the user for a numb
 print("You selected: ", guess) # Printing the input back to the user
 ```
 
-    ('Computer selected ', 6)
+    'Computer selected ' 6
     Select a number between 0 and 10: 7
-    ('You selected: ', 7)
+    'You selected: ' 7
 
 
 What might be a potential problem?
@@ -133,9 +133,9 @@ guess = input(prompt)
 print("You selected: ", guess)
 ```
 
-    ('Computer selected ', 9)
+    'Computer selected ' 9
     Select a number between 1 and 102
-    ('You selected: ', 2)
+    'You selected: ' 2
 
 
 Now we will try to convert the computer's ouput into a string so it matches the type of the user input.
@@ -143,13 +143,13 @@ Now we will try to convert the computer's ouput into a string so it matches the 
 Check Monday's lecture notes to see code for converting the user's input into an int so it matches the computer's output.
 
 ### Pseudo code:
-Convert the_num into str
-While the user did not guess correctly
-Check if the user's guess is the same as the_num
-    If True (they are the same) 
-        Print "You got it!"
-    Else
-        Ask the user for another guess
+- Convert the_num into str
+- While the user did not guess correctly
+- Check if the user's guess is the same as the_num
+    - If True (they are the same) 
+        - Print "You got it!"
+    - Else
+        - Ask the user for another guess
 
 
 ```python
@@ -178,13 +178,13 @@ print ("The End")
 ```
 
     Select a number between 1 and 109
-    ('You selected: ', 9)
+    'You selected: ' 9
     Select a number between 1 and 104
-    ('You selected: ', 4)
+    'You selected: ' 4
     Select a number between 1 and 107
-    ('You selected: ', 7)
+    'You selected: ' 7
     Select a number between 1 and 103
-    ('You selected: ', 3)
+    'You selected: ' 3
 
 
 ```python
@@ -216,7 +216,7 @@ print ("Done")
 ```
 
     Break in action
-    ('Stop after', 8)
+    'Stop after' 8
     0
     1
     2
@@ -226,16 +226,16 @@ print ("Done")
     6
     7
     Continue in action
-    (0, ' is divisible by ', 3)
+    0, ' is divisible by ' 3
     1
     2
-    (3, ' is divisible by ', 3)
+    3 ' is divisible by ' 3
     4
     5
-    (6, ' is divisible by ', 3)
+    6 ' is divisible by ' 3
     7
     8
-    (9, ' is divisible by ', 3)
+    9 ' is divisible by ' 3
     Done
 
 
@@ -257,16 +257,16 @@ print ("Done")
 ```
 
     Pass in action
-    (0, ' is divisible by ', 3)
+    0 ' is divisible by ' 3
     1
     2
-    (3, ' is divisible by ', 3)
+    3 ' is divisible by ' 3
     4
     5
-    (6, ' is divisible by ', 3)
+    6 ' is divisible by ' 3
     7
     8
-    (9, ' is divisible by ', 3)
+    9 ' is divisible by ' 3
     10
     Done
 
@@ -294,13 +294,13 @@ print ("The End")
 ```
 
     Select a number between 1 and 103
-    ('You selected: ', 3)
+    'You selected: ' 3
     Select a number between 1 and 106
-    ('You selected: ', 6)
+    'You selected: ' 6
     Select a number between 1 and 109
-    ('You selected: ', 9)
+    'You selected: ' 9
     Select a number between 1 and 103
-    ('You selected: ', 3)
+    'You selected: ' 3
 
 
 

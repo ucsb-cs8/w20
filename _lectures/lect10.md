@@ -1,7 +1,7 @@
 ---
 num: Lec 10
 lecture_date: 2020-02-05
-desc: `range`, Loops
+desc: range(), Loops
 ready: false
 pdfurl:
 ---

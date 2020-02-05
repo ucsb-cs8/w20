@@ -2,9 +2,20 @@
 num: Lec 10
 lecture_date: 2020-02-05
 desc: range(), Loops
-ready: false
+ready: true
 pdfurl:
 ---
+
+```python
+num = 1
+while num < 11:
+  if num == 8:
+    break
+  print(num)
+  num += 1
+print("Done with while")
+```
+
 
 # `range()` function
 
@@ -12,6 +23,25 @@ pdfurl:
 
 * Returns a range object
 * Can convert a generated range into a list
+
+```python
+start_at = 1990
+end_before = 2021
+step_size = 10
+
+our_range = range(start_at, end_before)
+our_range = list(our_range)
+print(our_range)
+
+num = start_at
+new_list = []
+while num < end_before:
+  print(num)
+  new_list.append(num)
+  num += step_size
+print(new_list)
+
+```
 
 
 # `while` loop 
@@ -57,3 +87,22 @@ for VARIABLE in COLLECTION:
 ```
 
 No need to use the counter variable inside the loop (demo)
+
+```python
+word = "CS8"
+i = 0
+while i < len(word)
+  print(word[i])
+  i += 1
+
+for i in range(0, len(word), 1):
+  print(word[i])
+
+num = 8
+i = 0
+while i < num:
+  print("Hello, World!")
+  i += 1
+  
+for i in range(num):
+  print("Hello, World!")

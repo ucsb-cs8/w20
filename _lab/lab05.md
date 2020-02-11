@@ -349,10 +349,11 @@ def getCharacterBackward(char, key):
 # Pytest Functions for {{page.num}}_tests.py
 
 ```python
+# lab05_tests.py
 from lab05 import createAlphabet
 
-'''Note: for some of these to work, your createAlphabet 
-function must be working properly'''
+'''Note: for some of these to work, your createAlphabet function must be working properly'''
+
 
 from lab05 import createCipher
 
@@ -365,7 +366,7 @@ def test_createCipher_2():
 def test_createCipher_3():
     assert createCipher(' &#A.,?QP') == 'PQ?,.A#& '
     
-###################################################
+#######################################################################################################
 from lab05 import simpleEncode
 
 def test_simpleEncode_1():
@@ -375,28 +376,30 @@ def test_simpleEncode_2():
     assert simpleEncode('only these characters have to be in alphabet', 'pq', 'st' ) == None
 
 def test_simpleEncode_3():
-    assert simpleEncode('only these characters have to be in alphabet', 'onlythescartvbip ', 'pasdfghjklzxcvbnm' ) == 'pasdmfghjhmkglzlkfhzjmglchmfpmvhmbamlsnglvhf'
+    assert simpleEncode('only these characters have to be in alphabet', 'onlythescarvbip ', 'pasdfghjklzxcvbn' ) == 'pasdnfghjhnkglzlkfhzjnglxhnfpnchnvanlsbglchf'
 
 def test_simpleEncode_4():
     assert simpleEncode('thisIsMyPlainText', 'someAlphabet','wrongLength') == -1
     
-###################################################
+#######################################################################################################
 from lab05 import simpleDecode
 def test_simpleDecode_1():
     assert simpleDecode('~,,Qf~,,Qf~RRQ', createAlphabet(),createCipher(createAlphabet())) == 'beep beep boop'
 
 def test_simpleDecode_2():
-    assert simpleDecode('pasdmfghjhmkglzlkfhzjmglchmfpmvhmbamlsnglvhf','onlythescartvbip ', 'pasdfghjklzxcvbnm') == 'only these characters have to be in alphabet'
+    assert simpleDecode('tbamret s==sida', createCipher('abtes= rmid'), createCipher(createCipher('abtes= rmid'))) == 'midterms == bad'
 
 def test_simpleDecode_3():
-    assert simpleDecode('abc','abg','ghj') == None
+    assert simpleDecode('pasdnfghjhnkglzlkfhzjnglxhnfpnchnvanlsbglchf','onlythescarvbip ', 'pasdfghjklzxcvbn') == 'only these characters have to be in alphabet'
 
 def test_simpleDecode_4():
+    assert simpleDecode('abc','abg','ghj') == None
+
+def test_simpleDecode_5():
     assert simpleDecode('abc','abg','ghzj') == -1
 
-###################################################
-# Note: These functions are from the next part of the lab        
-
+#######################################################################################################
+        
 from lab05 import getCharacterForward
 '''changes depending on alphabet used'''
 def test_getCharacterForward_1():
@@ -410,7 +413,7 @@ def test_getCharacterForward_2():
 def test_getCharacterForward_3():
     # Note: This is using the alphabet used in createAlphabet()
     assert getCharacterForward('a', 967) == 'N'
-###################################################
+#######################################################################################################
     
 from lab05 import getCharacterBackward
 '''changes depending on alphabet used'''
@@ -425,6 +428,7 @@ def test_getCharacterBackward_2():
 def test_getCharacterBackward_3():
     # Note: This is using the alphabet used in createAlphabet()
     assert getCharacterBackward('N', 967) == 'a'
+
 
 ```
 

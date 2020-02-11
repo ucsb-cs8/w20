@@ -116,12 +116,12 @@ def print_list_index( aList ):
 
 Test it by running it with the following examples:
 ```
->>> print_list(fruits)
+>>> print_list_index(fruits)
 apple is at index 0
 banana is at index 1
 cherry is at index 2
 
->>> print_list(["A", "B", "C"])
+>>> print_list_index(["A", "B", "C"])
 A is at index 0
 B is at index 1
 C is at index 2

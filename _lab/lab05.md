@@ -435,6 +435,16 @@ Save your functions in a Python file named `{{page.num}}.py` and `{{page.num}}_t
 
 # Submit your work to Gradescope
 
-Congratulations, you are finished with this lab!  
+Congratulations, you are finished with this lab! 
+
+# Extra Participation Credit
+
+You have a chance to earn 5 extra points on this lab by participating in a research study. To get credit for your participation, you need to submit to Gradescope a screenshot of the final page of the survey that shows that **you** have completed it. The screenshot should clearly show that it was taken by you, so the best way to do it is to have your name that is part of the System Menu at the top right of the screen.
+
+**Instructions**:
+
+To better understand students’ attitudes about computer science, as well as what facilitates feelings of belonging in computer science classrooms, you are being asked to participate in an anonymous online survey. This survey should take 15-25 minutes and asks about how you think you fit in computer science, your interest and motivation for computing, your attitudes about others, and your career interests. Sometimes attitudes can change over time, so you will also be asked to take this survey again at the end of the semester. Thank you for your help!
+
+ The link is:  <https://www.surveygizmo.com/s3/5317570/Small-for-Big-CS4All-Phase-1>
 
 _Acknowledgments: Thanks to Ana Nika and Matthew Buoni for the initial version of this lab, and to Noah Stier and Jose Cuellar for adapting it for this assignment. Additional thanks to Abtin Bateni, Radha Kumaran, and Sherry Chen for modularizing the functions, and to Olivia Gillam for creating the test functions._

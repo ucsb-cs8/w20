@@ -60,7 +60,7 @@ def getAdvice(num):
                      "Attend lectures", "Ask questions", \
                      "Attend labs", "Enjoy studying" ]
     
-    if num > 0 :
+    if num >= 0 :
         advice = stepsToSuccess[num % ...] # TODO: replace ...
         return ...
 ```

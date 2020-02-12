@@ -440,6 +440,7 @@ Save your functions in a Python file named `{{page.num}}.py` and `{{page.num}}_t
 # Submit your work to Gradescope
 
 Congratulations, you are finished with this lab! 
+Make sure when you submit to Gradescope you submit all your files together. (Submit the lab05.py lab05_tests.py and if applicable the screenshot of the extra credit together) 
 
 # Extra Participation Credit
 

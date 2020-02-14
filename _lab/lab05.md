@@ -245,8 +245,8 @@ You can now update the above pseudocode with the additional checks that are list
 def simpleEncode(plaintext, alphabet, cipher):
     """
     Given plaintext to encode,
-    an alphabet and a cipher, return the
-    encoded ciphertext.
+    an alphabet and a cipher alphabet, return
+    the encoded ciphertext.
     If the lengths of the alphabet and
     cipher are not the same, return -1.
     If a character from plaintext is not
@@ -270,17 +270,17 @@ Now that we have successfully converted our plaintext into a gibberish ciphertex
 def simpleDecode(ciphertext, alphabet, cipher):
     """
     Given ciphertext to decode,
-    an alphabet and a cipher, return the
-    decoded plaintext.
+    an alphabet and a cipher alphabet, return
+    the decoded plaintext.
     If the lengths of the alphabet and
     cipher are not the same, return -1.
     If a character from ciphertext is not
-    found in the alphabet, return None.
+    found in the cipher alphabet, return None.
     """
     return "stub"
 ```
 
-You should be able to run `simpleDecode("yx", createAlphabet(), createCipher(createAlphabet()))` and get back the original string "hi" that you encoded above.
+You should be able to run `simpleDecode("yx", createAlphabet(), createCipher(createAlphabet()))` and get back the original string "HI" that you encoded above.
 
 
 See if you can decode this message from your mentors:

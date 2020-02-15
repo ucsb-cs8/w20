@@ -23,6 +23,8 @@ In this lab you'll get to:
 
 Let's get started by creating a file **{{page.num}}.py**.
 
+**IMPORTANT**: For all functions, even if you are given code for it, you need to verify that the code is running correctly. As such, you want to always write your own tests to verify that you are able to correctly return the requested values. 
+
 ## Example of the use of modulo 
 Given a random number `num`, use it to index a list and advise the user on which step to take to succeed in this course.
 The user can provide any non-negative number `num`, and this number may be larger than the length of the list that we want to index. 
@@ -66,6 +68,8 @@ def getAdvice(num):
 ```
 
 Now is a good time to create **{{page.num}}_tests.py** and use the provided pytests to check if your function is correct.
+Add your own tests to verify that you are able to correctly return every value from the list. If you don't write any other tests, at least write two tests that verify that your function correctly returns the first and the last requested values.
+
 
 ```python
 def test_getAdvice_1():
@@ -440,6 +444,10 @@ Save your functions in a Python file named `{{page.num}}.py` and `{{page.num}}_t
 # Submit your work to Gradescope
 
 Congratulations, you are finished with this lab! 
+
+When submitting your files to Gradescope, you need to submit **all** requested files **together**, _all at once_, **every time** you submit your files to Gradescope. If you submit them one by one, Gradescope will only keep **the last one** that you submitted.
+
+For this assignment, submit the `{{page.num}}.py` and `{{page.num}}_tests.py`, and if applicable the screenshot of the extra credit, all together. 
 
 # Extra Participation Credit
 

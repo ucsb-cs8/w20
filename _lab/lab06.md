@@ -7,7 +7,7 @@ num: lab06
 ready: true
 ---
 
-In this lab you'll learn to:
+In this lab you'll get to:
 
 * Practice using nested loops
 * Create encryption and decryption algorithms that use a secret key
@@ -73,7 +73,7 @@ One test is given to you above (a list of primes between 2 and 100), you can als
 
  Matrices are rectangular arrays of numbers like so:
 
-![matrix image]({{page.num}}/matrix2x2.png)
+![matrix image](matrix2x2.png)
 
 Another way to think about this would be a list of lists, 
 where **each list** within the main list represents the values
@@ -85,9 +85,9 @@ A = [[10, 6], [4, 3]]
 ```
 
 Like numbers, matrices can be multiplied by integers like so:
-![matrix image]({{page.num}}/matrix_multiplication_1.png)
-![matrix image]({{page.num}}/matrix_multiplication_2.png)
-![matrix image]({{page.num}}/matrix_multiplication_3.png)
+![matrix multiplication](matrix_multiplication_1.png)
+![matrix multiplication](matrix_multiplication_2.png)
+![matrix multiplication](matrix_multiplication_3.png)
 
 
 Write a function `multiplyScalarMatrix()` that simulates multiplying a matrix by a scalar value. This function takes two input parameters, one of type `list` which represents a matrix, and the other of type `int` which represents a scalar, and returns the product matrix in the form of a `list`. For example, `multiplyScalarMatrix([[6, 8], [10, 12]], 5)` should return `[[30, 40], [50, 60]]`.

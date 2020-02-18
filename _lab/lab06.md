@@ -85,9 +85,9 @@ A = [[10, 6], [4, 3]]
 ```
 
 Like numbers, matrices can be multiplied by integers like so:
-![matrix multiplication](matrix_multiplication_1.png)
-![matrix multiplication](matrix_multiplication_2.png)
-![matrix multiplication](matrix_multiplication_3.png)
+![matrix multiplication](matrix_multiply_1.png)
+![matrix multiplication](matrix_multiply_2.png)
+![matrix multiplication](matrix_multiply_3.png)
 
 
 Write a function `multiplyScalarMatrix()` that simulates multiplying a matrix by a scalar value. This function takes two input parameters, one of type `list` which represents a matrix, and the other of type `int` which represents a scalar, and returns the product matrix in the form of a `list`. For example, `multiplyScalarMatrix([[6, 8], [10, 12]], 5)` should return `[[30, 40], [50, 60]]`.

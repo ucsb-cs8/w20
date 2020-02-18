@@ -75,6 +75,8 @@ One test is given to you above (a list of primes between 2 and 100), you can als
 
 ![matrix image](matrix2x2.png)
 
+Write a function `multiplyScalarMatrix()` that simulates multiplying a matrix by a scalar value. This function takes two input parameters, one of type `list` which represents a matrix, and the other of type `int` which represents a scalar, and returns the product matrix in the form of a `list`. For example, `multiplyScalarMatrix([[6, 8], [10, 12]], 5)` should return `[[30, 40], [50, 60]]`.
+
 Another way to think about this would be a list of lists, 
 where **each list** within the main list represents the values
 stored within **one row** of the matrix. 
@@ -90,7 +92,7 @@ Like numbers, matrices can be multiplied by integers like so:
 ![matrix multiplication](matrix_multiply_3.png)
 
 
-Write a function `multiplyScalarMatrix()` that simulates multiplying a matrix by a scalar value. This function takes two input parameters, one of type `list` which represents a matrix, and the other of type `int` which represents a scalar, and returns the product matrix in the form of a `list`. For example, `multiplyScalarMatrix([[6, 8], [10, 12]], 5)` should return `[[30, 40], [50, 60]]`.
+Let's look at another example. `multiplyScalarMatrix([[1, 5, 6], [2, 4, 6]], 3)` should return `[[3, 15, 18], [6, 12, 18]]`.
 
 Think how you would approach the solution and draft a pseudocode for your approach (add it as comments in your file):
 ```

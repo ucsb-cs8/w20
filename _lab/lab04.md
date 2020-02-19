@@ -390,6 +390,6 @@ def guessinggame():
 
 ## Final Step:  Log Out
 
-**Acknowledgments**: Special thanks to Sara Mandic, April Sanchez, Radha Kumaran, and Sherry Chen who helped create this lab, and to Abtin Badeni, Rakshith Gopalakrishna, and Ran Liu for helping improve it.
+**Acknowledgments**: Special thanks to Sara Mandic, April Sanchez, Radha Kumaran, and Sherry Chen who helped create this lab.
 
 

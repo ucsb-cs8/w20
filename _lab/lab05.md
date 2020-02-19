@@ -459,4 +459,4 @@ To better understand students’ attitudes about computer science, as well as wh
 
  The link is:  <https://www.surveygizmo.com/s3/5317570/Small-for-Big-CS4All-Phase-1>
 
-_Acknowledgments: Thanks to Ana Nika and Matthew Buoni for the initial version of this lab, and to Noah Stier and Jose Cuellar for adapting it for this assignment. Additional thanks to Abtin Bateni, Radha Kumaran, and Sherry Chen for modularizing the functions, and to Olivia Gillam for creating the test functions._
+_Acknowledgments: Thanks to Ana Nika and Matthew Buoni for the initial version of this lab, and to Noah Stier and Jose Cuellar for adapting it for this assignment. Additional thanks to Abtin Bateni, Rakshith Gopalakrishna, Radha Kumaran, and Sherry Chen for modularizing the functions, and to Olivia Gillam for creating the test functions._

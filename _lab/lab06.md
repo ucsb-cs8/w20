@@ -35,7 +35,13 @@ Create a list with all prime numbers between `start` and `end` (including `start
 For example, to get a list of all prime numbers between 2 and 100, including the number two, we would call `listPrimes(start, end)`.
 The output should be `[2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97]`.
 
-Reminder: A _prime number_ is a positive number that is evenly divisible (without a remainder) by 1 and itself. One is specifically excluded from the list in the definition.
+* * *
+
+Reminder: _A **prime number** is a positive number that is evenly divisible (without a remainder) **only** by 1 and itself. One (i.e., the number 1) is specifically excluded from the list of primes in the definition._
+* A prime number _cannot be even_, because all even numbers are divisible by 2: the only exception to this is 2 itself, because 2 "is evenly divisible (without a remainder) **only** by 1 and itself".
+* 9 and 15 are the first two odd numbers (other than the excluded 1), which are _**not** prime_, because they are divisible by 3.
+
+* * *
 
 First, draft a pseudocode for your approach (add it as comments in your file):
 ```

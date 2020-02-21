@@ -209,6 +209,7 @@ def createCipher( alphabet ):
     """
     Given the input plaintext alphabet,
     return the reversed input.
+    NOTE: createCipher() returns a string.
     """
     return "stub"
 ```

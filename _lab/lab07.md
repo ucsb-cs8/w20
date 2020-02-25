@@ -1,10 +1,10 @@
 ---
+assigned: 2020-02-25 9:00am
+desc: "String Formatting and File IO"
+due: 2020-03-03 08:59am
 layout: lab
 num: lab07
 ready: true
-desc: "String Formatting and File IO"
-assigned: 2020-02-25 9:00am
-due: 2020-03-03 08:59am
 ---
 
 In this lab, you'll get to practice:
@@ -201,3 +201,4 @@ You should be able to go to Gradescope to see both Python files and the text fil
 
 
 ### Congratulations! You are finished with the lab!
+Congratulations, you are finished with this lab!  

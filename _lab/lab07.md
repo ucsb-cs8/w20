@@ -27,7 +27,7 @@ counting the total and the unique words in the file.
 In this lab, you will need to create the following files:
 * `{{page.num}}.py` - a file containing function definitions
 * `{{page.num}}_tests.py` - a file containing test cases
-* `input*.txt` files that you used for testing
+* `inputX.txt` files that you used for testing
 * <strong>Please comment your name / perm at the top of each file.</strong>
 * <strong>Make sure to have a docstring for every function.</strong>
 

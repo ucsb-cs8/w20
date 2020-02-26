@@ -134,7 +134,7 @@ For example,
 Hint: you need to call `getCleanWordList` first.
 
 ```python
-def getUniqueWords(filepath):
+def getUniqueWords(filepath, charsToRemove):
     '''
     Return a list of unique words that appeared 
     in the file with the given filepath.
@@ -152,7 +152,7 @@ For example,
 Hint: you need to call `getCleanWordList` and `getUniqueWords` in this function. 
 
 ```python
-def getWordCount(filepath):
+def getWordCount(filepath, charsToRemove):
     '''
     Get the frequency of each unique word 
     in the file with given filepath, and return 
@@ -167,7 +167,7 @@ def getWordCount(filepath):
 Finally, `mostCommonWord` reads a file with given filepath, and returns the most common word in the file. 
 
 ```python
-def mostCommonWord(filepath):
+def mostCommonWord(filepath, charsToRemove):
     '''
     Reads the file from filepath in your function
     and returns the most common word in 
@@ -184,11 +184,11 @@ def mostCommonWord(filepath):
 
 ### Notes on computing the most common words
 
-If you run `mostCommonWord("input1.txt")`, this function should essentially return the mode value from the file (the word that occurs most often).
-Use `getWordCount` to help you first count the words in a file, then `mostCommonWord()` can find the max count, save all words with that count and return the word that occurs first in ditionary order
+If you run `mostCommonWord("input1.txt", ",.!?;")`, this function should essentially return the mode value from the file (the word that occurs most often).
+Use `getWordCount` to help you first count the words in a file, then `mostCommonWord()` can find the max count, save all words with that count and return the word that occurs first in dictionary order
 
-* `mostCommonWords("input1.txt")` Test that you are able to return "hello" as the most frequently occuring word. 
-* `mostCommonWords("input2.txt")`, the function should return `'world'`.
+* `mostCommonWord("input1.txt", ",.!?;")` Test that you are able to return "hello" as the most frequently occuring word. 
+* `mostCommonWord("input2.txt", ",.!?;")`, the function should return `'world'`.
 
 Test the other functions accordingly, verifying on a simple input file that the results are correct.
 

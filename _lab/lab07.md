@@ -134,7 +134,7 @@ For example,
 Hint: you need to call `getCleanWordList` first.
 
 ```python
-def getUniqueWords(filepath, charsToRemove):
+def getUniqueWords(filepath):
     '''
     Return a list of unique words that appeared 
     in the file with the given filepath.

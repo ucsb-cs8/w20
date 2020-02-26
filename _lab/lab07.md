@@ -42,7 +42,7 @@ Starter code is provided for you at the bottom of this page.
 
 Here are simple examples you should try:
 
-## How to read file in Python?
+## How to read a file in Python?
 
 The code below that opens, reads, and closes the file.
 
@@ -89,6 +89,8 @@ Sed ea mala virtuti magnitudine obruebantur. Iam in altera philosophiae parte. A
 
 These files are used when running pytest functions in `{{page.num}}_tests.py`.
 
+If you want to test your functions with the additional files, call them **input5.txt**, etc., so that the tests below still work for you.
+
 **We will be using additional input files to test your submission on Gradescope**.
 
 
@@ -123,6 +125,12 @@ Your code will need to split and strip the strings from the text file appropriat
 For example, 
 `getCleanWordList("input3.txt", ",.!?;")` returns `["Hello", "Today", "is", "a", "lovely", "day", "isn't", "it"]`.
 
+**Note** that if we exclude the exclamanton mark `!` and the question mark `?` from the string that's substituted for the `charsToRemove` parameter, they should be included as part of the returned words:
+
+* `getCleanWordList("input3.txt", ",.?;")` returns `["Hello!", "Today", "is", "a", "lovely", "day", "isn't", "it"]`.
+* `getCleanWordList("input3.txt", ",.!;")` returns `["Hello", "Today", "is", "a", "lovely", "day", "isn't", "it?"]`.
+* `getCleanWordList("input3.txt", ",.;")` returns `["Hello!", "Today", "is", "a", "lovely", "day", "isn't", "it?"]`.
+
 Hint: you need to call `getAllWords` inside `getCleanWordList`. 
 
 ```python
@@ -134,6 +142,8 @@ def getCleanWordList(filepath, charsToRemove):
     charsToRemove are removed.
     Empty strings should not be added to the
     resulting list of cleaned words.
+    Use getAllWords function as a helper function 
+    to get the list of all words.
     '''
     return "stub"
  ```

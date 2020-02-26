@@ -125,7 +125,7 @@ Your code will need to split and strip the strings from the text file appropriat
 For example, 
 `getCleanWordList("input3.txt", ",.!?;")` returns `["Hello", "Today", "is", "a", "lovely", "day", "isn't", "it"]`.
 
-**Note** that if we exclude the exclamanton mark `!` and the question mark `?` from the string that's substituted for the `charsToRemove` parameter, they should be included as part of the returned words:
+**Note** that if we exclude the exclamation mark `!` and the question mark `?` from the string that's substituted for the `charsToRemove` parameter, they should be included as part of the returned words:
 
 * `getCleanWordList("input3.txt", ",.?;")` returns `["Hello!", "Today", "is", "a", "lovely", "day", "isn't", "it"]`.
 * `getCleanWordList("input3.txt", ",.!;")` returns `["Hello", "Today", "is", "a", "lovely", "day", "isn't", "it?"]`.
@@ -182,7 +182,7 @@ def getWordCount(filepath, charsToRemove):
     Get the frequency of each unique word 
     in the file with given filepath, and return 
     a list of lists where each element is a list 
-    of two element in the format [<word>, <count>].
+    of two elements in the format [<word>, <count>].
     '''
     return "stub"
 ```
@@ -209,7 +209,7 @@ def mostCommonWord(filepath, charsToRemove):
 
 ### Notes on computing the most common words
 
-If you run `mostCommonWord("input1.txt", ",.!?;")`, this function should essentially return the mode value from the file (the word that occurs most often).
+If you run `mostCommonWord("input1.txt", ",.!?;")`, this function should return the mode value from the file (the word that occurs most often).
 Use `getWordCount` to help you first count the words in a file, then `mostCommonWord()` can find the max count, save all words with that count and return the word that occurs first in dictionary order
 
 * `mostCommonWord("input1.txt", ",.!?;")` Test that you are able to return "hello" as the most frequently occuring word. 

@@ -43,11 +43,19 @@ Starter code is provided for you at the bottom of this page.
 Here are simple examples you should try:
 
 ## How to read file in Python?
-```
+
+The code below that opens, reads, and closes the file.
+
+If you have a file called "input1.txt" in the same directory as the Python code in which you want to open this file, then you would substitute "input1.txt" for "filename".
+If your file is in a different directory, then in order for the Python code to open this file, you need to **use _a path_ to the file** instead of the `"filename"`.
+
+```python
 file = open("filename")
 content = file.read()
 file.close()
 ```
+
+Note that in the functions below, instead of hard-coding the file name, you pass it as an input argument called `filepath`.
 
 **input1.txt**
 ```
@@ -135,8 +143,8 @@ def getCleanWordList(filepath, charsToRemove):
 `getUniqueWords` reads a file with given filepath and returns a list of all unique words that appeared in the file. 
 
 For example, 
-`getUniqueWords("input1.txt")` returns either `["hello", "world"]` or `["world", "hello"]`; 
-`getUniqueWords("input2.txt")` returns either `["hello", "world"]` or `["world", "hello"]`. 
+`getUniqueWords("input1.txt", ",.!?;")` returns either `["hello", "world"]` or `["world", "hello"]`; 
+`getUniqueWords("input2.txt", ",.!?;")` returns either `["hello", "world"]` or `["world", "hello"]`. 
 
 Hint: you need to call `getCleanWordList` first.
 
@@ -153,8 +161,8 @@ def getUniqueWords(filepath, charsToRemove):
 `getWordCount` reads a file with given filepath and returns a list of lists, where **each element is a list** of two elements in the format `[word, count]`. 
 
 For example, 
-`getWordCount("input1.txt")` returns either `[["hello", 3], ["world", 1]]` or `[["world", 1], ["hello", 3]]`; 
-`getWordCount("input2.txt")` returns either `[["hello", 1], ["world", 3]]` or `[["world", 3], ["hello", 1]]`.    
+`getWordCount("input1.txt", ",.!?;")` returns either `[["hello", 3], ["world", 1]]` or `[["world", 1], ["hello", 3]]`; 
+`getWordCount("input2.txt", ",.!?;")` returns either `[["hello", 1], ["world", 3]]` or `[["world", 3], ["hello", 1]]`.    
 
 Hint: you need to call `getCleanWordList` and `getUniqueWords` in this function. 
 

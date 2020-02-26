@@ -42,6 +42,13 @@ Starter code is provided for you at the bottom of this page.
 
 Here are simple examples you should try:
 
+## How to read file in Python?
+```
+file = open("filename")
+content = file.read()
+file.close()
+```
+
 **input1.txt**
 ```
 hello

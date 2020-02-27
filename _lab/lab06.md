@@ -15,6 +15,8 @@ In this lab you'll get to:
 * Use built-in string methods
 * Convert an integer to a binary representation (optional)
 
+# Lab06 Slides
+You can view the accompanying slides to lab06 [here](https://drive.google.com/open?id=1SXRQvM21s12zqlxqcl9-Mhswe2JblUxa).
 
 # Step 0: Get ready to start on this lab
     

@@ -5,8 +5,11 @@ desc: Recursion is Recursion
 ready: true
 ---
 
+# Recursion
+* Recrusive functions call themselves to execute the same operations over and over
+* Often, a recursive function can be written iteratively (with a loop), but they might behave differently
+* A simple base case (or cases): does not use recursion to produce an answer
 
-# Thursday Lecture 2/27: Recursion!!!
 
 * Example: How could you find out how many people are in line if each person can only see the person directly in front of them?
     * Each person asks the person in front of them "How many people are in front of you?" 
@@ -56,13 +59,55 @@ def factorial(n):
         return (n*factorial(n-1))
 ```
 
-what if `n = 2.1`
+Now, the call of `factorial(3)` results in the following **call stack**:
+
+```python
+factorial(3)
+  3 * factorial(3-1)
+    2 * factorial(2-1)
+      1 * factorial(1-1)
+        1
+```
+
+
+
+## Checking for invalid input
+
+* what if `n = 2.1`?
 
 `2.1 - (1 * any integer)` will never equal 0. The base case will never be reached, so there will be an infinite recursion. 
-Python cannot handle an infinite recursion, so it will produce an error: `RecursionError: maximum recursion depth exceeded in comparison`. This is the error that you'll see if your function never reaches **the base case**.
+Python cannot handle an infinite recursion, so it will produce an error: `RecursionError: maximum recursion depth exceeded in comparison`. 
+This is the error that you'll see if your function never reaches **the base case**.
 
-Let's create a new function that calls `factorial(n)`
-if and only if the user inputs a valid type:
+However, we **should not** check if we got the correct input _within_ the recursive function, 
+because the code of the recursive function runs _every time_ that function is called.
+Instead, we want to check the input **once**, to decide if it is safe call the recursive function.
+In this case, the recursive function will be the _helper function_.
+
+
+Let's create a new function `getFactorial(n)` that calls `factorial(n)` 
+if and only if the user inputs a valid type.
+
+Below is one potential version with a very generic error.
+
+```python
+# One potential version
+def getFactorial(n):
+
+'''
+Check that n is >= 0
+and is an integer.
+If it is not, print an Error,
+Otherwise, return the value n!
+'''
+
+if type(n) == int and n >= 0:
+  return factorial(n)
+else:
+  print("Error")
+```
+
+Here's another potential version:
 
 ```python3
 def getFactorial(n):
@@ -78,6 +123,23 @@ def getFactorial(n):
     else:
         return factorial(n)
 ```
+
+We can also get very descriptive and output the incorrect type and value.
+
+```python
+# new function
+def getFactorial(n):
+  if type(n) != int
+    print ("Error: incorrect input type", type(m))
+    return
+  if n < 0:
+    print("Error: incorrect input value", n)
+    #return
+  else:
+    return factorial(n)    
+```
+
+
 * Question: What if the user inputs -2.1
 * Question: couldn't you do the same using only if statements and return statements?
   * Answer: Yes, here is an example of that:

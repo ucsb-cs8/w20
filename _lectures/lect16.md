@@ -70,6 +70,14 @@ See slides for additional examples of recursion (e.g., Droste Effect, Sierpinski
 * Goal: find a set of rules that reduce all other cases toward the base case.
 
 
+When designing a recursive solution, we need to answer the following questions:
+* What's our base case (or cases)? 
+   * What's `print`ed or `return`ed?
+* What's the next simplest input (**first recursive case**)? 
+   * What action do we need to take to **get from the first recursive case to the base case**? 
+
+
+
 # A skeleton of the recursive function
 
 ```python

@@ -2,9 +2,20 @@
 num: Lec 10
 lecture_date: 2020-02-05
 desc: range(), Loops
-ready: false
-pdfurl:
+ready: true
+reading:
 ---
+
+```python
+num = 1
+while num < 11:
+  if num == 8:
+    break
+  print(num)
+  num += 1
+print("Done with while")
+```
+
 
 # `range()` function
 
@@ -12,6 +23,25 @@ pdfurl:
 
 * Returns a range object
 * Can convert a generated range into a list
+
+```python
+start_at = 1990
+end_before = 2021
+step_size = 10
+
+our_range = range(start_at, end_before)
+our_range = list(our_range)
+print(our_range)
+
+num = start_at
+new_list = []
+while num < end_before:
+  print(num)
+  new_list.append(num)
+  num += step_size
+print(new_list)
+
+```
 
 
 # `while` loop 
@@ -58,6 +88,7 @@ for VARIABLE in COLLECTION:
 
 No need to use the counter variable inside the loop (demo)
 
+
 ______________________________________________________________________________
 # Thursday (2/6) Lecture 10 Notes
 
@@ -67,10 +98,10 @@ ______________________________________________________________________________
 
 # Lab04 Questions
 
-* Q: How to use pytest approx with lab04?
+* Q: How to use `pytest.approx` with lab04?
   * A: Give it the correct, exact answer (do not use rounded value shown in lab instructions).
 If you use the approximated value, the value will not match what the function returns because the precision of the function is much higher than that of the approximation.
-  * For pytest, you can do pytest.approx(100 + 100*(5/100/12)) == my_func(100, 5, 1)
+  * For pytest, you can do `pytest.approx(100 + 100*(5/100/12)) == my_func(100, 5, 1)`
 
 * Q: Should we round our answers for lab04?
   * A: No
@@ -81,7 +112,7 @@ If you use the approximated value, the value will not match what the function re
 
 # Code from Lecture
 ## While loop practice
-```python3
+```python
 # Print all even numbers from 11 to 50 (not including 50)
 
 num = 11
@@ -93,7 +124,7 @@ while num < stopNum:
     num += 1
 ```
 
-```python3
+```python
 # Print 5 numbers divisible by 7 from [20,30]
 
 start = 20
@@ -114,7 +145,7 @@ while num <= stop:
 ***Question: Why is the second "if" indented?  Why is the "else: not indented?***
 ***Question: What happens if the "else" is in-line with the first "if" instead, like so?***
 
-```python3
+```python
 print("Else matches the second if: ")
 while num <= stop:
     if num % 7 == 0: 
@@ -128,7 +159,7 @@ while num <= stop:
 
 ## Lab04 Attempt
 
-```python3
+```python
 account = 100
 rate = 5
 # so after the first month, the rate is .05/12 = 0.00417
@@ -144,7 +175,7 @@ print(value_in_account)
 ```
 
 ## range() function
-```python3
+```python
 
 start_at = 14
 end_before = 29
@@ -179,7 +210,7 @@ print("Custom range as a list")
 print(new_range)
 ```
 
-```python3
+```python
 start_at = 0 # default
 end_before = 10
 step_size = 1 # default
@@ -201,7 +232,7 @@ print(our_range)
 ```
 
 
-```python3
+```python
 start_at = 14 
 end_before = 29
 step_size = 3
@@ -220,7 +251,7 @@ for num in range(start_at, end_before, step_size):
 
 ```
 
-```python3
+```python
 step_size = 1 # default
 
 word = "CS8"
@@ -241,7 +272,7 @@ for character in word:
     
 ```
 
-```python3
+```python
 for course in ["CS8", "CS16", "CS24"]:
     if course == "CS16":
         print("I'm done")
@@ -251,7 +282,7 @@ for course in ["CS8", "CS16", "CS24"]:
 
 what happens if I switch "break" to "continue"?
 
-```python3
+```python
 for course in ["CS8", "CS16", "CS24"]:
     if course == "CS16":
         print("I'm done")
@@ -263,10 +294,30 @@ for course in ["CS8", "CS16", "CS24"]:
 
 ## Nested for loops
 
-```python3
+```python
 for course in ["CS8", "CS16", "CS24"]:
     print("Every character in", course)
     for letter in course:
         print(letter)
 ```  
 
+
+```python
+word = "CS8"
+i = 0
+while i < len(word)
+  print(word[i])
+  i += 1
+
+for i in range(0, len(word), 1):
+  print(word[i])
+
+num = 8
+i = 0
+while i < num:
+  print("Hello, World!")
+  i += 1
+  
+for i in range(num):
+  print("Hello, World!")
+```

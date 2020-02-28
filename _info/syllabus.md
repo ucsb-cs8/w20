@@ -39,11 +39,17 @@ Below are the links to different sections of the syllabus:
     * **Lab / Discussion Sections**: in Phelps 3525 on Tuesdays: 9am, 10am, 11am, noon
     * Exam 1: 01/27, in class;
     * Exam 2: 02/24, in class;
+    * Final Exam (see the note below): **Room TBA**; Thursday, March 19, 2020 **1:30 PM - 3:00 PM**
 * **Lecture 2**: Tuesday and Thursday, 11am--12:15pm, CHEM 1171
     * **Lab / Discussion Sections**: in Phelps 3525 on Wednesdays: 1pm, 2pm, 3pm, 4pm
     * Exam 1: 01/28, in class;
     * Exam 2: 02/25, in class;
-* **Final exam**: TBA -- arrangements for a common final are in progress.
+    * Final Exam (see the note below): **Room TBA**; Wednesday, March 18, 2020 **1:30 PM - 3:00 PM**
+
+**Note** that the final exam is going to be only **90 minutes long** (towards the last half of the allotted time slot listed on GOLD). We will design the exam accordingly and will collect all exams after 90 minutes after the start time listed above.
+Please provide this information to the DSP office, when scheduling your accommodation.
+
+**No reference sheets or notes of any kind, no books, calculators, phones, laptops or other materials or devices will be allowed during the final exam**. 
 
 
 ## Disclaimer
@@ -165,6 +171,8 @@ In rare cases, if there is a properly and officially documented family emergency
 
 We want you to learn and have a great time in the process. Please keep that goal in mind throughout the semester and do not hesitate to reach out if you'd like any help along the way. Welcome to CS 8!
 
-Last major revision: Jan 5, 2020
+Last major revision: Feb 26, 2020
 
-Last updated: 01/05/2020 live version of the syllabus
+Updated: 
+* 02/26/2020 added the note about the final exam
+* 01/05/2020 live version of the syllabus

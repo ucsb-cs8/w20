@@ -2,6 +2,7 @@
 num: Lec16
 lecture_date: 2020-02-26
 desc: Recursion is Recursion
+reading: Chapter 10
 ready: true
 ---
 

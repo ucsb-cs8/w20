@@ -7,6 +7,9 @@ num: lab05
 ready: true
 ---
 
+# Lab05 Slides
+You can view the accompanying slides to lab05 [here](https://drive.google.com/open?id=1qtsQZ3ZzktZsXrlp7EcIuivnIeI0IAca).
+
 # Warm-ups to Help with the Main Part of the Lab
 
 In this lab you'll get to:
@@ -209,6 +212,7 @@ def createCipher( alphabet ):
     """
     Given the input plaintext alphabet,
     return the reversed input.
+    NOTE: createCipher() returns a string.
     """
     return "stub"
 ```

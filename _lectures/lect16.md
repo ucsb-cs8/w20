@@ -124,25 +124,8 @@ def getFactorial(n):
         return factorial(n)
 ```
 
-We can also get very descriptive and output the incorrect type and value.
-
-```python
-# new function
-def getFactorial(n):
-  if type(n) != int
-    print ("Error: incorrect input type", type(m))
-    return
-  if n < 0:
-    print("Error: incorrect input value", n)
-    #return
-  else:
-    return factorial(n)    
-```
-
-
-* Question: What if the user inputs -2.1
-* Question: couldn't you do the same using only if statements and return statements?
-  * Answer: Yes, here is an example of that:
+* Question: Could you do the same for type checking using only `if` statements and `return` statements?
+  * Answer: Yes, you can: as long as you include the `return` that stops the function. Otherwise, you need an `elif`, so that you do not proceed with the rest of the function. here is an example of that:
 ```python3
 def getFactorial(n):
     '''
@@ -160,8 +143,31 @@ def getFactorial(n):
         return factorial(n)
 ```
 
-* 1 1 2 3 5 8 13
-* 1 2 3 4 5 6 7
+We can also get very descriptive and output the incorrect type and value.
+
+```python
+# new function
+def getFactorial(n):
+  if type(n) != int
+    print ("Error: incorrect input type", type(m))
+    return
+  if n < 0:
+    print("Error: incorrect input value", n)
+    #return
+  else:
+    return factorial(n)    
+```
+
+
+
+* Question: What if the user inputs `-2.1`?
+
+
+## Fibonacci numbers
+
+* `1 1 2 3 5 8 13` Fibonacci numbers (values)
+* `1 2 3 4 5 6 7` the index of. each number
+
 ```python3
 def fibonacci(n):
     '''

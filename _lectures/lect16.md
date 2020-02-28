@@ -39,10 +39,10 @@ The simplest case is called the **Base case**: There is nothing to do.
 * Next simplest case: There are 3 dishes. You wash one. Now there are 2 dishes. You wash one. Now there is one dish. You wash it. Now there are no dishes. You're done!
 * etc.
 
-**Each recursive case gets you closer to the base case.**
+**Each recursive case _should_ get you closer to the base case.**
 
 
-```python3
+```python
 def doDishes(numDishes):
     if numDishes == 0:
         # return "You're done!"
@@ -108,8 +108,11 @@ In other words...
 • 3! = 3∙2∙1=6
 • 4! = 4∙3∙2∙1 = 24
 
+Looks like we have a formula:
 n! = n∙(n – 1)!
 ```
+
+So, for any given `n`, to compute the factorial of `n`, we need to find the product of the successive numbers between 1 and `n`.
 
 Let's try expressing this in Python. 
 
@@ -138,12 +141,12 @@ Let's check if the above logic works for the next recursive case, which is `3!`.
  
  And now in Python:
 
-```python3
+```python
 def factorial(n):
     if (n == 0):
         return 1
     else:
-        return (n*factorial(n-1))
+        return n*factorial(n-1)
 ```
 
 Now, the call of `factorial(3)` results in the following **call stack** (similar to the steps we traced above):
@@ -161,7 +164,7 @@ factorial(3)
 
 ## Checking for invalid input
 
-* what if `n` is set to be `"two"`?
+* What if `n` is set to be `"two"`?
 
 ```python
 >>> factorial("two")
@@ -169,16 +172,16 @@ factorial(3)
     return n * factorial(n-1)
 TypeError: unsupported operand type(s) for -: 'str' and 'int'
 ```
-The `TypeError` points at the fact that we cannot apply subtraction between `str' and 'int'`.
+The `TypeError` points at the fact that we cannot use a subtraction between `str' and 'int'`.
 
-* what if `n` is `2.1`?
+* What if `n` is `2.1`?
 
 ```python
 >>> factorial(2.1)
   ...
     return n * factorial(n-1)
   [Previous line repeated 1021 more times]
-  File "/Users/kinto/Documents/code/cs8-w20/fact.py", line 2, in factorial
+  File "/....py", line 2, in factorial
     if n==0:
 RecursionError: maximum recursion depth exceeded in comparison
 ```
@@ -203,23 +206,22 @@ Below is one potential version with a very generic error.
 ```python
 # One potential version
 def getFactorial(n):
+    '''
+    Check that n is >= 0
+    and is an integer.
+    If it is not, print an Error,
+    Otherwise, return the value n!
+    '''
 
-'''
-Check that n is >= 0
-and is an integer.
-If it is not, print an Error,
-Otherwise, return the value n!
-'''
-
-if type(n) == int and n >= 0:
-  return factorial(n)
-else:
-  print("Error")
+    if type(n) == int and n >= 0:
+      return factorial(n)
+    else:
+      print("Error")
 ```
 
 Here's another potential version with the two check separated using `if / elif`:
 
-```python3
+```python
 def getFactorial(n):
     '''
     check that n is an integer>=0
@@ -239,7 +241,7 @@ def getFactorial(n):
   
   Here is an example of how you can write this function using only `if` statements and `return` statements:
   
-```python3
+```python
 def getFactorial(n):
     '''
     check that n is an integer>=0
@@ -291,24 +293,28 @@ def getFactorial(n):
    return n!
    Otherwise, print an error
    '''
-  if type(n) != int
-    print ("Error: incorrect input type", type(m))
-    return
-  if n < 0:
-    print("Error: incorrect input value", n)
-    #return
-  else: # n is a valid input
-    return factorial(n)    
+   if type(n) != int
+      print ("Error: incorrect input type", type(m))
+      return
+   if n < 0:
+      print("Error: incorrect input value", n)
+      #return # see what happens if there's no return
+   else: # n is a valid input
+      return factorial(n)    
 ```
 
 
 
 ## Fibonacci numbers
+A Fibonacci number is a number in a sequence of numbers (the Fibonacci sequence), such that each number is the sum of the two preceding ones. 
+The Wikipedia article has a lot of fascinating information about the [Fibonacci numbers](https://en.wikipedia.org/wiki/Fibonacci_number) (did you know that they are related to the golden ratio?).
+Sometimes, you see the Fibonacci sequence starting from 0 and 1.
+In lecture, we started them at 1 and 1.
 
-* `1 1 2 3 5 8 13` Fibonacci numbers (values)
-* `1 2 3 4 5 6 7` the index `n` of each number (e.g., 1st, 2nd, 3rd Fibonacci number)
+* `1 1 2 3 5 8 13 ...` Fibonacci numbers (values)
+* `1 2 3 4 5 6 7  ...` the index `n` of each number (e.g., 1st, 2nd, 3rd Fibonacci number)
 
-```python3
+```python
 def fibonacci(n):
     '''
     returns the nth fibonacci term
@@ -331,7 +337,7 @@ def fibonacci(n):
 
 We can generalize this like so:
 
-```python3
+```python
 def fibonacci(n):
     '''
     returns the nth fibonacci term
@@ -343,6 +349,8 @@ def fibonacci(n):
     else:
         return fibonacci(n - 2) + fibonacci(n - 1)
 ```  
+
+# Recursion in CS 16 and beyond
 
 If you continue taking CS classes, you'll see recursion again in CS 16 and beyond:
 * Recursion on the linked lists 

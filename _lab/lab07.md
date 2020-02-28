@@ -110,8 +110,9 @@ def getAllWords(filepath):
 
 
 For example, 
-`getAllWords("input1.txt")` returns `["hello", "hello", "hello", "world"]`; 
-`getAllWords("input2.txt")` returns `["hello", "world", "world", "world"]`.
+
+* `getAllWords("input1.txt")` returns `["hello", "hello", "hello", "world"]`; 
+* `getAllWords("input2.txt")` returns `["hello", "world", "world", "world"]`.
 
 
 ## Clean the resulting words
@@ -153,8 +154,9 @@ def getCleanWordList(filepath, charsToRemove):
 `getUniqueWords` reads a file with given filepath and returns a list of all unique words that appeared in the file. 
 
 For example, 
-`getUniqueWords("input1.txt", ",.!?;")` returns either `["hello", "world"]` or `["world", "hello"]`; 
-`getUniqueWords("input2.txt", ",.!?;")` returns either `["hello", "world"]` or `["world", "hello"]`. 
+* `getUniqueWords("input1.txt", ",.!?;")` returns either `["hello", "world"]` or `["world", "hello"]`; 
+* `getUniqueWords("input2.txt", ",.!?;")` returns either `["hello", "world"]` or `["world", "hello"]`. 
+
 
 Hint: you need to call `getCleanWordList` first.
 
@@ -171,8 +173,9 @@ def getUniqueWords(filepath, charsToRemove):
 `getWordCount` reads a file with given filepath and returns a list of lists, where **each element is a list** of two elements in the format `[word, count]`. 
 
 For example, 
-`getWordCount("input1.txt", ",.!?;")` returns either `[["hello", 3], ["world", 1]]` or `[["world", 1], ["hello", 3]]`; 
-`getWordCount("input2.txt", ",.!?;")` returns either `[["hello", 1], ["world", 3]]` or `[["world", 3], ["hello", 1]]`.    
+* `getWordCount("input1.txt", ",.!?;")` returns either `[["hello", 3], ["world", 1]]` or `[["world", 1], ["hello", 3]]`; 
+* `getWordCount("input2.txt", ",.!?;")` returns either `[["hello", 1], ["world", 3]]` or `[["world", 3], ["hello", 1]]`.    
+
 
 Hint: you need to call `getCleanWordList` and `getUniqueWords` in this function. 
 

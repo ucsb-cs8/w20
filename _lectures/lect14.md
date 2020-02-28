@@ -3,8 +3,42 @@ num: Lec 14
 lecture_date: 2020-02-19
 desc: Objects (Mutability), Nested Loops, String Formatting
 ready: false
-pdfurl:
+reading:
 ---
+
+# Wednesday, February 19th Lecture
+
+``` python
+# Generate num(candidate primes)
+for num in range(start, end, step)
+  #check the divisors
+  for div in range(2,num/2 + 1):
+    if num % div is divisible
+      print (         )
+      break
+    #save the prime number
+```
+
+Example of printing columns and rows:
+
+``` python
+mtable = {{2, 3, 11], [5, 78, 99], [5777, 9978, 99]]:
+for row in mtable:
+  for elt in row:
+    print (elt, " ", end = "")
+  print()
+```
+* ISSUE: not in columns because it is only separated by a space--> not formatted correctly
+
+# Questions
+
+What is the difference between break and continue?
+  * Continue: go to the top of the loop
+  * Break: get out of the loop completely
+  
+=======
+
+
 # Lecture 14 (Thursday)
 # Review
 
@@ -24,7 +58,7 @@ Pseudocode for the prime number function (lab06)...
 
 * check if each num is prime by dividing num by all the divisors
 
-```python3
+```python
 start = 2 # Example values
 end = 8 # Example values
 list_primes = []
@@ -49,7 +83,7 @@ for num in range(start, end):
     (but continue with the outer for loop)
 
 
-# IClicker Concept Questions
+
 ## Mutability of objects
 
 1. What is printed out after running the following code segment?
@@ -68,7 +102,7 @@ Answer: cat
 # LAB06 example
 2. What is printed out after running the following code segment?
 
-```python3
+```python
 tmp = [1,2,3]
 myL = []
 for i in range(4):
@@ -83,8 +117,7 @@ Answer:[42,2,3]
     * A: Even if you only change the first element of the list, since all the lists were initialized to be the same, all of the lists will be changed when the first list is changed. <br/>
     * How could we change this so that it only changes the value of the first one?
 
-```python3
-
+```python
 myL = []
 for i in range(4):
     tmp = [1,2,3]
@@ -101,8 +134,7 @@ they are not actually the same, so mutating one at the end by doing ```myL[0][0]
 We can visualize this by printing out the id of each list like so. In the first example, the ids are the same.
 
 
-```python3
-
+```python
 myL = []
 tmp = [1,2,3]
 for i in range(4):
@@ -115,8 +147,7 @@ print(myL)
 
 ```
 
-```python3
-
+```python
 myL = []
 for i in range(4):
     tmp = [1,2,3]
@@ -130,7 +161,8 @@ print(myL)
 ```
 
 3. What is printed out after running the following code segment?
-```
+
+```python
 my_pets = ["bat", "cat"]
 ur_pets = my_pets
 ur_pets.append("owl")
@@ -139,7 +171,8 @@ print(my_pets)
 Answer: ["bat", "cat", "owl"]
 
 4. What is printed out after running the following code segment?
-```
+
+```python
 my_pets = ["bat", "cat"]
 ur_pets = ["bat", "cat"]
 ur_pets.append("owl")
@@ -148,5 +181,8 @@ print(my_pets)
 Answer: ["bat", "cat"]
 
 # Formatting Output
+
+```python
 for num in range(0, 10):
     print("{0:10.3f}".format(num))
+```

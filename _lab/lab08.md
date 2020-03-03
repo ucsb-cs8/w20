@@ -4,7 +4,7 @@ num: lab08
 ready: true
 desc: "Recursion and dictionaries"
 assigned: 2020-03-03 9:00am
-due: 2020-03-03 08:59am
+due: 2020-03-10 08:59am
 ---
 
 In this lab, you'll get more practice with:
@@ -216,7 +216,7 @@ def recursiveReverseList(L):
 
 ```
 
-#### Check if an input string is a palindrome
+## Check if an input string is a palindrome
 
 A **palindrome** is a word, number, or other sequence of characters which reads the same backward as forward, such as "madam" or "racecar".
 
@@ -238,7 +238,7 @@ def test_isPalindrome_3():
 
 ```
 
-#### Compute 2<sup>n</sup> - 1 recursively
+## Compute 2<sup>n</sup> - 1 recursively
 
 Write your own implementation of a function `computeValue` that computes and returns _2<sup>n</sup> - 1_, given _n_ as an input parameter. If _n_ is less than 0, return the string `"Error"`.
 __Make sure your solution uses recursion.__

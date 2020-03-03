@@ -71,10 +71,11 @@ See slides for additional examples of recursion (e.g., Droste Effect, Sierpinski
 
 
 When designing a recursive solution, we need to answer the following questions:
+
 * What's our base case (or cases)? 
-   * What's `print`ed or `return`ed?
-* What's the next simplest input (**first recursive case**)? 
-   * What action do we need to take to **get from the first recursive case to the base case**? 
+* What action should be taken in the case case? What is `print`ed or `return`ed?
+* What's the **first recursive case** (next simplest input)? 
+* What action do we need to take to **get from the first recursive case to the base case**? 
 
 
 
@@ -132,6 +133,8 @@ But first, we need to answer:
    * What action do we need to take to **get from the first recursive case to the base case**? 
 
 
+If we correctly answer these questions, we would have the pseudocode / algorithm for the solution:
+
 * What's our base case (or cases)? `0! or 1!`
       * What's `print`ed or `return`ed?
          * We need to `return 1`
@@ -141,6 +144,7 @@ But first, we need to answer:
       * To get the "previous factorial" from the step above using our current input `2`, we need to use `(2-1)! = 1!`
       
 Let's check if the above logic works for the next recursive case, which is `3!`.
+
 * Next recursive case: input `3` (i.e., compute `3!`) 
    * **What action do we need to take to get from this input to the case that's closer to the base case?**
       * We need to `return` the `3` multiplied by the previous factorial, which is `2!`

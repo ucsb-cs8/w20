@@ -201,7 +201,7 @@ def recursiveSubstring(s, sub):
     '''
     The parameters sub and s are strings. 
     Compute if the string sub exists in s.
-    - Your solution must use recursion in order to receive credit.
+    - Your solution must use recursion in order to receive credit. (This means you are not allowed to use the "in" operator!)
     '''
     return "stub"
 

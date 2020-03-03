@@ -22,17 +22,17 @@ for num in range(start, end, step)
 Example of printing columns and rows:
 
 ``` python
-mtable = {{2, 3, 11], [5, 78, 99], [5777, 9978, 99]]:
+mtable = [[2, 3, 11], [5, 78, 99], [5777, 9978, 99]]:
 for row in mtable:
   for elt in row:
     print (elt, " ", end = "")
   print()
 ```
-* ISSUE: not in columns because it is only separated by a space--> not formatted correctly
+* ISSUE: not in columns because it is only separated by a space ==> not formatted correctly
 
 # Questions
 
-What is the difference between break and continue?
+What is the difference between `break` and `continue`?
   * Continue: go to the top of the loop
   * Break: get out of the loop completely
   
@@ -93,7 +93,6 @@ pet = 'cat'
 pet.replace("c","b")
 print(pet)
 ```
-Answer: cat
 
 * Q: Why do we not get an error because we intended to modify something immutable?
     * A: The replace is a function, and it is written in a way that it creates a NEW object rather than trying ot modify the original object. Since this new object is not set equal to a variable, it is not saved.
@@ -111,7 +110,6 @@ myL[0][0] = 42
 
 print(tmp)
 ```
-Answer:[42,2,3]
 
 * Q: If we do ```print(myL)```, why does it optput 42 each time? (like so: [[42,2,3],[42,2,3],[42,2,3]]  )
     * A: Even if you only change the first element of the list, since all the lists were initialized to be the same, all of the lists will be changed when the first list is changed. <br/>
@@ -147,6 +145,8 @@ print(myL)
 
 ```
 
+Compare it with: 
+
 ```python
 myL = []
 for i in range(4):
@@ -168,7 +168,7 @@ ur_pets = my_pets
 ur_pets.append("owl")
 print(my_pets)
 ```
-Answer: ["bat", "cat", "owl"]
+Answer: [...]
 
 4. What is printed out after running the following code segment?
 
@@ -178,7 +178,7 @@ ur_pets = ["bat", "cat"]
 ur_pets.append("owl")
 print(my_pets)
 ```
-Answer: ["bat", "cat"]
+Answer: [...]
 
 # Formatting Output
 

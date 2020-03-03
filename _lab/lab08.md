@@ -191,6 +191,7 @@ Remember to include docstrings and write your own test functions.
 def recursiveDigitSum(n):
     '''
     Computes the sum of digits of a positive integer n.
+    For example, if n = 361, the digit sum is 3 + 6 + 1 = 10
     Returns None of n is negative.
     - Your solution must use recursion in order to receive credit.
     '''

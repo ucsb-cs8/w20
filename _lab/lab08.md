@@ -42,7 +42,8 @@ You will complete the portions in the starter code by doing the following:
    * Before you move on to the next function definition and <em>its</em> tests, get all of the tests you just wrote to pass.
    * Repeat this until you have ALL of the function definitions and their tests, and all of them pass.
 
-* * *
+------
+
 # Questions to ask to solve recursion:
 
 When designing a recursive solution, we need to answer the following questions:
@@ -66,9 +67,8 @@ def recF(input):
 # so, the recursive case is supposed to use
 # the input that gets you closer to the base case
 ```
+------
 
-
-* * *                                                                            
 
 ## Recursion walk-through
 

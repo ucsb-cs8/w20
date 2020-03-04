@@ -1,9 +1,9 @@
 ---
-num: Lec 17
+num: Lec17
 lecture_date: 2020-03-02
 desc:
-ready: false
-pdfurl:
+reading:
+ready: true
 ---
 
 # Python Dictionaries
@@ -84,6 +84,28 @@ Question: What if we used a return in this function?
 Question: Do I always need to use input `==` something? 
 - No! Sometimes your base case includes a range of numbers
 
+
+
+# Practice Problem
+* Hint: the output will be mirrored
+
+* ANSWER to Practice Problem
+  * Base case: n = 0
+    * action: `print(n)`
+  * First recursive case: n = 1
+    * action: `print(n)`  then `countdown(n-1)`  and finally `print(n)`
+    
+```python
+def countdown(n):
+  if n = 0:
+    print(n)
+  else:
+    print(n)
+    countdown(n-1)
+    print(n)
+```
+  
+
 ## Dictionaries
 
 A new data structure.
@@ -144,4 +166,5 @@ Notice, the values inside a dictionary are their own type called dict_values
 
 Question: Are the keys or the values the view type?
 - Values! These are the items which will be dynamically updated.
+
 

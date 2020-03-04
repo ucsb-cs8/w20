@@ -11,7 +11,7 @@ pdfurl:
 ## Review
 
 ### Soliving Recursion
-- Step 1: A simple base case (or cases): does not use recursio to produce an answer
+- Step 1: A simple base case (or cases): does not use recursion to produce an answer
     - typically returns a fixed value
     - the simplest possible case
 - Step 2: A recursive case, when the function calls itself on the next simplest input
@@ -43,42 +43,45 @@ Lab grades to be released soon, if you did not name your files/functions correct
 
 Create a recursive function called `countdown()` that takes a parameter n and recursively counts down from parameter n and recursively counts down from n to 0 (inclusive of both), mirroring the values around the output of 0.
 - Example: `countdown(2)` would output:
+```
 2
 1
 0
 1
 2
+```
 
 What would our function look like?
-Pull up list of questions
-    - Our base case is n == 0
-    - The action that should be taken in our base case is print (n)
-    - The first recursive case is n == 1
-    - The action that should be taken to get from our first recursive case to the base case is countdown(n-1)
+
+Let's pull up our list of questions:
+    - Our base case is `n == 0`
+    - The action that should be taken in our base case is `print(n)`
+    - The first recursive case is `n == 1`
+    - The action that should be taken to get from our first recursive case to the base case is `countdown(n-1)`
         - Two parts: action calling the function and an action handling the input itself
 
 Question: Do we need a break after the base case?
 - No, because the function ends after the base case
 
-Question: What happens if we replace print with return?
+Question: What happens if we replace `print` with `return`?
 - All values get returned, so there is nothing left to be the recursive input
 
-Now, let's move on to countdown_mirror()
+Now, let's move on to `countdown_mirror()`
     - Base case doesn't change
     - The additional action is the mirroring part
     
 Once you figure out your first recursive case, 99% of the time you're done!
 
 ### Slide 16-17:
-- Need the result of the countdown(3-1) before it is able to print(2), need the result of countdown(2-1) before it is able to print(1), need the result of countdown(1-1): which is just print(0)
+- Need the result of the `countdown(3-1)` before it is able to `print(2)`, need the result of `countdown(2-1)` before it is able to `print(1)`, need the result of `countdown(1-1)`: which is just print(0)
 - Executes from the top to the bottom of the function call
 
 Question: What if we used a return in this function?
-`a = return countdown_mirror(n-1)` --> Not valid syntax, return is a standalone function
+`a = return countdown_mirror(n-1)` ==> Not valid syntax, return is a standalone function
 - But we can use result
-`a = countdown_mirror(n-1)` --> Won't work either because the result is None
+`a = countdown_mirror(n-1)` ==> Won't work either because the result is None
 
-Question: Do I always need to use input == something? 
+Question: Do I always need to use input `==` something? 
 - No! Sometimes your base case includes a range of numbers
 
 ## Dictionaries
@@ -95,22 +98,22 @@ Dictionaries are sometimes referred to as tables or maps
 Searching through dictionaries is much faster than lists!
 
 ```python
-#code here
+# Demo of the speed difference
 ```
 
 In order to get an item out of the list, we need to know the index of the item. For dictionaries, we don't really care about that. All we need is the key. For example, if we want to print the number of bananas, all we need is the key (banana).
 
 Question: Can we put a dictionary inside of another dictionary?
-- It depends as whaty you're storing it as
+- It depends as what you're storing it as
 - Keys have to be immutable, but corresponding values can be mutable!
 
-If we are looking for a key in a dictionary that doesn't exist in the dictionary, python will gives us a KeyError.
+If we are looking for a key in a dictionary that doesn't exist in the dictionary, python will gives us a `KeyError`.
 
 ```python
 # .get() code
 ```
 
-By default, .get() returns None if a key is not present in a dictionary. 
+By default, `.get()` returns `None` if a key is not present in a dictionary. 
 
 We are able to add a key and a corresponding value to our dictionary
 - use .get() to check if the key exists in the dictionary
@@ -122,9 +125,6 @@ Question: how would we reassign a value of an existing key?
 - python's way of keeping track of time
 - tells us how long it takes python to perform a function
 
-```
-# code
-```
 
 What this code is doing:
 - Opening a file for reading

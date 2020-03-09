@@ -200,6 +200,8 @@ The following functions should be in a separate file called **{{page.num}}.py**.
 
 Suppose we decide to invest some money in an account that continously compounds interest. In other words, the amount that we initially invested is constantly earning interest and any interest that we earned also keeps acquiring interest.
 
+**Update 3/9/2020:** The interest rate that you are given is an **annual rate**, e.g., 5% or 7.5%.  _Before the first month_, you only have the initial amount that you contributed in your account (e.g., 100 dollars).
+
 At first, let's compute our earnings in the short term. Suppose you save $100 _each_ month into a savings account that has an annual interest rate of 5%. So, the monthly interest rate is $$ 0.05 / 12 = 0.00417 $$. After the first month, the value in the account becomes
 
 $$ 100 * (1 + 0.00417) = 100.417 $$

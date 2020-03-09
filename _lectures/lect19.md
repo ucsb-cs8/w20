@@ -8,6 +8,8 @@ ready: true
 
 * Pay attention to conditionals!
 
+* You can find the list of the UCSB major/minor codes here: <https://registrar.sa.ucsb.edu/faculty-staff/resources-for-faculty-staff/major-minor-codes>
+
 ```python
 ucsb_majors = {}
 try:

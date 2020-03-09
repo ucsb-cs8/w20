@@ -1,9 +1,8 @@
 ---
 num: Lec19
 lecture_date: 2020-03-09
-desc:
+desc: Review
 ready: true
-pdfurl:
 ---
 * Algorithm: a solution to a problem, typically written in a human-understandable language(pseudocode)
 

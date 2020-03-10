@@ -51,7 +51,7 @@ What are the basic elements of programming?
 2. Basic Data Types
     - This forces you to care about syntax!
     - `int` and `float`
-        - Allow you to do arithmetic --> `+`, `-`, `**`, `//`, `/`, `%`, `*`
+        - Allow you to do arithmetic ==> `+`, `-`, `**`, `//`, `/`, `%`, `*`
     - `bool`
         - `if`/`else`/`elif`
             - `==` and `!=`
@@ -68,7 +68,7 @@ What are the basic elements of programming?
 4. More complex data types
     - Lists
         - `len` and indexing now apply to lists
-        - plot
+        - plot (not going to be on the exam)
     - Tuples
         - Mutability
         - Named tuples
@@ -78,21 +78,22 @@ Indexing gave us...
     - `while` loop
         - `range()`
     - `for` loop
-        - Anything you can do with a while loop you can do with a for loop!
+        - Anything you can do with a while loop you can do with a for loop (without infinite loops)!
 6. Recursion
     - Call our function within its definition
 7. Dictionaries
     - Will definitely be on the final!!
 8. File I/O
     - Reading in our data to store complex data types
+    - Writing out files into a file
     
 Consider making a similar concept map while studying!
 
 # Practice Algorithm
 
-This won't be on the exam, but it's still good to know...
+Exceptions won't be on the exam, but it's still good to know for your future projects.
 
-We can use `try` to tell python that a line of code *may* cause an error. This prevents your code from crashing.
+We can use `try` to tell python that a line of code *may* cause an error. This prevents your code from crashing, giving you a way to gracefully handle the exception.
 
 For example,
 ```python
@@ -117,7 +118,7 @@ Reading a large file in may take a really long time to load, and will make testi
 
 Instead, consider using a small file for testing to speed up the process and use the large file when your function is ready.
 
-**Note!** Even if you are not submitting the replacement lab, we still encourage you to look at it for practice!
+**Note!** Even if you are not submitting the replacement lab, we still encourage you to look at it for practice! Knowing how to compute summary statistics yourself might come in handy during the final.
 
 Let's fix our code to skip duplicates.
 ```python
@@ -140,3 +141,6 @@ else:
             outfile.write(line_to_write)
     infile.close()
 ```
+
+
+Practice your debugging skills: given a function/code that is not correct, find the error or where it might potentially be going wrong.

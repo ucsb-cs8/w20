@@ -144,3 +144,38 @@ else:
 
 
 Practice your debugging skills: given a function/code that is not correct, find the error or where it might potentially be going wrong.
+
+
+
+### Final file after Lecture on Tuesday
+
+```python
+outfile = open("major_codes_clean.txt", 'w')
+
+try:
+    infile = open("major-codes-2.txt", 'r')
+    #infile = open("major-codes.txt")
+except FileNotFoundError as err:
+    print("No such file exists.")
+    print("ERROR:", err)
+else:
+    ucsb_majors = {}
+    for line in infile: # line is a str
+        #print("'", line, "'", sep="")
+        line_to_write = line
+        line = line.strip()
+        line = line.split('\t')
+        print(line)
+        key = line[0].strip()
+        value = line[1]
+        if ucsb_majors.get(key) != None:
+            ucsb_majors[key] = value
+            print(type(line))
+            outfile.write(line_to_write)
+        else:
+            # we found a duplicate
+            pass
+    infile.close()
+
+outfile.close()
+```

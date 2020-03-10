@@ -123,8 +123,8 @@ Similarly, for the **{{page.num}}_tests.py**.
 def test_InToFtandIn_66():
     assert InToFtandIn(66.0)=="feet: 5.0 inches: 6.0"
 
-def test_InToFtandIn_254():
-    assert InToFtandIn(71.0)=="feet: 8.0 inches: 4.0"
+def test_CmToFtandIn_254():
+    assert CmToFtandIn(254.0)=="feet: 8.0 inches: 4.0"
 ```
 
 

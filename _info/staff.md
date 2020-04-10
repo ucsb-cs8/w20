@@ -103,7 +103,7 @@ Some other things about me: I am a member of the Society of Women Engineers (SWE
 
 <tr>
   <td>
-  <img src="/w20/info/mentorPhotos/rk.jpeg"  width="300px"  alt="" style="float: left; margin: 20px 10px 0px 0px;">
+  <img src="/w20/info/mentorPhotos/404.gif"  width="300px"  alt="" style="float: left; margin: 20px 10px 0px 0px;">
   <h3>Radha Kumaran (TA)</h3>
     Preferred Pronouns: She, Her, Hers<br/>
     Major: Computer Science<br/>
